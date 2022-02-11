@@ -1,0 +1,8 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = lyrics
+lyrics = element lyrics {song} 
+song = element song {year, line, author}
+year = element year {dddd}
+line = element line {a-z}
+author = element author {a-z}
