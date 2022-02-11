@@ -1,0 +1,25 @@
+Beatles Step File - February 11, 2022
+
+1. Saved clean-lyrics.csv as an .xml file
+
+2. Manually tagged <headings> line
+
+3a. Searched and wrapped years
+    find: (\d{4}),
+    replace: <year>\1</year>
+    
+3b. manually fix Hey Jude, Revolution
+
+3c. find additional years
+
+4. searched and wrapped cover status
+    find: (False|True)
+    replace: <cover status="\1">\1</cover>
+    
+5a. searched and tagged beginning of lyrics elements
+    find: </year>"?
+    replace: </year><lyrics>
+    
+5b. searched and tagged end of lyrics elements
+    find: <cover
+    replace: </lyrics><cover
