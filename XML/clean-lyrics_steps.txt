@@ -23,3 +23,20 @@ Beatles Step File - February 11, 2022
 5b. searched and tagged end of lyrics elements
     find: <cover
     replace: </lyrics><cover
+
+6. searched/tagged for album titles 
+    find: ,(.+),<year>
+    replace: _<album title="\1">\1</album><year>
+
+7a. searched/tagged for song name
+    find: \n(.+)_
+    replace: \n<songName name="\1">\1</songName>
+    *had to fix line 2 manually to remove extra tag
+    
+7b. searched/tagged for song names that did not have an album
+    find: \n([A-Z].+),,
+    replace: \n<songName name="\1">\1</songName>
+    *cleaned up a couple outliers manually
+
+
+
