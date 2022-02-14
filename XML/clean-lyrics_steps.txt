@@ -38,5 +38,15 @@ Beatles Step File - February 11, 2022
     replace: \n<songName name="\1">\1</songName>
     *cleaned up a couple outliers manually
 
+8. cleaned up quotes around songwriters
+    find: "\[""
+    replace: [
+    find: ""\]"
+    replace: ]
+    find: "",""
+    replace: (space),(space)
 
+9. tagged songwriters
+    find: \[(([A-z]+((\s)?[A-z]+)((\s,\s)?[A-z]+))+.?)\]
+    replace: <songWrite writer="\1"/>
 
