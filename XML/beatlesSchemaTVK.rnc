@@ -1,8 +1,16 @@
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
-start = lyrics
-lyrics = element lyrics {song} 
-song = element song {year, line, author}
-year = element year {\d}
-line = element line {a-z}
-author = element author {a-z}
+start = root
+root = element root {headings, song} 
+headings = element headings {text}
+song = element song {songName, album, year, lyrics?, cover, songWrite, vocalist? }
+songName = element songName {name}
+name = attribute name {text}
+album = element album {text}
+year = element year {xsd:integer}
+lyrics = element lyrics {text}
+cover = element cover {status}
+status = attribute status {text}
+songWrite = element songWrite {writer}
+writer = attribute writer {text}
+vocalist = element vocalist {text}
