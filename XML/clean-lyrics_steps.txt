@@ -53,5 +53,6 @@ Beatles Step File - February 11, 2022
 10. tagged vocals
     find: "/>,<songWrite (.+?>)$
     replace: "/>,<vocals \1
-    find: 
+    find: (<vocals )writer="
+    replace: \1vocalist=
 
