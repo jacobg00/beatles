@@ -49,4 +49,9 @@ Beatles Step File - February 11, 2022
 9. tagged songwriters
     find: \[(([A-z]+((\s)?[A-z]+)((\s,\s)?[A-z]+))+.?)\]
     replace: <songWrite writer="\1"/>
+    
+10. tagged vocals
+    find: "/>,<songWrite (.+?>)$
+    replace: "/>,<vocals \1
+    find: 
 
