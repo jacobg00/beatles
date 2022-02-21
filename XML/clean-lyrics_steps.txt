@@ -60,4 +60,15 @@ Beatles Step File - February 11, 2022
     find: (vocalist=)([A-Z])
     replace: \1"\2
     
-
+12. removed commas from attribute values
+    find: ([A-Z] ),(space)
+    replace: \1(space)
+    *XML search options enabled, attribute values checked
+    
+13. replaced spaces in attribute values with underscores
+    find: ([a-z]) ([a-z])
+    replace: \1_\2
+    
+14. replaced double spaces in attribute values with single spaces
+    find: (space)(space)
+    replace: (space)
