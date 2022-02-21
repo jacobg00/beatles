@@ -56,3 +56,8 @@ Beatles Step File - February 11, 2022
     find: (<vocals )writer="
     replace: \1vocalist=
 
+11. prior step left out quotation marks after vocalist=
+    find: (vocalist=)([A-Z])
+    replace: \1"\2
+    
+
