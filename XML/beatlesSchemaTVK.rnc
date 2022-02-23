@@ -1,7 +1,7 @@
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 start = root
-root = element root {headings, song} 
+root = element root {headings, song+} 
 headings = element headings {text}
 song = element song {songName, album, year, lyrics?, cover, songWrite, vocals? }
 songName = element songName {name, text}
