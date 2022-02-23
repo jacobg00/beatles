@@ -72,3 +72,15 @@ Beatles Step File - February 11, 2022
 14. replaced double spaces in attribute values with single spaces
     find: (space)(space)
     replace: (space)
+
+15. removed extra commas
+    find: >,<
+    replace: ><
+
+16. removed extra commas from lyrics
+    find: ,</lyrics>
+    replace: </lyrics>
+
+17. made self closing tags for instrumentals
+    find: <lyrics></lyrics>
+    replace: <instrumental/>
