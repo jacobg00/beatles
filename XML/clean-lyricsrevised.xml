@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="beatlesSchemaTVK.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="beatlesSchemaTVKrevised.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
 <headings>title,album,year,lyrics,cover,songwriters_parsed,vocals_parsed</headings>
 <song><songName name="12-Bar_Original">12-Bar Original</songName><album title="Anthology 2">Anthology 2</album><year>1965</year><instrumental/><cover status="False">False</cover><songWrite writer="John_Lennon Paul_McCartney George_Harrison Ringo_Starr"/><vocals vocalist="Instrumental"/></song>
