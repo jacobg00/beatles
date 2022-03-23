@@ -7,8 +7,9 @@ return (concat ("&#xa;", "Out of the ", $lyricsLove, " songs that have the word 
 :)
 (: On this seccond one I was trying to display the number of times love is said in that song:)
 let $song:=//song
-let $numberLove := $song//count(//lyrics//text()[contains(..,'love')])
+
 let $songName :=$song[lyrics/matches(.,'love','i')]/songName/text()
 for $songN in $songName
+let $numberLove := $song//count(//lyrics//text()[contains(..,'love')])
 order by $songN
 return (concat ("&#xa;", "In ", $songN, "love is said", $numberLove))
