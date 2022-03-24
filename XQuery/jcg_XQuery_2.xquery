@@ -24,7 +24,7 @@ can find it. And that is: :)
 ! (tokenize(.)[. = 'love'] => count())
 (: whc: so now we tokenize(), meaning look at each section of the string separated by whitespaces;
 look only at those ones where the substring equals "love"; and count them. We do NOT need to make
-this tokenize search case-insensitive because we already replaced any capital-L Loves with " love "
+this tokenize() search case-insensitive because we already replaced any capital-L Loves with " love "
 in the replace() function.:)
 where $song[./songName/text() = $songN]//songWrite[@writer/matches(.,'Lennon')]
 (: whc: for demonstration purposes, I added the above line, which allows you to filter by songwriter.
