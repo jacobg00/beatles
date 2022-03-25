@@ -30,5 +30,8 @@ let $SongRNR := //$song[.//@title="Rock 'n' Roll_Music"]
 let $Songhamburg := //$song[.//@title="Live! at_the_Star-Club_in_Hamburg, Germany; 1962"]
 let $SongRare := //$song[.//@title="Rarities"]
 let $SongLIBFilm := //$song[.//@title="Let_it_Be_film"]
+let $year :=//year
+for $date  in $year
+return (concat ("&#xa;", "On the album, ", $albname," the song ", $song, " was written in ", $year ))
 
-return $SongRare
+
