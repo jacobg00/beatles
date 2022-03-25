@@ -1,0 +1,58 @@
+Beatles Billboard Albums Step File - March 25, 2022
+
+1. Copied tables into a new .xml file
+
+2. Commented out headings
+
+3. Added the root tags
+
+4. Searched and wrapped years
+    find: \n(.+)(\d{4}),
+    replace: \n<date album_debut="\1\2">\1\2</date>
+	*Manually fixed where it caught The Beatles 1962-1966
+
+5.Searched for spaces in dates
+	Find: ,SPACE
+	Replace: ,
+
+6.Looked for inconsistant tabs
+	Find: SPACE\t
+	Replace: \t
+
+7. Tagged Chart Position
+	Find:\t(\d+)\t
+	Replace:<album_position>\1</album_position>
+
+8. Tagged Total weeks on charts
+	Find: >(\d+)\t
+	Replace: ><chart_weeks>\1</chart_weeks>
+
+9. Tagged weeks at #1
+	Find: >(\d+)\n
+	Replace: ><album_weeks_at_one>\1<album_weeks_at_one>\n
+
+10. Made beginning tags for album names
+	Find: (</date>)\t
+	Replace: \1<album title=>
+
+11. Made end tags for album names
+	Find: (<album_position)
+	Replace: </album>\1
+
+12. Found the NAs for the chart position
+	Find: \tNA\t
+	Replace:<album_position>NA</album_position>
+
+13. Found the NAs for the weeks on charts
+	Find:position>NA\t
+	Replace:position><chart_weeks>NA</chart_weeks>\n
+
+14. Had to add one missed album name end tag
+
+15. Removed extra lines
+	Find: SPACE\n
+	Replace: Nothing
+
+
+
+
