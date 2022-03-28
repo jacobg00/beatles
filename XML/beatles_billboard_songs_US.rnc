@@ -1,0 +1,11 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+start = root
+root = element root {billboardSong+} 
+billboardSong = element billboardSong {date,songName,position,chart_weeks,weeks_at_one?}
+date = element date{song_debut, text}
+song_debut = attribute song_debut {text}
+songName = element songName {name, text}
+name = attribute name {text}
+position = element position {text}
+chart_weeks = element chart_weeks {text}
+weeks_at_one = element weeks_at_one {text}

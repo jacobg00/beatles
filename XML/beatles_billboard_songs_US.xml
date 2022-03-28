@@ -1,73 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Debut Date	Title	Highest Position	Total Weeks on Charts	Total Weeks at #1-->
+<?xml-model href="beatles_billboard_songs_US.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
-    <date song_debut="January 18,1964">January 18,1964</date><songName name="I_Want_to_Hold_Your_Hand">I Want To Hold Your Hand</songName><position>1</position><chart_weeks>15</chart_weeks><weeks_at_one>7<weeks_at_one>
-    <date song_debut="January 25,1964">January 25,1964</date><songName name="She_Loves_You">She Loves You</songName><position>1</position><chart_weeks>15</chart_weeks><weeks_at_one>2<weeks_at_one>
-    <date song_debut="February 1,1964">February 1,1964</date><songName name="Please_Please_Me">Please Please Me</songName><position>3</position><chart_weeks>13</chart_weeks> 
-    <date song_debut="February 1,1964">February 1,1964</date><songName name="I_Saw_Her_Standing_There">I Saw Her Standing There</songName><position>14</position><chart_weeks>11</chart_weeks> 
-*<date song_debut="February 8,1964">February 8,1964</date><songName name=>My Bonnie</songName><position>26</position><chart_weeks>6</chart_weeks> 
-    <date song_debut="February 22,1964">February 22,1964</date><songName name="From_Me_to_You">From Me To You</songName><position>41</position><chart_weeks>6</chart_weeks> 
-    <date song_debut="March 14,1964">March 14,1964</date><songName name="Twist_and_Shout">Twist And Shout</songName><position>2</position><chart_weeks>11</chart_weeks> 
-    <date song_debut="March 14,1964">March 14,1964</date><songName name="Roll_Over_Beethoven">Roll Over Beethoven</songName><position>68</position><chart_weeks>4</chart_weeks> 
-    <date song_debut="March 28,1964">March 28,1964</date><songName name="Can't_Buy_Me_Love">Can't Buy Me Love</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>5<weeks_at_one>
-    <date song_debut="March 28,1964">March 28,1964</date><songName name="All_My_Loving">All My Loving</songName><position>45</position><chart_weeks>6</chart_weeks> 
-    <date song_debut="March 28,1964">March 28,1964</date><songName name="Do_You_Want_to_Know_a_Secret?">Do You Want To Know A Secret</songName><position>2</position><chart_weeks>11</chart_weeks> 
-    <date song_debut="March 28,1964">March 28,1964</date><songName name="You_Can't_Do_That">You Can't Do That</songName><position>48</position><chart_weeks>4</chart_weeks> 
-        <date song_debut="April 4,1964">April 4,1964</date><songName name="Thank_You_Girl">Thank You Girl</songName><position>35</position><chart_weeks>7</chart_weeks> 
-        <date song_debut="April 11,1964">April 11,1964</date><songName name="There's_a_Place">There's A Place</songName><position>74</position><chart_weeks>1</chart_weeks> 
-        <date song_debut="April 11,1964">April 11,1964</date><songName name="Love_Me_Do">Love Me Do</songName><position>1</position><chart_weeks>14</chart_weeks><weeks_at_one>1<weeks_at_one>
-*<date song_debut="April 11,1964">April 11,1964</date><songName name=>Why</songName><position>88</position><chart_weeks>1</chart_weeks> 
-<date song_debut="May 9,1964">May 9,1964</date><songName name="P.S._I_Love_You">P.S. I Love You</songName><position>10</position><chart_weeks>8</chart_weeks> 
-<date song_debut="May 30,1964">May 30,1964</date><songName name="Sie_liebt_dich">Sie Liebt Dich</songName><position>97</position><chart_weeks>1</chart_weeks> 
-<date song_debut="July 18,1964">July 18,1964</date><songName name="A_Hard_Day's_Night">A Hard Day's Night</songName><position>1</position><chart_weeks>13</chart_weeks><weeks_at_one>2<weeks_at_one>
-<date song_debut="July 18,1964">July 18,1964</date><songName name="Ain't_She_Sweet">Ain't She Sweet</songName><position>19</position><chart_weeks>9</chart_weeks> 
-<date song_debut="July 18,1964">July 18,1964</date><songName name="I_Should_Have_Known_Better">I Should Have Known Better</songName><position>53</position><chart_weeks>4</chart_weeks> 
-<date song_debut="July 25,1964">July 25,1964</date><songName name="And_I Love_Her">And I Love Her</songName><position>12</position><chart_weeks>9</chart_weeks> 
-<date song_debut="July 25,1964">July 25,1964</date><songName name="I'm_Happy_Just_to_Dance_with_You">I'm Happy Just To Dance With You</songName><position>95</position><chart_weeks>1</chart_weeks> 
-<date song_debut="July 25,1964">July 25,1964</date><songName name="I'll_Cry_Instead">I'll Cry Instead</songName><position>25</position><chart_weeks>7</chart_weeks> 
-<date song_debut="August 1,1964">August 1,1964</date><songName name="If_I_Fell">If I Fell</songName><position>53</position><chart_weeks>9</chart_weeks> 
-<date song_debut="September 5,1964">September 5,1964</date><songName name="Matchbox">Matchbox</songName><position>17</position><chart_weeks>8</chart_weeks> 
-<date song_debut="September 5,1964">September 5,1964</date><songName name="Slow_Down">Slow Down</songName><position>25</position><chart_weeks>7</chart_weeks> 
-<date song_debut="December 5,1964">December 5,1964</date><songName name="I_Feel_Fine">I Feel Fine</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>3<weeks_at_one>
-<date song_debut="December 5,1964">December 5,1964</date><songName name="She's_a_Woman">She's A Woman</songName><position>4</position><chart_weeks>9</chart_weeks> 
-<date song_debut="February 20,1965">February 20,1965</date><songName name="Eight_Days_a_Week">Eight Days A Week</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>2<weeks_at_one>
-<date song_debut="February 20,1965">February 20,1965</date><songName name="I_Don't_Want_to_Spoil_the_Party">I Don't Want To Spoil The Party</songName><position>39</position><chart_weeks>6</chart_weeks> 
-*<date song_debut="February 27,1965">February 27,1965</date><songName name=>4 - By The Beatles</songName><position>68</position><chart_weeks>5</chart_weeks> 
-    <date song_debut="April 24,1965">April 24,1965</date><songName name="Ticket_to_Ride">Ticket To Ride</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>1<weeks_at_one>
-        <date song_debut="April 24,1965">April 24,1965</date><songName name="Yes_It_Is">Yes It Is</songName><position>46</position><chart_weeks>4</chart_weeks> 
-        <date song_debut="July 31,1965">July 31,1965</date><songName name="Help!">Help!</songName><position>1</position><chart_weeks>13</chart_weeks><weeks_at_one>3<weeks_at_one>
-            <date song_debut="September 18,1965">September 18,1965</date><songName name="Yesterday">Yesterday</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>4<weeks_at_one>
-                <date song_debut="September 18,1965">September 18,1965</date><songName name="Act_Naturally">Act Naturally</songName><position>47</position><chart_weeks>7</chart_weeks> 
-                <date song_debut="December 11,1965">December 11,1965</date><songName name="We_Can_Work_It_Out">We Can Work It Out</songName><position>1</position><chart_weeks>12</chart_weeks><weeks_at_one>3<weeks_at_one>
-                    <date song_debut="December 11,1965">December 11,1965</date><songName name="Day_Tripper">Day Tripper</songName><position>5</position><chart_weeks>10</chart_weeks> 
-                    <date song_debut="March 5,1966">March 5,1966</date><songName name="Nowhere_Man">Nowhere Man</songName><position>3</position><chart_weeks>9</chart_weeks> 
-                    <date song_debut="March 5,1966">March 5,1966</date><songName name="What_Goes_On">What Goes On</songName><position>81</position><chart_weeks>2</chart_weeks> 
-                    <date song_debut="June 11,1966">June 11,1966</date><songName name="Paperback_Writer">Paperback Writer</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>2<weeks_at_one>
-                        <date song_debut="June 11,1966">June 11,1966</date><songName name="Rain">Rain</songName><position>23</position><chart_weeks>7</chart_weeks> 
-                        <date song_debut="August 20,1966">August 20,1966</date><songName name="Yellow_Submarine">Yellow Submarine</songName><position>2</position><chart_weeks>9</chart_weeks> 
-                        <date song_debut="August 20,1966">August 20,1966</date><songName name="Eleanor_Rigby">Eleanor Rigby</songName><position>11</position><chart_weeks>8</chart_weeks> 
-<date song_debut="February 18,1967">February 18,1967</date><songName name=>Penny Lane</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>1<weeks_at_one>
-    <date song_debut="February 18,1967">February 18,1967</date> <songName name="Strawberry_Fields_Forever">Strawberry Fields Forever</songName><position>8</position><chart_weeks>9</chart_weeks> 
-    <date song_debut="July 22,1967">July 22,1967</date><songName name="All_You_Need_Is_Love">All You Need Is Love</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>1<weeks_at_one>
-        <date song_debut="July 22,1967">July 22,1967</date><songName name="Baby,_You're_a Rich_Man">Baby You're A Rich Man</songName><position>34</position><chart_weeks>5</chart_weeks> 
-        <date song_debut="December 2,1967">December 2,1967</date><songName name="Hello_,Goodbye">Hello Goodbye</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>3<weeks_at_one>
-            <date song_debut="December 2,1967">December 2,1967</date><songName name="I_Am_the_Walrus">I Am The Walrus</songName><position>56</position><chart_weeks>4</chart_weeks> 
-            <date song_debut="March 23,1968">March 23,1968</date><songName name="Lady_Madonna">Lady Madonna</songName><position>4</position><chart_weeks>11</chart_weeks> 
-            <date song_debut="March 23,1968">March 23,1968</date><songName name="The_Inner_Light">The Inner Light</songName><position>96</position><chart_weeks>1</chart_weeks> 
-            <date song_debut="September 14,1968">September 14,1968</date><songName name="Hey_Jude">Hey Jude</songName><position>1</position><chart_weeks>19</chart_weeks><weeks_at_one>9<weeks_at_one>
-                <date song_debut="September 14,1968">September 14,1968</date><songName name="Revolution">Revolution</songName><position>12</position><chart_weeks>11</chart_weeks> 
-                <date song_debut="May 10,1969">May 10,1969</date><songName name="Get_Back">Get Back</songName><position>1</position><chart_weeks>12</chart_weeks><weeks_at_one>5<weeks_at_one>
-                    <date song_debut="May 10,1969">May 10,1969</date><songName name="Don't_Let_Me_Down">Don't Let Me Down</songName><position>35</position><chart_weeks>12</chart_weeks> 
-                    <date song_debut="June 14,1969">June 14,1969</date><songName name="The_Ballad_of_John_and_Yoko">The Ballad Of John And Yoko</songName><position>8</position><chart_weeks>9</chart_weeks> 
-*<date song_debut="October 18,1969">October 18,1969</date><songName name=>Something* / Come Together*</songName><position>1</position><chart_weeks>16</chart_weeks><weeks_at_one>1<weeks_at_one>
-    <date song_debut="March 21,1970">March 21,1970</date><songName name="Let_It_Be">Let It Be</songName><position>1</position><chart_weeks>14</chart_weeks><weeks_at_one>2<weeks_at_one>
-        <date song_debut="May 23,1970">May 23,1970</date><songName name="The_Long_and_Winding_Road">The Long And Winding Road / For You Blue</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>2<weeks_at_one>
-            <date song_debut="June 12,1976">June 12,1976</date><songName name="Got_to_Get_You_into_My_Life">Got To Get You Into My Life</songName><position>7</position><chart_weeks>16</chart_weeks> 
-            <date song_debut="November 20,1976">November 20,1976</date><songName name="Ob-La-Di,_Ob-La-Da">Ob-La-Di, Ob-La-Da</songName><position>49</position><chart_weeks>6</chart_weeks> 
-            <date song_debut="September 16,1978">September 16,1978</date><songName name="Sgt._Pepper's_Lonely_Hearts_Club_Band">Sgt. Pepper's Lonely Hearts Club Band</songName><position>71</position>	 
-*<date song_debut="March 27,1982">March 27,1982</date><songName name=>The Beatles Movie Medley</songName><position>12</position>	 
-            <date song_debut="August 9,1986">August 9,1986</date><songName name="Twist_and_Shout">Twist And Shout</songName><position>23</position>	 
-            <date song_debut="April 22,1995">April 22,1995</date><songName name="Baby_It's_You">Baby It's You</songName><position>67</position>	 
-            <date song_debut="December 30,1995">December 30,1995</date><songName name="Free_as_a Bird">Free As A Bird</songName><position>6</position>	 
-            <date song_debut="March 23,1996">March 23,1996</date><songName name="Real_Love">Real Love</songName><position>11</position>	 
+<billboardSong><date song_debut="January 18,1964">January 18,1964</date><songName name="I_Want_to_Hold_Your_Hand">I Want To Hold Your Hand</songName><position>1</position><chart_weeks>15</chart_weeks><weeks_at_one>7</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="January 25,1964">January 25,1964</date><songName name="She_Loves_You">She Loves You</songName><position>1</position><chart_weeks>15</chart_weeks><weeks_at_one>2</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="February 1,1964">February 1,1964</date><songName name="Please_Please_Me">Please Please Me</songName><position>3</position><chart_weeks>13</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="February 1,1964">February 1,1964</date><songName name="I_Saw_Her_Standing_There">I Saw Her Standing There</songName><position>14</position><chart_weeks>11</chart_weeks> </billboardSong>
+    *<billboardSong><date song_debut="February 8,1964">February 8,1964</date><songName name=>My Bonnie</songName><position>26</position><chart_weeks>6</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="February 22,1964">February 22,1964</date><songName name="From_Me_to_You">From Me To You</songName><position>41</position><chart_weeks>6</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 14,1964">March 14,1964</date><songName name="Twist_and_Shout">Twist And Shout</songName><position>2</position><chart_weeks>11</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 14,1964">March 14,1964</date><songName name="Roll_Over_Beethoven">Roll Over Beethoven</songName><position>68</position><chart_weeks>4</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 28,1964">March 28,1964</date><songName name="Can't_Buy_Me_Love">Can't Buy Me Love</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>5</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="March 28,1964">March 28,1964</date><songName name="All_My_Loving">All My Loving</songName><position>45</position><chart_weeks>6</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 28,1964">March 28,1964</date><songName name="Do_You_Want_to_Know_a_Secret?">Do You Want To Know A Secret</songName><position>2</position><chart_weeks>11</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 28,1964">March 28,1964</date><songName name="You_Can't_Do_That">You Can't Do That</songName><position>48</position><chart_weeks>4</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="April 4,1964">April 4,1964</date><songName name="Thank_You_Girl">Thank You Girl</songName><position>35</position><chart_weeks>7</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="April 11,1964">April 11,1964</date><songName name="There's_a_Place">There's A Place</songName><position>74</position><chart_weeks>1</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="April 11,1964">April 11,1964</date><songName name="Love_Me_Do">Love Me Do</songName><position>1</position><chart_weeks>14</chart_weeks><weeks_at_one>1</weeks_at_one></billboardSong>
+    *<billboardSong><date song_debut="April 11,1964">April 11,1964</date><songName name=>Why</songName><position>88</position><chart_weeks>1</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="May 9,1964">May 9,1964</date><songName name="P.S._I_Love_You">P.S. I Love You</songName><position>10</position><chart_weeks>8</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="May 30,1964">May 30,1964</date><songName name="Sie_liebt_dich">Sie Liebt Dich</songName><position>97</position><chart_weeks>1</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="July 18,1964">July 18,1964</date><songName name="A_Hard_Day's_Night">A Hard Day's Night</songName><position>1</position><chart_weeks>13</chart_weeks><weeks_at_one>2</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="July 18,1964">July 18,1964</date><songName name="Ain't_She_Sweet">Ain't She Sweet</songName><position>19</position><chart_weeks>9</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="July 18,1964">July 18,1964</date><songName name="I_Should_Have_Known_Better">I Should Have Known Better</songName><position>53</position><chart_weeks>4</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="July 25,1964">July 25,1964</date><songName name="And_I Love_Her">And I Love Her</songName><position>12</position><chart_weeks>9</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="July 25,1964">July 25,1964</date><songName name="I'm_Happy_Just_to_Dance_with_You">I'm Happy Just To Dance With You</songName><position>95</position><chart_weeks>1</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="July 25,1964">July 25,1964</date><songName name="I'll_Cry_Instead">I'll Cry Instead</songName><position>25</position><chart_weeks>7</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="August 1,1964">August 1,1964</date><songName name="If_I_Fell">If I Fell</songName><position>53</position><chart_weeks>9</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="September 5,1964">September 5,1964</date><songName name="Matchbox">Matchbox</songName><position>17</position><chart_weeks>8</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="September 5,1964">September 5,1964</date><songName name="Slow_Down">Slow Down</songName><position>25</position><chart_weeks>7</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="December 5,1964">December 5,1964</date><songName name="I_Feel_Fine">I Feel Fine</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>3</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="December 5,1964">December 5,1964</date><songName name="She's_a_Woman">She's A Woman</songName><position>4</position><chart_weeks>9</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="February 20,1965">February 20,1965</date><songName name="Eight_Days_a_Week">Eight Days A Week</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>2</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="February 20,1965">February 20,1965</date><songName name="I_Don't_Want_to_Spoil_the_Party">I Don't Want To Spoil The Party</songName><position>39</position><chart_weeks>6</chart_weeks> </billboardSong>
+    *<billboardSong><date song_debut="February 27,1965">February 27,1965</date><songName name=>4 - By The Beatles</songName><position>68</position><chart_weeks>5</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="April 24,1965">April 24,1965</date><songName name="Ticket_to_Ride">Ticket To Ride</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>1</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="April 24,1965">April 24,1965</date><songName name="Yes_It_Is">Yes It Is</songName><position>46</position><chart_weeks>4</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="July 31,1965">July 31,1965</date><songName name="Help!">Help!</songName><position>1</position><chart_weeks>13</chart_weeks><weeks_at_one>3</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="September 18,1965">September 18,1965</date><songName name="Yesterday">Yesterday</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>4</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="September 18,1965">September 18,1965</date><songName name="Act_Naturally">Act Naturally</songName><position>47</position><chart_weeks>7</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="December 11,1965">December 11,1965</date><songName name="We_Can_Work_It_Out">We Can Work It Out</songName><position>1</position><chart_weeks>12</chart_weeks><weeks_at_one>3</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="December 11,1965">December 11,1965</date><songName name="Day_Tripper">Day Tripper</songName><position>5</position><chart_weeks>10</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 5,1966">March 5,1966</date><songName name="Nowhere_Man">Nowhere Man</songName><position>3</position><chart_weeks>9</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 5,1966">March 5,1966</date><songName name="What_Goes_On">What Goes On</songName><position>81</position><chart_weeks>2</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="June 11,1966">June 11,1966</date><songName name="Paperback_Writer">Paperback Writer</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>2</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="June 11,1966">June 11,1966</date><songName name="Rain">Rain</songName><position>23</position><chart_weeks>7</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="August 20,1966">August 20,1966</date><songName name="Yellow_Submarine">Yellow Submarine</songName><position>2</position><chart_weeks>9</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="August 20,1966">August 20,1966</date><songName name="Eleanor_Rigby">Eleanor Rigby</songName><position>11</position><chart_weeks>8</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="February 18,1967">February 18,1967</date><songName name=>Penny Lane</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>1</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="February 18,1967">February 18,1967</date><songName name="Strawberry_Fields_Forever">Strawberry Fields Forever</songName><position>8</position><chart_weeks>9</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="July 22,1967">July 22,1967</date><songName name="All_You_Need_Is_Love">All You Need Is Love</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>1</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="July 22,1967">July 22,1967</date><songName name="Baby,_You're_a Rich_Man">Baby You're A Rich Man</songName><position>34</position><chart_weeks>5</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="December 2,1967">December 2,1967</date><songName name="Hello_,Goodbye">Hello Goodbye</songName><position>1</position><chart_weeks>11</chart_weeks><weeks_at_one>3</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="December 2,1967">December 2,1967</date><songName name="I_Am_the_Walrus">I Am The Walrus</songName><position>56</position><chart_weeks>4</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 23,1968">March 23,1968</date><songName name="Lady_Madonna">Lady Madonna</songName><position>4</position><chart_weeks>11</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="March 23,1968">March 23,1968</date><songName name="The_Inner_Light">The Inner Light</songName><position>96</position><chart_weeks>1</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="September 14,1968">September 14,1968</date><songName name="Hey_Jude">Hey Jude</songName><position>1</position><chart_weeks>19</chart_weeks><weeks_at_one>9</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="September 14,1968">September 14,1968</date><songName name="Revolution">Revolution</songName><position>12</position><chart_weeks>11</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="May 10,1969">May 10,1969</date><songName name="Get_Back">Get Back</songName><position>1</position><chart_weeks>12</chart_weeks><weeks_at_one>5</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="May 10,1969">May 10,1969</date><songName name="Don't_Let_Me_Down">Don't Let Me Down</songName><position>35</position><chart_weeks>12</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="June 14,1969">June 14,1969</date><songName name="The_Ballad_of_John_and_Yoko">The Ballad Of John And Yoko</songName><position>8</position><chart_weeks>9</chart_weeks> </billboardSong>
+    *<billboardSong><date song_debut="October 18,1969">October 18,1969</date><songName name=>Something* / Come Together*</songName><position>1</position><chart_weeks>16</chart_weeks><weeks_at_one>1</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="March 21,1970">March 21,1970</date><songName name="Let_It_Be">Let It Be</songName><position>1</position><chart_weeks>14</chart_weeks><weeks_at_one>2</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="May 23,1970">May 23,1970</date><songName name="The_Long_and_Winding_Road">The Long And Winding Road / For You Blue</songName><position>1</position><chart_weeks>10</chart_weeks><weeks_at_one>2</weeks_at_one></billboardSong>
+<billboardSong><date song_debut="June 12,1976">June 12,1976</date><songName name="Got_to_Get_You_into_My_Life">Got To Get You Into My Life</songName><position>7</position><chart_weeks>16</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="November 20,1976">November 20,1976</date><songName name="Ob-La-Di,_Ob-La-Da">Ob-La-Di, Ob-La-Da</songName><position>49</position><chart_weeks>6</chart_weeks> </billboardSong>
+<billboardSong><date song_debut="September 16,1978">September 16,1978</date><songName name="Sgt._Pepper's_Lonely_Hearts_Club_Band">Sgt. Pepper's Lonely Hearts Club Band</songName><position>71</position>	 </billboardSong>
+    *<billboardSong><date song_debut="March 27,1982">March 27,1982</date><songName name=>The Beatles Movie Medley</songName><position>12</position>	 </billboardSong>
+<billboardSong><date song_debut="August 9,1986">August 9,1986</date><songName name="Twist_and_Shout">Twist And Shout</songName><position>23</position>	 </billboardSong>
+<billboardSong><date song_debut="April 22,1995">April 22,1995</date><songName name="Baby_It's_You">Baby It's You</songName><position>67</position>	 </billboardSong>
+<billboardSong><date song_debut="December 30,1995">December 30,1995</date><songName name="Free_as_a Bird">Free As A Bird</songName><position>6</position>	 </billboardSong>
+<billboardSong><date song_debut="March 23,1996">March 23,1996</date><songName name="Real_Love">Real Love</songName><position>11</position>	 </billboardSong>
 </root>
