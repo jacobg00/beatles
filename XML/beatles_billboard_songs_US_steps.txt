@@ -40,3 +40,9 @@ Beatles Billboard Songs Step File - March 25, 2022
 11. Made end tags for song names
 	Find: (<position)
 	Replace: </songName>\1
+
+12. Wrapped each line with billboardSong
+
+13. Found spaces in date
+	Find:(song_debut=".+) (\d+,\d+")
+	Replace: \1_\2

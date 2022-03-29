@@ -53,6 +53,29 @@ Beatles Billboard Albums Step File - March 25, 2022
 	Find: SPACE\n
 	Replace: Nothing
 
+16. added billboardAlbum tags to wrap each line 
+
+17. Tagged the albums that were not reReleases
+	Find:(title=.+)>(.+)(</album>)
+	Replace:\1 reRelease="false">\2\3
+
+18. Made titles for albums not on our exisitng list and added a tag showing this
+	Find:title=>(.+)(</album>)
+	Replace: title="\1" reRelease="true">\1\2
+	
+19. Found spaces in album title
+	Find: (title=".+) (.+" reRelease)
+	Replace\1_\2
+	*Ran this multiple times untill all spaces were replaced
+
+20. Found spaces in date
+	Find:(album_debut=".+) (\d+,\d+")
+	Replace: \1_\2
+
+
+
+
+
 
 
 
