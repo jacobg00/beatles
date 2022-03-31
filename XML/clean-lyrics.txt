@@ -1,3 +1,5 @@
+<!-- whc: Note: this was originally an xml file, a rough draft. Another version was made. I converted it to a .txt file so it wouldn't get pulled into xquery searches of the xml folder. -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="beatlesSchemaTVK.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
