@@ -27,23 +27,23 @@ let $chart-song-titles := $chart-songs/songName/data(@name)
             </tr>
             {
                 let $song:=//song
+                let $songN := $song/songName/text()
                 let $loveSongName :=$song[lyrics/matches(.,'love','i')]/songName/text()
                 let $warSongName := $song[lyrics/matches(.,'war','i')]/songName/text()
                 let $peaceSongName := $song[lyrics/matches(.,'peace','i')]/songName/text()
-                for $songN in $loveSongName
+                for $s in $song
                 let $numberLove := $song[./songName/text() = $songN]//lyrics/text()
                 ! replace(., "love", " love ", "i") 
                 ! (tokenize(.)[. = 'love'] => count())
-               (: for $songN in $warSongName :)
+
                 let $numberWar := $song[./songName/text() = $songN]//lyrics/text()
                 ! replace(., "war", " war ", "i") 
                 ! (tokenize(.)[. = 'war'] => count())
-               (: for $songN in $peaceSongName :)
+     
                 let $numberPeace := $song[./songName/text() = $songN]//lyrics/text()
                 ! replace(., "peace", " peace ", "i") 
                 ! (tokenize(.)[. = 'peace'] => count())
-                order by $songN
-                return <tr><td>{$songN}</td> <td>{$numberLove}</td> <td>{$numberWar}</td> <td>{$numberPeace}</td></tr>
+                return <tr><td>{$s/songName/text()}</td> <td>{$numberLove}</td> <td>{$numberWar}</td> <td>{$numberPeace}</td></tr>
             }
         </table>
     </body>
