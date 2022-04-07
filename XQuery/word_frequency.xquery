@@ -26,11 +26,13 @@ let $chart-song-titles := $chart-songs/songName/data(@name)
                 <th>Peace</th>
             </tr>
             {
-                let $song := //song
-                let $songName := $song/songName/text()
-                let $loveSongName := $song[lyrics/matches(.,'love','i')]/songName/text()
-                let $warSongName := $song[lyrics/matches(.,'war','i')]/songName/text()
-                let $peaceSongName := $song[lyrics/matches(.,'peace','i')]/songName/text()
+                let $songName := //song/songName/text()
+                let $song := //song[(/songName/text() = $songName//lyrics/text()
+                ! replace(., "love", " love ", "i")
+                ! (tokenize(.)[. = 'love'] => count()))]
+                let $loveSongName := //song[lyrics/matches(.,'love','i')]/songName/text()
+                let $warSongName := //song[lyrics/matches(.,'war','i')]/songName/text()
+                let $peaceSongName := //song[lyrics/matches(.,'peace','i')]/songName/text()
                 for $s in $song
                 let $numberLove := $s[./songName/text() = $songName]//lyrics/text()
                 ! replace(., "love", " love ", "i") 
