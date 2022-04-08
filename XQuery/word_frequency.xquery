@@ -1,17 +1,17 @@
-(:
-declare option saxon:output "method=text";
-
-declare variable $files := collection('../XML/?select=*.xml');
-declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
-declare variable $bbSongs := doc('../XML/beatles_billboard_songs_US.xml');
-declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
-
-let $lyric-songs := $lyric-file//song
-let $lyric-song-titles := $lyric-songs/songName/data(@name)
-let $chart-songs := $bbSongs//billboardSong
-let $chart-song-titles := $chart-songs/songName/data(@name)
-:)
-
+declare variable $song := //song[(./lyrics/text() ! replace(., "love", " love ", "i") ! (tokenize(.)[. = 'love']) => count()) + (./lyrics/text() ! replace(., "war", " war ", "i") ! (tokenize(.)[. = 'war']) => count()) + (./lyrics/text() ! replace(., "peace", " peace ", "i") ! (tokenize(.)[. = 'peace']) => count()) >0 ];
+declare variable $songName := $song/songName/text();
+declare variable $loveSongName := $song[lyrics/matches(.,'love','i')]/songName/text();
+declare variable $warSongName := $song[lyrics/matches(.,'war','i')]/songName/text();
+declare variable $peaceSongName := $song[lyrics/matches(.,'peace','i')]/songName/text();
+declare variable $loveSongTotal := $song[lyrics/matches(.,'love','i')] => count();
+declare variable $warSongTotal := $song[lyrics/matches(.,'war','i')] => count();
+declare variable $peaceSongTotal := $song[lyrics/matches(.,'peace','i')] => count();
+declare variable $loveTotal := (//lyrics/text() ! replace(., "love", " love ", "i") ! (tokenize(.)[. = 'love']) => count());
+declare variable $warTotal := (//lyrics/text() ! replace(., "war", " war ", "i") ! (tokenize(.)[. = 'war']) => count());
+declare variable $peaceTotal := (//lyrics/text() ! replace(., "peace", " peace ", "i") ! (tokenize(.)[. = 'peace']) => count());
+(: //lyrics/text()=>string-join() -- connects all lyric text in all songs :)
+(: wordCount() or getWords() functions could help :)
+(: for $value in distinct-values() could help :)
 <html>
     <head>
         <title>Word Frequency</title>
@@ -26,24 +26,6 @@ let $chart-song-titles := $chart-songs/songName/data(@name)
                 <th>Peace</th>
             </tr>
             {
-                let $song := //song[(./lyrics/text()
-                ! replace(., "love", " love ", "i")
-                ! (tokenize(.)[. = 'love']) => count()) +
-                (./lyrics/text()
-                ! replace(., "war", " war ", "i")
-                ! (tokenize(.)[. = 'war']) => count()) +
-                (./lyrics/text()
-                ! replace(., "peace", " peace ", "i")
-                ! (tokenize(.)[. = 'peace']) => count())
-                >0 ]
-                let $songName := $song/songName/text()
-                let $loveSongName := $song[lyrics/matches(.,'love','i')]/songName/text()
-                let $warSongName := $song[lyrics/matches(.,'war','i')]/songName/text()
-                let $peaceSongName := $song[lyrics/matches(.,'peace','i')]/songName/text()
-                let $loveSongTotal := $song[lyrics/matches(.,'love','i')] => count()
-                let $warSongTotal := $song[lyrics/matches(.,'war','i')] => count()
-                let $peaceSongTotal := $song[lyrics/matches(.,'peace','i')] => count()
-                
                 for $s in $song
                 
                 let $numberLove := $s[./songName/text() = $songName]//lyrics/text()
@@ -61,7 +43,16 @@ let $chart-song-titles := $chart-songs/songName/data(@name)
                 return <tr><td>{$s/songName/text()}</td> <td>{$numberLove}</td> <td>{$numberWar}</td> <td>{$numberPeace}</td></tr>
             }
             <tr>
-                <td>Total Songs Containing</td>
+                <td>Total Songs Containing</td> 
+                <td>{$loveSongTotal}</td>
+                <td>{$warSongTotal}</td>
+                <td>{$peaceSongTotal}</td>
+            </tr>
+            <tr>
+                <td>Total Word Count</td>
+                <td>{$loveTotal}</td>
+                <td>{$warTotal}</td>
+                <td>{$peaceTotal}</td>
             </tr>
         </table>
     </body>
