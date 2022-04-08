@@ -1,4 +1,4 @@
-declare variable $files := collection('../XML/?select=*.xml');
+(:declare variable $files := collection('../XML/?select=*.xml');:)
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml');
 declare variable $bbSongs := doc('../XML/beatles_billboard_songs_US.xml');
 declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
@@ -26,20 +26,20 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                     stroke-width="5"/>
             </g>
             {
-                let $lyric-songs := $lyric-file//song
-                let $lyric-song-titles := $lyric-songs/songName/data(@name)
+                let $lyric-songs := $lyric-file//Q{}song
+                let $lyric-song-titles := $lyric-songs/Q{}songName/data(@name)
                 
-                let $chart-songs := $bbSongs//billboardSong
-                let $chart-song-titles := $chart-songs/songName/data(@name)
+                let $chart-songs := $bbSongs//Q{}billboardSong
+                let $chart-song-titles := $chart-songs/Q{}songName/data(@name)
                 
                 let $yspacer:= 25
                 
-                let $songYear := $lyric-songs/year
+                let $songYear := $lyric-songs/Q{}year
                 let $songYearDistinct := $songYear => distinct-values()
                 
                 for $year at $n in $songYearDistinct
                 
-                let $songYearCount := $lyric-songs[./year = $year] => count()
+                let $songYearCount := $lyric-songs[./Q{}year = $year] => count()
                     
                     order by $year
                 (:return concat("&#xa;", $year, " ", $n, " ", $songYearCount):)
