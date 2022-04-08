@@ -26,14 +26,26 @@ let $chart-song-titles := $chart-songs/songName/data(@name)
                 <th>Peace</th>
             </tr>
             {
-                let $songName := //song/songName/text()
-                let $song := //song[(/songName/text() = $songName//lyrics/text()
+                let $song := //song[(./lyrics/text()
                 ! replace(., "love", " love ", "i")
-                ! (tokenize(.)[. = 'love'] => count()))]
-                let $loveSongName := //song[lyrics/matches(.,'love','i')]/songName/text()
-                let $warSongName := //song[lyrics/matches(.,'war','i')]/songName/text()
-                let $peaceSongName := //song[lyrics/matches(.,'peace','i')]/songName/text()
+                ! (tokenize(.)[. = 'love']) => count()) +
+                (./lyrics/text()
+                ! replace(., "war", " war ", "i")
+                ! (tokenize(.)[. = 'war']) => count()) +
+                (./lyrics/text()
+                ! replace(., "peace", " peace ", "i")
+                ! (tokenize(.)[. = 'peace']) => count())
+                >0 ]
+                let $songName := $song/songName/text()
+                let $loveSongName := $song[lyrics/matches(.,'love','i')]/songName/text()
+                let $warSongName := $song[lyrics/matches(.,'war','i')]/songName/text()
+                let $peaceSongName := $song[lyrics/matches(.,'peace','i')]/songName/text()
+                let $loveSongTotal := $song[lyrics/matches(.,'love','i')] => count()
+                let $warSongTotal := $song[lyrics/matches(.,'war','i')] => count()
+                let $peaceSongTotal := $song[lyrics/matches(.,'peace','i')] => count()
+                
                 for $s in $song
+                
                 let $numberLove := $s[./songName/text() = $songName]//lyrics/text()
                 ! replace(., "love", " love ", "i") 
                 ! (tokenize(.)[. = 'love'] => count())
@@ -46,8 +58,11 @@ let $chart-song-titles := $chart-songs/songName/data(@name)
                 ! replace(., "peace", " peace ", "i") 
                 ! (tokenize(.)[. = 'peace'] => count())
                 
-                return <tr><td>{$s/songName/text()}</td> <td>{$numberLove}</td> <td>{$numberWar}</td> <td>{$numberPeace}</td> </tr>
+                return <tr><td>{$s/songName/text()}</td> <td>{$numberLove}</td> <td>{$numberWar}</td> <td>{$numberPeace}</td></tr>
             }
+            <tr>
+                <td>Total Songs Containing</td>
+            </tr>
         </table>
     </body>
 </html>
