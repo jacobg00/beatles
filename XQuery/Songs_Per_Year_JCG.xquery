@@ -38,7 +38,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 let $chart-song-year:=$chart-songs//Q{}year
                 let $chartYearDistinct := $chart-song-year => distinct-values()
                 
-                let $chartYearCount := $chart-songs[./Q{}year] => count()
+                (:let $chartYearCount := $chart-songs[./Q{}year] => count():)
                 
                 let $yspacer:= 40
                 let $xspacer:= 5
@@ -47,6 +47,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 
                 for $year in $songYearDistinct
                 let $songYearCount := $lyric-songs[./Q{}year = $year] => count()
+                let $chartYearCount := $chart-song-year => count()
                 
                 order by $year
                 count $n
