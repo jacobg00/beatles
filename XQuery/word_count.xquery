@@ -17,6 +17,10 @@ $words definition above. Note that string() and text() do nearly the same thing,
 sometimes there is reason to prefer one over the other. Once you get this to run, start
 adding in other punctuation that you still see showing up in the results.:)
 
+(: Here is the XPath mentioned above:
+//song[2]/lyrics/string()!replace(., '[,\.]', ' ')
+:)
+
 (:  whc: To give due credit, the fundamental structure of this xquery was taken from 
 https://stackoverflow.com/questions/15122641/count-number-of-word-occurrences-in-strings-using-xquery
  It was then adapted for the XML markup and XPath of the Beatles lyrics file.  :)
