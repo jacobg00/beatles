@@ -47,7 +47,6 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 
                 for $year in $songYearDistinct
                 let $songYearCount := $lyric-songs[./Q{}year = $year] => count()
-                let $chartYearCount := $chart-song-year => count()
                 
                 order by $year
                 count $n
@@ -66,8 +65,8 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 <text x="25" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$year}</text>
                 <text x="{$songYearCount*$xspacer+85}" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$songYearCount}</text>
                 
-                <text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
-                <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+                 <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
                 </g>
                     
             }

@@ -29,12 +29,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">2</text>
-            <text x="0"
-                  y="55"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -54,12 +50,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">3</text>
-            <text x="0"
-                  y="95"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -79,12 +71,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">2</text>
-            <text x="0"
-                  y="135"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -104,12 +92,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">17</text>
-            <text x="0"
-                  y="175"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -129,12 +113,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">66</text>
-            <text x="0"
-                  y="215"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -154,12 +134,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">41</text>
-            <text x="0"
-                  y="255"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -179,12 +155,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">37</text>
-            <text x="0"
-                  y="295"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -204,12 +176,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">19</text>
-            <text x="0"
-                  y="335"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -229,12 +197,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">27</text>
-            <text x="0"
-                  y="375"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -254,12 +218,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">45</text>
-            <text x="0"
-                  y="415"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -279,12 +239,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">43</text>
-            <text x="0"
-                  y="455"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -304,12 +260,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">1</text>
-            <text x="0"
-                  y="495"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -329,12 +281,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">1</text>
-            <text x="0"
-                  y="535"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
          <g>
             <rect x="75"
@@ -354,12 +302,8 @@
                   font-family="impact"
                   font-size="18px"
                   fill="black">1</text>
-            <text x="0"
-                  y="575"
-                  font-family="impact"
-                  font-size="18px"
-                  fill="black">0</text>
-            <!--<rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+            <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
          </g>
       </g>
    </g>
