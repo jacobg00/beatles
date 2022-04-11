@@ -3,9 +3,12 @@ declare option saxon:output "method=text";
 declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
 
-let $words := $lyric-file//song/lyrics/text()/tokenize(normalize-space(.),'\s')
-for $w in distinct-values($words)
-let $count := count($words[. = $w])
+let $words := $lyric-file//song/lyrics/string()=>string-join()
+let $words-cleaned := replace($words, '[,\.\"\(\)]', '\s', 'q') => normalize-space()
+let $words-separate := tokenize($words-cleaned, '\s')
+for $w in distinct-values($words-separate)
+let $count := count($words-separate[. = $w])
+order by $count descending
 return concat($w, "&#x9;", $count, "&#10;")
 
 
