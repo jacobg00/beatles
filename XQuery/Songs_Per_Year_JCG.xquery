@@ -34,11 +34,10 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 
                 
                 let $chart-songs := $bbSongs//Q{}billboardSong
-                let $chart-song-titles := $chart-songs/Q{}songName/data(@name) 
-                let $chart-song-year:=$chart-songs//Q{}year
+                let $chart-song-date:=$chart-songs//Q{}date
+                let $chart-song-year :=$chart-song-date//Q{}year
                 let $chartYearDistinct := $chart-song-year => distinct-values()
-                
-                (:let $chartYearCount := $chart-songs[./Q{}year] => count():)
+
                 
                 let $yspacer:= 40
                 let $xspacer:= 5
@@ -47,26 +46,20 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 
                 for $year in $songYearDistinct
                 let $songYearCount := $lyric-songs[./Q{}year = $year] => count()
-                
+                let $chartYearCount := $chart-songs/Q{}date[./Q{}year = $year] => count()
                 order by $year
                 count $n
                 
-                
-                (:
-                
-                for $chartYear in $chartYearDistinct
-                let $chartYearCount :=  $chartYearDistinct => count()
-                order by $year
-                count $z
-                :)
+               
                 return 
                 <g>
                 <rect x="75" y="{$n*$yspacer}" height="20" width="{$songYearCount*$xspacer}" stroke="black" stroke-width="5" fill="red"/>
                 <text x="25" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$year}</text>
                 <text x="{$songYearCount*$xspacer+85}" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$songYearCount}</text>
                 
-                 <!--<text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
-                <rect x="75" y="{$z*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>-->
+                <text x="0" y="{$n*$yspacer+15}" font-family="impact" font-size="18px" fill="black"> {$chartYearCount}</text>
+                <rect x="75" y="{$n*$yspacer}" height="20" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="5" fill="blue"/>
+                <!-- For 1995 and 1996 (possibly back to 1978?) the songs were on the billboard charts but the song was not released-->
                 </g>
                     
             }
