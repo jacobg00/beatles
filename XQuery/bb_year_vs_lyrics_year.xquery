@@ -37,20 +37,22 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 let $chart-lyrics-year := $lyric-file//Q{}song[./Q{}songName/data(@name) =
                 $cs/Q{}songName/data(@name)]/Q{}year/string()
                 count $n
-                return
+              
                  return <tr><td>{$chart-song-title}</td> <td>{$chart-lyrics-year}</td> <td>{$chart-song-year}</td></tr>
-                    <!--<g>
+                    (:whc: you needed to use XPath/XQuery comment tags below, not XML tags:)
+                    (:<g>
                         <text x="25" y="{10*$n}" font-family="impact" font-size="10px" fill="black"> {$chart-song-title}</text>
                         <text x="250" y="{10*$n}" font-family="impact" font-size="10px" fill="black"> {$chart-lyrics-year}</text>
                         <text x="325" y="{10*$n}" font-family="impact" font-size="10px" fill="black"> {$chart-song-year}</text>
-                    </g>-->
-            
+                    </g>:)
+            }  <!--whc: you also needed to add a curly brace here -->
         </table>
     </body>
 </html>
-<!--
+(:<!--
             }
         </g>
     </g>
 </svg>
 -->
+:)
