@@ -21,7 +21,7 @@ I systematically removed all other punctuation. Note the need for the pipe | ope
 each possibility and the + at the end in case there's more than one in a row. Now, if you want 
 to get rid of apostrophes too, just make that switch; but it will play havoc with words such as
 won't and shouldn't. Whether you want to go down that path depends on your textual analysis 
-purposes. :)
+purposes. You could also get rid of 's which would at least remove one set of anomalies.:)
 
 (:  whc: To give due credit, the fundamental structure of this xquery was taken from 
 https://stackoverflow.com/questions/15122641/count-number-of-word-occurrences-in-strings-using-xquery
