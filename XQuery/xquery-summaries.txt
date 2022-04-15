@@ -1,0 +1,45 @@
+Beatles XQuery list: Who wrote it, what it does, what output it generated
+
+BB_Albums_Per_Year_JCG.xquery
+
+bb_songs_per_year.xquery
+
+bb_year_vs_lyrics_year.xquery
+
+Beatles_Featured_on_songs.xquery
+
+Beatles_singer_vs_billboard.xquery
+
+global-variables.xquery: WHC. Created at first just to establish the global variables for the collection and docs, now also includes example of how to correlate across files by songName. No saved output file.
+
+jcg_XQuery_2.xquery
+
+JCG_Xquery_to_html.xquery
+
+network.xquery
+
+Songs_Per_Year_JCG.xquery
+
+songs-per-year.xquery
+
+songs-per-year-revised.xquery
+
+TVK_xquery2.xquery
+
+TVK_Xquery2-complex.xquery
+
+vmm_xquery_2.xquery
+
+word_count.xquery: VMM and WHC. used to generate a text output of all words and their frequencies, saved as word_count_output.html.
+
+word_count_covers.xquery: VMM. Ditto word_count, except filters for cover songs. Output saved.
+
+word_count_originals.xquery: VMM. Ditto word_count, except filters OUT cover songs. Output saved.
+
+word_frequency.xquery: VMM. Creates HTML table, song by song, with occurrences of words love, war, peace. Output saved as word_frequency.html.
+
+word_score.xquery: VMM and WHC. Created words_separated_per_song.xml, mirroring clean-lyricsrevised.xml, except that it breaks each song into its words and counts the number of their occurrences.
+
+word_score_to_xml.xquery: WHC. Created word_score_total.xml, which lists all words used and their frequencies in xml elements.
+
+
