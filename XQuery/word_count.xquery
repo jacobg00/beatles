@@ -1,15 +1,25 @@
-declare option saxon:output "method=text";
-
 declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
 
+<html>
+<head></head>
+<body>
+<h1>Word Count in The Beatles Discography</h1>
+<p>
+{
 let $words := $lyric-file//song/lyrics/string()=>string-join()=>lower-case()
 let $words-cleaned := replace($words, '[,|"|!|\.|(|)|\?|;|\[|\]]+', ' ') => normalize-space()
 let $words-separate := tokenize($words-cleaned, '\s')
 for $w in distinct-values($words-separate)
 let $count := count($words-separate[. = $w])
 order by $count descending
-return concat($w, "&#x9;", $count, "&#10;")
+return (<b>{$w}</b>, "&#x9;", $count, "&#10;")
+}
+</p>
+</body>
+</html>
+
+
 
 
 (:whc: I made two changes. First, note the addition of the lower-case() function in the 
