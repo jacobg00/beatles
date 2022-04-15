@@ -38,6 +38,8 @@ word_count_originals.xquery: VMM. Ditto word_count, except filters OUT cover son
 
 word_frequency.xquery: VMM. Creates HTML table, song by song, with occurrences of words love, war, peace. Output saved as word_frequency.html.
 
+word_modularity.xquery: WHC. Creates HTML table, song by song, counting the occurrence of every word in every song, and then multiplying that occurrence number by the number of times that word appears in the whole corpus.
+
 word_score.xquery: VMM and WHC. Created words_separated_per_song.xml, mirroring clean-lyricsrevised.xml, except that it breaks each song into its words and counts the number of their occurrences.
 
 word_score_to_xml.xquery: WHC. Created word_score_total.xml, which lists all words used and their frequencies in xml elements.
