@@ -1,15 +1,25 @@
-declare option saxon:output "method=text";
-
 declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
 
+<html>
+<head></head>
+<body>
+<h1>Word Count in Cover Songs</h1>
+<p>
+{
 let $words := $lyric-file//song[./cover/@status="True"]/lyrics/string()=>string-join()=>lower-case()
 let $words-cleaned := replace($words, '[,|"|!|\.|(|)|\?|;|\[|\]]+', ' ') => normalize-space()
 let $words-separate := tokenize($words-cleaned, '\s')
 for $w in distinct-values($words-separate)
 let $count := count($words-separate[. = $w])
 order by $count descending
-return concat($w, "&#x9;", $count, "&#10;")
+return (<b>{$w}</b>, "&#x9;", $count, "&#10;")
+}
+</p>
+</body>
+</html>
+
+
 
 
 (:The next step will be to remove most punctuation, with the likely exception of 

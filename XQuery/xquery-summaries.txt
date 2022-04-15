@@ -22,13 +22,13 @@ TVK_xquery2.xquery
 
 TVK_Xquery2-complex.xquery
 
-vmm_xquery_2.xquery
+vmm_xquery_2.xquery: VMM. Counts instrumentals, displays % of songs that are instrumentals, counts covers, displays number of covers that are instrumentals
 
 word_count.xquery: VMM and WHC. used to generate a text output of all words and their frequencies, saved as word_count_output.html.
 
-word_count_covers.xquery: VMM. Ditto word_count, except filters for cover songs. Output saved.
+word_count_covers.xquery: VMM. Ditto word_count, except filters for cover songs. Output saved as word_count_covers_output.html
 
-word_count_originals.xquery: VMM. Ditto word_count, except filters OUT cover songs. Output saved.
+word_count_originals.xquery: VMM. Ditto word_count, except filters OUT cover songs. Output saved as word_count_originals_output.html
 
 word_frequency.xquery: VMM. Creates HTML table, song by song, with occurrences of words love, war, peace. Output saved as word_frequency.html.
 
