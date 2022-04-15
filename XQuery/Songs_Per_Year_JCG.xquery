@@ -58,7 +58,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
               
                 <rect x="75" y="{$n*$yspacer+-5}" height="10" width="{$songYearCount*$xspacer}" stroke="black" stroke-width="1" fill="red"/>
                 <text x="25" y="{$n*$yspacer+10}" font-family="impact" font-size="18px" fill="black"> {$year}</text>
-                <text x="{$songYearCount*$xspacer+85}" y="{$n*$yspacer+8}" font-family="impact" font-size="15px" fill="black"> {$songYearCount}</text>
+                <text x="{$songYearCount*$xspacer+90}" y="{$n*$yspacer+8}" font-family="impact" font-size="15px" fill="black"> {$songYearCount}</text>
                  
                 <text x="{$chartYearCount*$xspacer+90}" y="{$n*$yspacer+20}" font-family="impact" font-size="15px" fill="blue"> {$chartYearCount}</text>
                 <rect x="75" y="{$n*$yspacer+5}" height="10" width="{$chartYearCount*$xspacer}" stroke="black" stroke-width="1" fill="blue"/>
