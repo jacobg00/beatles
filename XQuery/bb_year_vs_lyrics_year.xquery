@@ -13,7 +13,6 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
             <tr>
                 <th>Song</th>
                 <th>Released </th>
-                <th>&#x9;</th>
                 <th>Billboard Charts</th>
             </tr>            
             {
@@ -28,7 +27,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 $cs/Q{}songName/data(@name)]/Q{}year/string()
                 count $n
               
-                 return <tr><td>{$chart-song-title}</td> <td>{$chart-lyrics-year}</td><td>&#x9;</td> <td>{$chart-song-year}</td></tr>
+                 return <tr><td>{$chart-song-title}</td> <td>{$chart-lyrics-year}</td><td>{$chart-song-year}</td></tr>
                    
             }  <!--whc: you also needed to add a curly brace here -->
         </table>
