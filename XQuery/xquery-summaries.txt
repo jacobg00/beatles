@@ -6,13 +6,7 @@ bb_songs_per_year.xquery
 
 bb_year_vs_lyrics_year.xquery
 
-Beatles_Featured_on_songs.xquery
-
-Beatles_singer_vs_billboard.xquery
-
 global-variables.xquery: WHC. Created at first just to establish the global variables for the collection and docs, now also includes example of how to correlate across files by songName. No saved output file.
-
-jcg_XQuery_2.xquery
 
 JCG_Xquery_to_html.xquery
 
