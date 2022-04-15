@@ -30,7 +30,7 @@ word_count_covers.xquery: VMM. Ditto word_count, except filters for cover songs.
 
 word_count_originals.xquery: VMM. Ditto word_count, except filters OUT cover songs. Output saved as word_count_originals_output.html
 
-word_frequency.xquery: VMM. Creates HTML table, song by song, with occurrences of words love, war, peace. Output saved as word_frequency.html.
+word_frequency_love.xquery: VMM. Creates HTML table, song by song, with occurrences of words love, war, peace. Output saved as word_frequency_love.html.
 
 word_modularity.xquery: WHC. Creates HTML table, song by song, counting the occurrence of every word in every song, and then multiplying that occurrence number by the number of times that word appears in the whole corpus.
 
