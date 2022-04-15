@@ -14,10 +14,10 @@ declare variable $peaceTotal := (//lyrics/text() ! replace(., "peace", " peace "
 (: for $value in distinct-values() could help :)
 <html>
     <head>
-        <title>Word Frequency</title>
+        <title>Love/War/Peace Frequency</title>
     </head>
     <body>
-        <h1>Notable Word Frequency in The Beatles Discography</h1>
+        <h1>Love/War/Peace Frequency in The Beatles Discography</h1>
         <table>
             <tr>
                 <th>Song</th>
