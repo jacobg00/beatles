@@ -1,18 +1,18 @@
 Beatles XQuery list: Who wrote it, what it does, what output it generated
 
-BB_Albums_Per_Year_JCG.xquery
+BB_Albums_Per_Year_JCG.xquery: JCG. Displays an svg bar graph of how many in each year albums made the billboard charts. Output is BB_Albums_Per_Year.svg
 
-bb_songs_per_year.xquery
+bb_songs_per_year.xquery: JCG. Same as BB_Albums_Per_Year, but with the bb songs. Output is bb_songs_per_year_Output.svg
 
-bb_year_vs_lyrics_year.xquery
+bb_year_vs_lyrics_year.xquery: JCG. Creates an xquery chart that shows the song name, the year it was released, and the year it made the billboard charts Output is bb_year_vs_lyrics_year.svg
 
 global-variables.xquery: WHC. Created at first just to establish the global variables for the collection and docs, now also includes example of how to correlate across files by songName. No saved output file.
 
-JCG_Xquery_to_html.xquery
+JCG_Xquery_to_html.xquery JCG: Just a file so I remember how to make xquery into an html
 
 network.xquery
 
-Songs_Per_Year_JCG.xquery
+Songs_Per_Year_JCG.xquery JCG. Creates an svg bar graph that shows how many songs were released that year, how many songs made the billboard that year, and how many albums made the billboard that year. Output is Songs_Per_Year_JCG_Output.svg
 
 songs-per-year.xquery
 
