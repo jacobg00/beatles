@@ -9,8 +9,10 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <h1>When Were The Beatles' Songs Released?</h1>
-        <h3>This graph looks at when The Beatles released thier songs, when they had thier BillBoard top 100 hits, and when thier albums made the BillBoard charts.</h3>
+        <h1>The Beatles By Years: When They Released Thier Music and When It Made the Billboard Charts </h1>
+        <h2>Graph 1</h2>
+        <h3>This first graph looks at when The Beatles released thier songs, when they had thier BillBoard top 100 hits, and when thier albums made the BillBoard charts.</h3>
+        <h3>*Note: The Year That A Particular Song Appeared on the Charts Isn't Necessarily When It Was Released* </h3>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -26,21 +28,24 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                         <text
                             x="550"
                             y="50"
-                            font-family="impact"
+                            font-weight="bold"
+                            font-family="arial"
                             font-size="18px"
-                            fill="black"> Red = Songs Released That Year</text>
+                            fill="#e8edf1"> Red = Songs Released That Year</text>
                         <text
                             x="550"
                             y="100"
-                            font-family="impact"
+                            font-weight="bold"
+                            font-family="arial"
                             font-size="18px"
-                            fill="black"> Blue = Songs That made the Billboard Top 100 That Year</text>
+                            fill="#e8edf1"> Blue = Songs That made the Billboard Top 100 That Year</text>
                         <text
                             x="550"
                             y="150"
-                            font-family="impact"
+                            font-weight="bold"
+                            font-family="arial"
                             font-size="18px"
-                            fill="black"> Gold = Albums That made the Billboard Top 100 That Year</text>
+                            fill="#e8edf1"> Gold = Albums That made the Billboard Top 100 That Year</text>
                     </g>
                     
                     {
@@ -149,8 +154,11 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 </g>
             </g>
         </svg>
+        <p>By looking at this first graph we can see that as a band, The Beatles peak output for music was 1963, but their popularity peaked in 1964</p>
     </body>
-    <h3>This graph shows when The Beatles' songs made the BillBoard Top 100s</h3>
+    <H2>Graph 2: Billboard Songs</H2>
+    <h3>This graph shows how many per year of The Beatles' songs made the BillBoard Top 100s</h3>
+    
     <body>
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -222,9 +230,11 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 </g>
             </g>
         </svg>
+    <p>This graph shows us out of The Beatles music that made the Billboard Charts, how many songs each year made the charts.</p>
     
     </body>
-    <h3>This graph shows when The Beatles' albums made the BillBoard Top 100s</h3>
+    <h2>Graph 3: BillBoard Albums</h2>
+    <h3>This graph shows how many per year of The Beatles' albums made the BillBoard Top 100s</h3>
     <body>
         
         <svg
@@ -296,5 +306,35 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 </g>
             </g>
         </svg>
+        <p>This graph is interesting becuase of how long The Beatles' albums stayed on the Billboard Charts. This is primarily attributed to rereleases and remasters of thier music, along with new compilations.</p>
+    </body>
+    <body>
+        <h1>Song's Billboard Appearance vs. Release Date</h1>
+        <p> This chart illistrates the fact that the year a song was released isn't typically the same year it made the Billboard charts  </p>
+        <table>
+            <tr>
+                <th>Song</th>
+                <th>Released </th>
+                <th>Billboard Charts</th>
+                
+            </tr>            
+            {
+                let $chart-songs := $bbSongs//Q{}billboardSong
+                
+                
+                for $cs in $chart-songs
+                let $chart-song-title := $cs/Q{}songName/text()
+                let $chart-song-date := $cs/Q{}date/string()
+                let $chart-song-year := $cs/Q{}date/Q{}year/string()
+                let $chart-lyrics-year := $lyric-file//Q{}song[./Q{}songName/data(@name) =
+                $cs/Q{}songName/data(@name)]/Q{}year/string()
+                count $n
+                
+                 return <tr><td>{$chart-song-title}</td><td>{$chart-lyrics-year}</td><td>{$chart-song-year}</td></tr>
+                   
+            }  <!--whc: you also needed to add a curly brace here -->
+        </table>
+         <p> By using this chart in addition to our other graphs, we can begin to see how relevent The Beatles' music was at a given point in time, and even pick out trends. An example of this can be found when looking at graph 2, where we see that in 1986, 1 song made the Billboard charts. Checking the chart above, we can see that the song was Twist And Shout. 
+         How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout.  </p>
     </body>
 </html>
