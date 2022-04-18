@@ -1,23 +1,21 @@
-declare option saxon:output "method=text";
 
    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
    <g alignment-baseline="baseline" transform="translate (100, 200)">
    
    
-   
-   </g>
-   {
-let $h := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Harrison')]] =>count() 
-let $l := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Lennon') ]] =>count() 
-let $m := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'McCartney')]] =>count() 
-let $s := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Starr') ]] =>count() 
 
-let $hl := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Harrison')  and contains(., 'Lennon') ]] =>count() 
-let $hm := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Harrison')  and contains(., 'McCartney') ]] =>count() 
-let $hs := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Harrison')  and contains(., 'Starr') ]] =>count()  
-let $lm := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Lennon')  and contains(., 'McCartney') ]] =>count()  
-let $ls := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Lennon')  and contains(., 'Starr') ]] =>count() 
-let $ms := //song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'McCartney')  and contains(., 'Starr') ]] =>count() 
+   {
+let $h := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Harrison')]] =>count() 
+let $l := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Lennon') ]] =>count() 
+let $m := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney')]] =>count() 
+let $s := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Starr') ]] =>count() 
+
+let $hl := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Harrison')  and contains(., 'Lennon') ]] =>count() 
+let $hm := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Harrison')  and contains(., 'McCartney') ]] =>count() 
+let $hs := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Harrison')  and contains(., 'Starr') ]] =>count()  
+let $lm := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Lennon')  and contains(., 'McCartney') ]] =>count()  
+let $ls := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Lennon')  and contains(., 'Starr') ]] =>count() 
+let $ms := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney')  and contains(., 'Starr') ]] =>count() 
 
 
 
@@ -42,7 +40,8 @@ return
         <text x="300" y="300" stroke="black" stroke-width="1">S</text>
 </g>
 }
-
+   
+   </g>
 </svg>
 
 
