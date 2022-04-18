@@ -1,19 +1,22 @@
-declare variable $song := //song[(./lyrics/text() ! replace(., "he", " he ", "i") ! (tokenize(.)[. = 'he']) => count()) + (./lyrics/text() ! replace(., "she", " she ", "i") ! (tokenize(.)[. = 'she']) => count()) + (./lyrics/text() ! replace(., "him", " him ", "i") ! (tokenize(.)[. = 'him']) => count()) + (./lyrics/text() ! replace(., "her", " her ", "i") ! (tokenize(.)[. = 'her']) => count()) >0 ];
+declare variable $song := //song; (: [(./lyrics/text() ! replace(., "he", " he ", "i") ! (tokenize(.)[. = 'he']) => count()) + (./lyrics/text() ! replace(., "she", " she ", "i") ! (tokenize(.)[. = 'she']) => count()) + (./lyrics/text() ! replace(., "him", " him ", "i") ! (tokenize(.)[. = 'him']) => count()) + (./lyrics/text() ! replace(., "her", " her ", "i") ! (tokenize(.)[. = 'her']) => count()) >0 ]; :)
 declare variable $songName := $song/songName/text();
 (: declare variable $heSongName := $song[lyrics/matches(.,'he','i')]/songName/text();
 declare variable $sheSongName := $song[lyrics/matches(.,'she','i')]/songName/text();
 declare variable $himSongName := $song[lyrics/matches(.,'him','i')]/songName/text();
 declare variable $herSongName := $song[lyrics/matches(.,'her','i')]/songName/text(); :)
+
 declare variable $heSongTotal := $song[lyrics/matches(.,'he','i')] => count();
 declare variable $sheSongTotal := $song[lyrics/matches(.,'she','i')] => count();
 declare variable $himSongTotal := $song[lyrics/matches(.,'him','i')] => count();
 declare variable $herSongTotal := $song[lyrics/matches(.,'her','i')] => count();
 
-declare variable $heTotal := (//lyrics/text() ! replace(., "he", " he ", "i") ! (tokenize(.)[. = 'he']) => count());
-declare variable $sheTotal := (//lyrics/text() ! replace(., "she", " she ", "i") ! (tokenize(.)[. = 'she']) => count());
-declare variable $himTotal := (//lyrics/text() ! replace(., "him", " him ", "i") ! (tokenize(.)[. = 'him']) => count());
-declare variable $herTotal := (//lyrics/text() ! replace(., "her", " her ", "i") ! (tokenize(.)[. = 'her']) => count());
-declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
+declare variable $lyrics := //lyrics/text()=>string-join();
+declare variable $lyricsClean := $lyrics =>lower-case()=>replace(., '\W+', ' ') => normalize-space();
+
+declare variable $heTotal := $lyricsClean ! (tokenize(.)[. = 'he']) => count();
+declare variable $sheTotal := $lyricsClean ! (tokenize(.)[. = 'she']) => count();
+declare variable $himTotal := $lyricsClean ! (tokenize(.)[. = 'him']) => count();
+declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count();
 
 <html>
     <head>
@@ -30,7 +33,7 @@ declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml');
                 <th>Her</th>
             </tr>
             {
-                let $words := $lyric-file//song/lyrics/string()=>string-join()=>lower-case()
+                let $words := //song/lyrics/string()=>string-join()=>lower-case()
                 let $words-cleaned := replace($words, '[,|"|!|\.|(|)|\?|;|\[|\]]+', ' ') => normalize-space()
                 let $words-separate := tokenize($words-cleaned, '\s')
                 for $s in $song
