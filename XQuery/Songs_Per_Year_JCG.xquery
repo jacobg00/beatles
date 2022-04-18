@@ -6,6 +6,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
 <html>
     <head>
         <title>The Beatles' music Billboard Appearances vs. Release Dates</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
         <h1>When Were The Beatles' Songs Released?</h1>
