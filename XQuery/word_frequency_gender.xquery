@@ -1,22 +1,40 @@
-declare variable $song := //song; (: [(./lyrics/text() ! replace(., "he", " he ", "i") ! (tokenize(.)[. = 'he']) => count()) + (./lyrics/text() ! replace(., "she", " she ", "i") ! (tokenize(.)[. = 'she']) => count()) + (./lyrics/text() ! replace(., "him", " him ", "i") ! (tokenize(.)[. = 'him']) => count()) + (./lyrics/text() ! replace(., "her", " her ", "i") ! (tokenize(.)[. = 'her']) => count()) >0 ]; :)
+declare variable $song := //song
+[((./lyrics/text() ! replace(., "he", " he ", "i") ! (tokenize(.)[. = 'he']) => count()) 
++ (./lyrics/text() ! replace(., "she", " she ", "i") ! (tokenize(.)[. = 'she']) => count()) 
++ (./lyrics/text() ! replace(., "him", " him ", "i") ! (tokenize(.)[. = 'him']) => count()) 
++ (./lyrics/text() ! replace(., "her", " her ", "i") ! (tokenize(.)[. = 'her']) => count())) > 0 ];
+
+(:[.//lyrics]; whc: this predicate filters out instrumentals: This predicate currently isn't being used:)
+
 declare variable $songName := $song/songName/text();
 (: declare variable $heSongName := $song[lyrics/matches(.,'he','i')]/songName/text();
 declare variable $sheSongName := $song[lyrics/matches(.,'she','i')]/songName/text();
 declare variable $himSongName := $song[lyrics/matches(.,'him','i')]/songName/text();
 declare variable $herSongName := $song[lyrics/matches(.,'her','i')]/songName/text(); :)
 
+
+declare variable $songString := $song/lyrics//text()=>string-join()=>lower-case();
+declare variable $songStringNorm := replace($songString, '\W+', ' ') => normalize-space();
+
+
 declare variable $heSongTotal := $song[lyrics/matches(.,'he','i')] => count();
+(:let $heSong := $s[./songName/text() = $songName]//lyrics/
+                let $heSongClean := replace($heSong, '\W+', ' ') => normalize-space()
+                let $numberHe := :)
 declare variable $sheSongTotal := $song[lyrics/matches(.,'she','i')] => count();
 declare variable $himSongTotal := $song[lyrics/matches(.,'him','i')] => count();
 declare variable $herSongTotal := $song[lyrics/matches(.,'her','i')] => count();
 
-declare variable $lyrics := //lyrics/text()=>string-join();
-declare variable $lyricsClean := $lyrics =>lower-case()=>replace(., '\W+', ' ') => normalize-space();
+
+declare variable $lyrics := //lyrics/text()=>string-join()=>lower-case();
+declare variable $lyricsClean :=  replace($lyrics, '\W+', ' ') => normalize-space();
 
 declare variable $heTotal := $lyricsClean ! (tokenize(.)[. = 'he']) => count();
 declare variable $sheTotal := $lyricsClean ! (tokenize(.)[. = 'she']) => count();
 declare variable $himTotal := $lyricsClean ! (tokenize(.)[. = 'him']) => count();
 declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count();
+
+
 
 <html>
     <head>
@@ -40,8 +58,8 @@ declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count()
                 
                 let $heSong := $s[./songName/text() = $songName]//lyrics/text()=>string-join()=>lower-case()
                 let $heSongClean := replace($heSong, '\W+', ' ') => normalize-space()
-                let $numberHe := (tokenize($heSongClean)[. = 'he'] => count())
-
+                let $numberHe := (tokenize($heSongClean, '\s')[. = 'he'] => count())
+(:whc: $numberHe is now working corectly. Copy across the next three.:)
                 let $numberShe := $s[./songName/text() = $songName]//lyrics/text()
                 ! replace(., "she", " she ", "i") 
                 ! (tokenize(.)[. = 'she'] => count())
@@ -64,7 +82,7 @@ declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count()
                 <td>{$herSongTotal}</td>
             </tr>
             <tr>
-                <td>Total Word Count</td>
+                <td>Total Word Use Count</td>
                 <td>{$heTotal}</td>
                 <td>{$sheTotal}</td>
                 <td>{$himTotal}</td>
