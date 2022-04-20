@@ -44,15 +44,15 @@
                stroke="black"
                stroke-width="8"/>
          <!--ms edge-->
-         <line x1="500"
-               y1="20"
+         <line x1="1"
+               y1="1"
                x2="300"
                y2="50"
                stroke="red"
                stroke-width="1"/>
          <!--DM edge-->
-         <line x1="500"
-               y1="20"
+         <line x1="1"
+               y1="1"
                x2="50"
                y2="300"
                stroke="purple"
@@ -91,14 +91,14 @@
                x2="300"
                y2="50"
                stroke="red"
-               stroke-width="0"/>
+               stroke-width="1"/>
          <!--Lee M edge-->
          <line x1="500"
                y1="40"
                x2="50"
                y2="300"
                stroke="purple"
-               stroke-width="0"/>
+               stroke-width="1"/>
          <!--Lee L edge-->
          <line x1="500"
                y1="50"
@@ -114,15 +114,15 @@
                stroke="purple"
                stroke-width="1"/>
          <!--hh l edge-->
-         <line x1="500"
-               y1="60"
+         <line x1="1"
+               y1="150"
                x2="50"
                y2="50"
                stroke="blue"
                stroke-width="1"/>
          <!--h YO edge-->
-         <line x1="500"
-               y1="60"
+         <line x1="1"
+               y1="150"
                x2="50"
                y2="300"
                stroke="purple"
@@ -184,8 +184,8 @@
                  stroke-width="1"
                  fill="white"/>
          <!--l node-->
-         <circle cx="500"
-                 cy="20"
+         <circle cx="1"
+                 cy="1"
                  r="1"
                  stroke="Black"
                  stroke-width="1"
@@ -212,8 +212,8 @@
                  stroke-width="1"
                  fill="white"/>
          <!--Heinz_Hellmer node-->
-         <circle cx="500"
-                 cy="60"
+         <circle cx="1"
+                 cy="150"
                  r="1"
                  stroke="Black"
                  stroke-width="1"
