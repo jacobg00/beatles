@@ -1,8 +1,8 @@
-declare variable $song := //song
-[((./lyrics/text() ! replace(., "he", " he ", "i") ! (tokenize(.)[. = 'he']) => count()) 
+declare variable $song := //song[.//lyrics];
+(:[((./lyrics/text() ! replace(., "he", " he ", "i") ! (tokenize(.)[. = 'he']) => count()) 
 + (./lyrics/text() ! replace(., "she", " she ", "i") ! (tokenize(.)[. = 'she']) => count()) 
 + (./lyrics/text() ! replace(., "him", " him ", "i") ! (tokenize(.)[. = 'him']) => count()) 
-+ (./lyrics/text() ! replace(., "her", " her ", "i") ! (tokenize(.)[. = 'her']) => count())) > 0 ];
++ (./lyrics/text() ! replace(., "her", " her ", "i") ! (tokenize(.)[. = 'her']) => count())) > 0 ];:)
 
 (:[.//lyrics]; whc: this predicate filters out instrumentals: This predicate currently isn't being used:)
 
@@ -39,6 +39,7 @@ declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count()
 <html>
     <head>
         <title>Gender Word Frequency</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
         <h1>Gender Word Frequency in The Beatles Discography</h1>
@@ -74,13 +75,13 @@ declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count()
                 
                 return <tr><td>{$s/songName/text()}</td> <td>{$numberHe}</td> <td>{$numberShe}</td> <td>{$numberHim}</td> <td>{$numberHer}</td></tr>
             }
-            <tr>
+            {(:<tr>
                 <td>Total Songs Containing</td> 
                 <td>{$heSongTotal}</td>
                 <td>{$sheSongTotal}</td>
                 <td>{$himSongTotal}</td>
                 <td>{$herSongTotal}</td>
-            </tr>
+            </tr>:)}
             <tr>
                 <td>Total Word Use Count</td>
                 <td>{$heTotal}</td>

@@ -2,9 +2,12 @@ declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
 
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
 <body>
 <h1>Word Count in Cover Songs</h1>
+<p>This page displays every individual word that shows up in an original song written and performed by The Beatles. It is displayed as a large block of text, rather than a table. It was decided that the large block of text is actually more fitting than a very long table that would need to extend very far down or across the page. This page was created as a way to compare the frequency of words in songs covered by The Beatles with songs written by The Beatles on the originals page, as well as with all Beatles songs on the discography page.</p>
 <p>
 {
 let $words := $lyric-file//song[./cover/@status="True"]/lyrics/string()=>string-join()=>lower-case()
