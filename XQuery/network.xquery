@@ -37,8 +37,8 @@ let $JNL := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[ contai
 let $JNM := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney') and contains(., 'Jean_Nicolas')  ]] =>count() 
 
 
-let $LeeM := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney')  and contains(., 'Lee_Montague') ]] =>count() 
-let $LeeL := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Lennon') and contains(., 'Lee_Montague') ]] =>count() 
+let $LeeM := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney')  and contains(., 'Lee_Montogue') ]] =>count() 
+let $LeeL := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Lennon') and contains(., 'Lee_Montogue') ]] =>count() 
 
 
 
@@ -73,8 +73,8 @@ return
        
         
         
-        <line x1="500" y1="60" x2="50" y2="50" stroke="blue" stroke-width="{$hYO}"/><!--h YO edge-->
-        <line x1="500" y1="60" x2="50" y2="300" stroke="purple" stroke-width="{$lYO}"/><!--l YO edge-->
+        <line x1="1" y1="150" x2="50" y2="50" stroke="blue" stroke-width="{$hYO}"/><!--h YO edge-->
+        <line x1="1" y1="150" x2="50" y2="300" stroke="purple" stroke-width="{$lYO}"/><!--l YO edge-->
       
         
         
@@ -94,7 +94,7 @@ return
         <circle cx="500" cy="30" r="{$JN}" stroke="Black" stroke-width="1" fill="white" /><!--Jean_Nicolas node-->
         <circle cx="500" cy="40" r="{$Lee}" stroke="Black" stroke-width="1" fill="white" /><!--Lee_Montogue node-->
         <circle cx="500" cy="50" r="{$HH}" stroke="Black" stroke-width="1" fill="white" /><!--Heinz_Hellmer node-->
-        <circle cx="500" cy="60" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
+        <circle cx="1" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
        
         
         

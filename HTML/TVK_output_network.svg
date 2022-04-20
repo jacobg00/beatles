@@ -44,15 +44,15 @@
                stroke="black"
                stroke-width="8"/>
          <!--ms edge-->
-         <line x1="1"
-               y1="1"
+         <line x1="500"
+               y1="20"
                x2="300"
                y2="50"
                stroke="red"
                stroke-width="1"/>
          <!--DM edge-->
-         <line x1="1"
-               y1="1"
+         <line x1="500"
+               y1="20"
                x2="50"
                y2="300"
                stroke="purple"
@@ -184,8 +184,8 @@
                  stroke-width="1"
                  fill="white"/>
          <!--l node-->
-         <circle cx="1"
-                 cy="1"
+         <circle cx="500"
+                 cy="20"
                  r="1"
                  stroke="Black"
                  stroke-width="1"
