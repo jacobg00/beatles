@@ -9,11 +9,15 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-    <p>
+    
         <h1>The Beatles By Years: When They Released Their Music and When It Made the Billboard Charts </h1>
+        <p>
+        <div class="graph">
+        <p>
+        
         <h2>Graph 1</h2>
         <h3>This first graph looks at when The Beatles released their songs, when they had their BillBoard top 100 hits, and when their albums made the BillBoard charts.</h3>
-        <h3>*Note: The Year That A Particular Song Appeared on the Charts Isn't Necessarily When It Was Released* </h3>
+        <h3>*Note: The Year That A Particular Song Appeared on the Charts Isn't Necessarily When It Was Released* </h3></p>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -22,26 +26,26 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
             
             <g
                 alignment-baseline="baseline"
-                transform="translate (50, 10)">
+                transform="translate (50, 5)">
                 <g
                     alignment-baseline="baseline">
                     <g>
                         <text
-                            x="550"
+                            x="400"
                             y="50"
                             font-weight="bold"
                             font-family="arial"
                             font-size="18px"
                             fill="#e8edf1"> Red = Songs Released That Year</text>
                         <text
-                            x="550"
+                            x="400"
                             y="100"
                             font-weight="bold"
                             font-family="arial"
                             font-size="18px"
                             fill="#e8edf1"> Blue = Songs That made the Billboard Top 100 That Year</text>
                         <text
-                            x="550"
+                            x="400"
                             y="150"
                             font-weight="bold"
                             font-family="arial"
@@ -147,7 +151,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                                     x1="75"
                                     y1="25"
                                     x2="75"
-                                    y2="700"
+                                    y2="675"
                                     stroke="black"
                                     stroke-width="5"/>
                             </g>
@@ -156,8 +160,12 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
             </g>
         </svg>
         <text>By looking at this first graph we can see that as a band, The Beatles peak output for music was 1963, but their popularity peaked in 1964</text>
-    </p>
+ 
+    </div>
+       </p>
+     <div class="graph" >
     <p>
+    
     <H2>Graph 2: Billboard Songs</H2>
     <h3>This graph shows how many per year of The Beatles' songs made the BillBoard Top 100s</h3>
         <svg
@@ -168,7 +176,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
             
             <g
                 alignment-baseline="baseline"
-                transform="translate (50, 50)">
+                transform="translate (50, 10)">
                 <g
                     alignment-baseline="baseline">
                     
@@ -230,10 +238,13 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 </g>
             </g>
         </svg>
-    <text>This graph shows us out of The Beatles music that made the Billboard Charts, how many songs each year made the charts.</text>
+    <p>This graph shows us out of The Beatles music that made the Billboard Charts, how many songs each year made the charts.</p>
     
     </p>
+    </div>
+    <div class="graph">
     <p>
+    
     <h2>Graph 3: BillBoard Albums</h2>
     <h3>This graph shows how many per year of The Beatles' albums made the BillBoard Top 100s</h3>
 
@@ -309,6 +320,8 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
         </svg>
         <text>This graph is interesting becuase of how long The Beatles' albums stayed on the Billboard Charts. This is primarily attributed to rereleases and remasters of their music, along with new compilations.</text>
     </p>
+    </div>
+    <div class="graph">
     <p>
         <h1>Song's Billboard Appearance vs. Release Date</h1>
         <text> This chart illistrates the fact that the year a song was released isn't typically the same year it made the Billboard charts  </text>
@@ -335,8 +348,9 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                    
             }  <!--whc: you also needed to add a curly brace here -->
         </table>
-         <text> By using this chart in addition to our other graphs, we can begin to see how relevent The Beatles' music was at a given point in time, and even pick out trends. An example of this can be found when looking at graph 2, where we see that in 1986, 1 song made the Billboard charts. Checking the chart above, we can see that the song was Twist And Shout. 
-         How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout.  </text>
+         <p> By using this chart in addition to our other graphs, we can begin to see how relevent The Beatles' music was at a given point in time, and even pick out trends. An example of this can be found when looking at graph 2, where we see that in 1986, 1 song made the Billboard charts. Checking the chart above, we can see that the song was Twist And Shout. 
+         How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout.  </p>
          </p>
+         </div>
     </body>
 </html>
