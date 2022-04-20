@@ -44,38 +44,190 @@
                stroke="black"
                stroke-width="8"/>
          <!--ms edge-->
+         <line x1="500"
+               y1="20"
+               x2="300"
+               y2="50"
+               stroke="red"
+               stroke-width="1"/>
+         <!--DM edge-->
+         <line x1="500"
+               y1="20"
+               x2="50"
+               y2="300"
+               stroke="purple"
+               stroke-width="1"/>
+         <!--DL edge-->
+         <line x1="500"
+               y1="30"
+               x2="50"
+               y2="300"
+               stroke="purple"
+               stroke-width="2"/>
+         <!--L jn edge-->
+         <line x1="500"
+               y1="30"
+               x2="300"
+               y2="50"
+               stroke="red"
+               stroke-width="2"/>
+         <!--M jn edge-->
+         <line x1="500"
+               y1="30"
+               x2="500"
+               y2="40"
+               stroke="black"
+               stroke-width="0"/>
+         <!--hh jn edge-->
+         <line x1="500"
+               y1="30"
+               x2="500"
+               y2="50"
+               stroke="black"
+               stroke-width="1"/>
+         <!--JN Lee edge-->
+         <line x1="500"
+               y1="40"
+               x2="300"
+               y2="50"
+               stroke="red"
+               stroke-width="0"/>
+         <!--Lee M edge-->
+         <line x1="500"
+               y1="40"
+               x2="50"
+               y2="300"
+               stroke="purple"
+               stroke-width="0"/>
+         <!--Lee L edge-->
+         <line x1="500"
+               y1="50"
+               x2="300"
+               y2="50"
+               stroke="red"
+               stroke-width="1"/>
+         <!--hh m edge-->
+         <line x1="500"
+               y1="50"
+               x2="50"
+               y2="300"
+               stroke="purple"
+               stroke-width="1"/>
+         <!--hh l edge-->
+         <line x1="500"
+               y1="60"
+               x2="50"
+               y2="50"
+               stroke="blue"
+               stroke-width="1"/>
+         <!--h YO edge-->
+         <line x1="500"
+               y1="60"
+               x2="50"
+               y2="300"
+               stroke="purple"
+               stroke-width="1"/>
+         <!--l YO edge-->
+         <line x1="50"
+               y1="50"
+               x2="300"
+               y2="300"
+               stroke="black"
+               stroke-width="7"/>
+         <!--hs edge-->
+         <line x1="50"
+               y1="300"
+               x2="300"
+               y2="50"
+               stroke="black"
+               stroke-width="72"/>
+         <!--lm edge-->
+         <line x1="50"
+               y1="300"
+               x2="300"
+               y2="300"
+               stroke="black"
+               stroke-width="8"/>
+         <!--ls edge-->
+         <line x1="300"
+               y1="50"
+               x2="300"
+               y2="300"
+               stroke="black"
+               stroke-width="8"/>
+         <!--ms edge-->
          <circle cx="50"
                  cy="50"
                  r="38"
                  stroke="blue"
-                 stroke-width="2"
+                 stroke-width="1"
                  fill="white"/>
          <!--h node-->
          <circle cx="300"
                  cy="300"
                  r="12"
                  stroke="green"
-                 stroke-width="2"
+                 stroke-width="1"
                  fill="white"/>
          <!--s node-->
          <circle cx="300"
                  cy="50"
                  r="137"
                  stroke="red"
-                 stroke-width="2"
+                 stroke-width=""
                  fill="white"/>
          <!--m node-->
          <circle cx="50"
                  cy="300"
                  r="138"
                  stroke="purple"
-                 stroke-width="2"
+                 stroke-width="1"
                  fill="white"/>
          <!--l node-->
+         <circle cx="500"
+                 cy="20"
+                 r="1"
+                 stroke="Black"
+                 stroke-width="1"
+                 fill="white"/>
+         <!--Donovan node-->
+         <circle cx="500"
+                 cy="30"
+                 r="2"
+                 stroke="Black"
+                 stroke-width="1"
+                 fill="white"/>
+         <!--Jean_Nicolas node-->
+         <circle cx="500"
+                 cy="40"
+                 r="1"
+                 stroke="Black"
+                 stroke-width="1"
+                 fill="white"/>
+         <!--Lee_Montogue node-->
+         <circle cx="500"
+                 cy="50"
+                 r="1"
+                 stroke="Black"
+                 stroke-width="1"
+                 fill="white"/>
+         <!--Heinz_Hellmer node-->
+         <circle cx="500"
+                 cy="60"
+                 r="1"
+                 stroke="Black"
+                 stroke-width="1"
+                 fill="white"/>
+         <!--Yoko_Ono node-->
          <text x="50" y="50" stroke="black" stroke-width="1">H</text>
          <text x="50" y="300" stroke="black" stroke-width="1">L</text>
          <text x="300" y="50" stroke="black" stroke-width="1">M</text>
          <text x="300" y="300" stroke="black" stroke-width="1">S</text>
+         <text x="550" y="20" stroke="black" stroke-width="0.5">Donovan</text>
+         <text x="550" y="30" stroke="black" stroke-width="0.5">Jean Nicolas</text>
+         <text x="550" y="40" stroke="black" stroke-width="0.5">Lee Montogue</text>
+         <text x="550" y="50" stroke="black" stroke-width="0.5">Heinz Hellmer</text>
+         <text x="550" y="60" stroke="black" stroke-width="0.5">Yoko Ono</text>
       </g>
    </g>
 </svg>

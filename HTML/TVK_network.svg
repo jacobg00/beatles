@@ -20,6 +20,6 @@
         <text x="50" y="50" stroke="black" stroke-width="1">H</text>
         <text x="50" y="300" stroke="black" stroke-width="1">L</text>
         <text x="300" y="50" stroke="black" stroke-width="1">M</text>
-        <text x="300" y="300" stroke="black" stroke-width="1">S</text>
+        <text x="300" y="300" stroke="black" stroke-width="1">S</text>     
     </g>
 </svg>
