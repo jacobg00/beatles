@@ -38,6 +38,7 @@ declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count()
     </head>
     <body>
         <h1>Gender Word Frequency in The Beatles Discography</h1>
+        <p>This table displays the frequency of words associated with gender in songs performed by The Beatles. This table started as a simple idea to show the difference in Beatles songs themed around women vs. those themed around men.</p>
         <table>
             <tr>
                 <th>Song</th>
