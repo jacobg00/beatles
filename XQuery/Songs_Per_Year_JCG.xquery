@@ -9,7 +9,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-    
+    <div id="content">
         <h1>The Beatles By Years: When They Released Their Music and When It Made the Billboard Charts </h1>
        <p>This page utilizes SVG graphs in addition to Xquery to pull in data that looks at the music by The Beatles over the years. In addition to the year of release, The Beatles music that appeard on Billboard Top 100 is displayed.
        </p>
@@ -358,5 +358,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
          How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout. The last column of the table shows us that there was a whole 23 years between the song's release and when it hit the Billboard charts!</p>
          </p>
          </div>
+         </div>
     </body>
+
 </html>
