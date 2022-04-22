@@ -1,3 +1,12 @@
+/* shd: header css */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #6685a3;
+}
+/* shd: end header css */
 /* shd: navbar css */
 .navbar {
     display: flex;
@@ -8,6 +17,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin:0%;
+    padding: 0%;
     z-index: 500;
 }
 .navbar a {
@@ -83,14 +94,15 @@
 /*shd: end sticky css */
 
 /* shd: body css */
+
 body {
 background-color: #6685a3;
 color: #e8edf1;
 font-family: arial, helvetica, sans-serif;
-
-padding: 1em 10em;
-
-
+margin: 0%;
+}
+#content {
+   padding: 1em 10em;
 }
 .graph{
  margin-bottom:10%;
