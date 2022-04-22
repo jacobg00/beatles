@@ -1,3 +1,88 @@
+/* shd: navbar css */
+.navbar {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1ac6ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 500;
+}
+.navbar a {
+   float: left;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 501;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #006080;
+    color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #006080;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    background-color: white;
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: white;
+}
+/* shd: end navbar css */
+
+/* shd: sticky css */
+.cfix:after {
+    display:block;
+    clear:both;
+    justify-content: space-around;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+/*shd: end sticky css */
+
+/* shd: body css */
 body {
 background-color: #6685a3;
 color: #e8edf1;
