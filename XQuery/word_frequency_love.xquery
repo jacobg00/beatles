@@ -9,11 +9,10 @@ declare variable $peaceSongTotal := $song[lyrics/matches(.,'peace','i')] => coun
 declare variable $loveTotal := (//lyrics/text() ! replace(., "love", " love ", "i") ! (tokenize(.)[. = 'love']) => count());
 declare variable $warTotal := (//lyrics/text() ! replace(., "war", " war ", "i") ! (tokenize(.)[. = 'war']) => count());
 declare variable $peaceTotal := (//lyrics/text() ! replace(., "peace", " peace ", "i") ! (tokenize(.)[. = 'peace']) => count());
-(: //lyrics/text()=>string-join() -- connects all lyric text in all songs :)
-(: wordCount() or getWords() functions could help :)
-(: for $value in distinct-values() could help :)
+
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <title>Love/War/Peace Frequency</title>
     </head>
     <body>
@@ -24,6 +23,24 @@ declare variable $peaceTotal := (//lyrics/text() ! replace(., "peace", " peace "
                 <th>Love</th>
                 <th>War</th>
                 <th>Peace</th>
+            </tr>
+            <tr>
+                <td>Total Songs Containing</td> 
+                <td>{$loveSongTotal}</td>
+                <td>{$warSongTotal}</td>
+                <td>{$peaceSongTotal}</td>
+            </tr>
+            <tr>
+                <td>Total Word Count</td>
+                <td>{$loveTotal}</td>
+                <td>{$warTotal}</td>
+                <td>{$peaceTotal}</td>
+            </tr>
+            <tr>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
             </tr>
             {
                 for $s in $song
@@ -42,18 +59,7 @@ declare variable $peaceTotal := (//lyrics/text() ! replace(., "peace", " peace "
                 
                 return <tr><td>{$s/songName/text()}</td> <td>{$numberLove}</td> <td>{$numberWar}</td> <td>{$numberPeace}</td></tr>
             }
-            <tr>
-                <td>Total Songs Containing</td> 
-                <td>{$loveSongTotal}</td>
-                <td>{$warSongTotal}</td>
-                <td>{$peaceSongTotal}</td>
-            </tr>
-            <tr>
-                <td>Total Word Count</td>
-                <td>{$loveTotal}</td>
-                <td>{$warTotal}</td>
-                <td>{$peaceTotal}</td>
-            </tr>
+
         </table>
     </body>
 </html>
