@@ -1,6 +1,14 @@
+<html><head><title>Network Analysis</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
 
+</head>
+<body>
+
+<h1>Network Analysis </h1>
+
+<p>A network analysis is a graph that uses nodes, the circles, to represent people, places organizations, or some other thing. The lines connecting them, known as edges indicate a relationship between them. In this instance, the nodes are the beatles and those who have written songs with them. The width of the edges represent how many times they have written songs together. As you can see the strongest cowriting relationship is between John Lennon and Paul McCartney. The size of the node indicates the number of songs written by that person. </p>
    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-   <g alignment-baseline="baseline" transform="translate (100, 200)">
+   <g alignment-baseline="baseline" transform="translate (200, 100)">
    
    
 
@@ -56,8 +64,8 @@ return
         <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="{$ls}"/><!--ls edge-->
         <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$ms}"/><!--ms edge-->
         
-        <line x1="500" y1="20" x2="300" y2="50" stroke="red" stroke-width="{$DML}"/><!--DM edge-->
-        <line x1="500" y1="20" x2="50" y2="300" stroke="purple" stroke-width="{$DML}"/><!--DL edge-->
+        <line x1="-50" y1="-40" x2="300" y2="50" stroke="red" stroke-width="{$DML}"/><!--DM edge-->
+        <line x1="-50" y1="-40" x2="50" y2="300" stroke="purple" stroke-width="{$DML}"/><!--DL edge-->
         
         
         <line x1="500" y1="30" x2="50" y2="300" stroke="purple" stroke-width="{$JNL}"/><!--L jn edge-->
@@ -73,8 +81,8 @@ return
        
         
         
-        <line x1="1" y1="150" x2="50" y2="50" stroke="blue" stroke-width="{$hYO}"/><!--h YO edge-->
-        <line x1="1" y1="150" x2="50" y2="300" stroke="purple" stroke-width="{$lYO}"/><!--l YO edge-->
+        <line x1="-10" y1="150" x2="50" y2="50" stroke="blue" stroke-width="{$hYO}"/><!--h YO edge-->
+        <line x1="-10" y1="150" x2="50" y2="300" stroke="purple" stroke-width="{$lYO}"/><!--l YO edge-->
       
         
         
@@ -90,11 +98,11 @@ return
         <circle cx="300" cy="50" r="{$m}" stroke="red" stroke-width="" fill="white" /><!--m node-->
         <circle cx="50" cy="300" r="{$l}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
         
-        <circle cx="500" cy="20" r="{$D}" stroke="Black" stroke-width="1" fill="white" /><!--Donovan node-->
-        <circle cx="500" cy="30" r="{$JN}" stroke="Black" stroke-width="1" fill="white" /><!--Jean_Nicolas node-->
-        <circle cx="500" cy="40" r="{$Lee}" stroke="Black" stroke-width="1" fill="white" /><!--Lee_Montogue node-->
-        <circle cx="500" cy="50" r="{$HH}" stroke="Black" stroke-width="1" fill="white" /><!--Heinz_Hellmer node-->
-        <circle cx="1" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
+        <circle cx="-50" cy="-40" r="{$D}" stroke="Black" stroke-width="1" fill="white" /><!--Donovan node-->
+        <circle cx="-40" cy="-30" r="{$JN}" stroke="Black" stroke-width="1" fill="white" /><!--Jean_Nicolas node-->
+        <circle cx="-30" cy="-20" r="{$Lee}" stroke="Black" stroke-width="1" fill="white" /><!--Lee_Montogue node-->
+        <circle cx="-20" cy="-10" r="{$HH}" stroke="Black" stroke-width="1" fill="white" /><!--Heinz_Hellmer node-->
+        <circle cx="-10" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
        
         
         
@@ -113,5 +121,6 @@ return
    
    </g>
 </svg>
-
-
+<p>check 2</p>
+</body>
+</html>
