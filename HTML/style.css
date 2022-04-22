@@ -12,7 +12,10 @@ padding: 1em 10em;
  margin-top:10%
 }
 
-
+.table{
+ margin-bottom:2%;
+ margin-top:1%
+}
 
 table, td, th {
     border: 1px solid black;}
