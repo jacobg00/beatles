@@ -17,6 +17,7 @@ declare variable $peaceTotal := (//lyrics/text() ! replace(., "peace", " peace "
     </head>
     <body>
         <h1>Love/War/Peace Frequency in The Beatles Discography</h1>
+        <p>This table was created with the intention of comparing words that we assumed would appear frequently in The Beatles discography. It turned out that 'war' and 'peace' actually appear very rarely in comparison to 'love'. Any motivation to further elaborate on this chart disappeared after that realization, so it was decided to use the lessons learned here to create other more complex pages of output.</p>
         <table>
             <tr>
                 <th>Song</th>
