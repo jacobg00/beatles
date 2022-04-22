@@ -16,7 +16,7 @@ let $words-separate := tokenize($words-cleaned, '\s')
 for $w in distinct-values($words-separate)
 let $count := count($words-separate[. = $w])
 order by $count descending
-return (<b>{$w}</b>, "&#x9;", <i>{$count}</i>, "&#x9;", "&#10;")
+return (<b>{$w}</b>, "&#x9;", <i>{$count}</i>, "&#10;")
 }
 </p>
 </body>
