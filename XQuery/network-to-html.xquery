@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
+<div id="content">
 <h1>Network Analysis </h1>
 <p>A network analysis is a graph that uses nodes, the circles, to represent people, places organizations, or some other thing. The lines connecting them, known as edges indicate a relationship between them. In this instance, the nodes are the beatles and those who have written songs with them. The width of the edges represent how many times they have written songs together. As you can see the strongest cowriting relationship is between John Lennon and Paul McCartney. The size of the node indicates the number of songs written by that person. </p>
    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
@@ -103,5 +104,6 @@ return
    </g>
 </svg>
 <p></p>
+</div>
 </body>
 </html>
