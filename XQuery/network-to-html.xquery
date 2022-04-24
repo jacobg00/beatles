@@ -100,7 +100,8 @@ return
    
    </g>
 </svg>
-<p></p>
+<p>Nicolas, Hellmer and Montogue are all listed as writers due to their work translating two tracks into German. Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to Hold Your Hand)
+ with Montogue  and Nicolas listed for Sie Liebt dich  (She loves you)</p>
 </div>
 </body>
 </html>
