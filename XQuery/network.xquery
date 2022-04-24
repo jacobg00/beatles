@@ -13,6 +13,7 @@
    
 
    {
+   
 let $h := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Harrison')]] =>count() 
 let $l := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Lennon') ]] =>count() 
 let $m := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney')]] =>count() 
@@ -48,7 +49,7 @@ let $JNM := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contain
 let $LeeM := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney')  and contains(., 'Lee_Montogue') ]] =>count() 
 let $LeeL := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Lennon') and contains(., 'Lee_Montogue') ]] =>count() 
 
-
+let $cover := //Q{}song [.//@status='True'][./Q{}songWrite/ data(@writer)[contains(., 'Harrison')]] =>count() 
 
   
 
@@ -121,6 +122,11 @@ return
    
    </g>
 </svg>
-<p>check 2</p>
+
+<p>Cover Songs </p>
+
+
+
+
 </body>
 </html>
