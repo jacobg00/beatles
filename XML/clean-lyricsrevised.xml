@@ -1487,8 +1487,8 @@
         <vocals vocalist="McCartney"/>
     </song>
     <song>
-        <songName name="Hallelujah,_I_Love_Her_So">"Hallelujah, I Love Her So</songName>
-        <album title="Anthology_1"> I Love Her So",Anthology 1</album>
+        <songName name="Hallelujah,_I_Love_Her_So">Hallelujah, I Love Her So</songName>
+        <album title="Anthology_1">Anthology 1</album>
         <year>1960</year>
         <lyrics>Let me tell you about a girl I know She's my baby and I love her so Every morning
             when the sun comes up She brings me coffee in my favorite cup That's why I know, yes I
@@ -1675,7 +1675,7 @@
         <vocals vocalist="Harrison"/>
     </song>
     <song>
-        <songName name="Here,_There_and_Everywhere">"Here, There and Everywhere</songName>
+        <songName name="Here,_There_and_Everywhere">Here, There and Everywhere</songName>
         <album title="Revolver">Revolver</album>
         <year>1966</year>
         <lyrics>To lead a better life I need my love to be here... Here, making each day of the year
@@ -2398,8 +2398,8 @@
     </song>
     <song>
         <songName name="I'm_Talking_About_You">I'm Talking About You</songName>
-        <album title="Live! at_the_Star-Club_in_Hamburg, Germany; 1962">"Live! at the Star-Club in
-            Hamburg, Germany; 1962"</album>
+        <album title="Live! at_the_Star-Club_in_Hamburg, Germany; 1962">Live! at the Star-Club in
+            Hamburg, Germany; 1962</album>
         <year>1962</year>
         <instrumental/>
         <cover status="True">True</cover>
@@ -2637,7 +2637,7 @@
         <vocals vocalist="Lennon"/>
     </song>
     <song>
-        <songName name="Komm_gib_mir_deine_Hand">"Komm gib mir deine Hand"</songName>
+        <songName name="Komm_gib_mir_deine_Hand">Komm gib mir deine Hand</songName>
         <album title="Rarities">Rarities</album>
         <year>1964</year>
         <lyrics>Oh, komm doch, komm zu mir Du nimmst mir den verstand Oh, komm doch, komm zu mir
@@ -2792,7 +2792,7 @@
         <vocals vocalist="McCartney"/>
     </song>
     <song>
-        <songName name="Long,_Long,_Long">"Long, Long, Long</songName>
+        <songName name="Long,_Long,_Long">Long, Long, Long</songName>
         <album title="The_Beatles">The Beatles</album>
         <year>1968</year>
         <lyrics>It's been a long long long time How could I ever have lost you When I loved you It
@@ -2810,7 +2810,7 @@
         <year>1964</year>
         <lyrics>I'm gonna tell Aunt Mary about Uncle John He says he has the blues but he has a
             lotta fun Oh baby Yeeeeh baby Woooooh baby Having me some fun tonight I saw Uncle John
-            with long tall Sally He saw Aunt Mary cumming and he ducked back in the alley Oh baby
+            with long tall Sally He saw Aunt Mary coming and he ducked back in the alley Oh baby
             Yeeeeh baby Woooooh baby Having me some fun tonight Well long tall Sally built pretty
             sweet She got everything that Uncle John needs Oh baby Yeeeeh baby Woooooh baby Having
             me some fun tonight We're gonna have some fun tonight Have some fun tonight Everything's
@@ -2972,8 +2972,8 @@
         <vocals vocalist="McCartney Lennon"/>
     </song>
     <song>
-        <songName name="Mailman,_Bring_Me_No_More_Blues">"Mailman, Bring Me No More Blues</songName>
-        <album title="Anthology 3"> Bring Me No More Blues",Anthology 3</album>
+        <songName name="Mailman,_Bring_Me_No_More_Blues">Mailman, Bring Me No More Blues</songName>
+        <album title="Anthology 3">Anthology 3</album>
         <year>1969</year>
         <lyrics>She wrote me only one sad night Told me she's no longer mine Sue sue mailman, that
             will do for sometime Mailman, bring me no more blues Mailman, bring me no more blues One
@@ -3002,7 +3002,7 @@
     </song>
     <song>
         <songName name="Matchbox">Matchbox</songName>
-        <album title="Long_Tall_Sally_EP">"Long Tall Sally EP</album>
+        <album title="Long_Tall_Sally_EP">Long Tall Sally EP</album>
         <year>1964</year>
         <lyrics>I said I'm sitting here watching Matchbox hole in my clothes I said I'm sitting here
             wondering Matchbox hole in my clothes I ain't got no matches but I sure Got a long way
@@ -3057,8 +3057,8 @@
         <vocals vocalist="Lennon McCartney"/>
     </song>
     <song>
-        <songName name="Memphis_Tennessee">"Memphis Tennessee</songName>
-        <album title="Live_at_the_BBC"> Tennessee",Live at the BBC</album>
+        <songName name="Memphis_Tennessee">Memphis Tennessee</songName>
+        <album title="Live_at_the_BBC">Live at the BBC</album>
         <year>1963</year>
         <instrumental/>
         <cover status="True">True</cover>
@@ -3262,7 +3262,7 @@
         <vocals vocalist="Lennon McCartney Harrison"/>
     </song>
     <song>
-        <songName name="Ob-La-Di,_Ob-La-Da">"Ob-La-Di, Ob-La-Da"</songName>
+        <songName name="Ob-La-Di,_Ob-La-Da">Ob-La-Di, Ob-La-Da</songName>
         <album title="The_Beatles"> The Beatles</album>
         <year>1968</year>
         <lyrics>Desmond has a barrow in the market place Molly is the singer in a band Desmond says
@@ -3653,9 +3653,9 @@
         <vocals vocalist="Sound_Collage"/>
     </song>
     <song>
-        <songName name="Rip_It_Up/Shake,_Rattle,_and_Roll/Blue_Suede_Shoes">"Rip It Up"/"Shake,
-            Rattle, and Roll"/"Blue Suede Shoes"/"Shake</songName>
-        <album title="Anthology 3"> Rattle, and Roll"/"Blue Suede Shoes",Anthology 3</album>
+        <songName name="Rip_It_Up/Shake,_Rattle,_and_Roll/Blue_Suede_Shoes">Rip It Up/Shake,
+            Rattle, and Roll/Blue Suede Shoes</songName>
+        <album title="Anthology 3">Anthology 3</album>
         <year>1969</year>
         <instrumental/>
         <cover status="True">True</cover>
@@ -4003,7 +4003,7 @@
     </song>
     <song>
         <songName name="Slow_Down">Slow Down</songName>
-        <album title="Long_Tall_Sally_EP">"Long Tall Sally EP"</album>
+        <album title="Long_Tall_Sally_EP">Long Tall Sally EP</album>
         <year>1964</year>
         <instrumental/>
         <cover status="True">True</cover>

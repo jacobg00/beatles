@@ -9,16 +9,16 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-    
+    <div id="content">
         <h1>The Beatles By Years: When They Released Their Music and When It Made the Billboard Charts </h1>
-       <p>This page utilizes SVG graphs in addition to Xquery to look at the music by The Beatles over the years. In addition to the year of release, The Beatles music that appeard on Billboard Top 100 is displayed.
+       <p>This page utilizes SVG graphs in addition to Xquery to pull in data that looks at the music by The Beatles over the years. In addition to the year of release, The Beatles music that appeard on Billboard Top 100 is displayed.
        </p>
        <p>
         <div class="graph">
         <p>
         
-        <h2>Graph 1</h2>
-        <h3>This first graph looks at when The Beatles released their songs, when they had their BillBoard top 100 hits, and when their albums made the BillBoard charts.</h3>
+        <h2>Graph 1: Years Released</h2>
+        <h3>This first graph looks at when The Beatles released their songs, when they had their BillBoard top 100 hits, and when their albums made the BillBoard charts. This graph only goes up to 1980 because that is when the Beatles stopped releasing new songs. The Beatles officially broke up in 1970 but they did collaborate after the fact some, which was released as The Beatles.  </h3>
         <h3>*Note: The Year That A Particular Song Appeared on the Charts Isn't Necessarily When It Was Released* </h3></p>
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +335,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 <th>Song</th>
                 <th>Released </th>
                 <th>Billboard Charts</th>
-                
+                <th>Years Difference</th>
             </tr>            
             {
                 let $chart-songs := $bbSongs//Q{}billboardSong
@@ -343,20 +343,22 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 
                 for $cs in $chart-songs
                 let $chart-song-title := $cs/Q{}songName/text()
-                let $chart-song-date := $cs/Q{}date/string()
-                let $chart-song-year := $cs/Q{}date/Q{}year/string()
+                let $chart-song-date := $cs/Q{}date/data()
+                let $chart-song-year := $cs/Q{}date/Q{}year/data()
                 let $chart-lyrics-year := $lyric-file//Q{}song[./Q{}songName/data(@name) =
-                $cs/Q{}songName/data(@name)]/Q{}year/string()
+                $cs/Q{}songName/data(@name)]/Q{}year/data()
                 count $n
-                
-                 return <tr><td>{$chart-song-title}</td><td>{$chart-lyrics-year}</td><td>{$chart-song-year}</td></tr>
+                let $diffYear := ($chart-song-year - $chart-lyrics-year) 
+                 return <tr><td>{$chart-song-title}</td><td>{$chart-lyrics-year}</td><td>{$chart-song-year}</td><td>{$diffYear}</td></tr>
                    
             }  <!--whc: you also needed to add a curly brace here -->
         </table>
         </div>
          <p> By using this chart in addition to our other graphs, we can begin to see how relevent The Beatles' music was at a given point in time, and even pick out trends. An example of this can be found when looking at graph 2, where we see that in 1986, 1 song made the Billboard charts. Checking the chart above, we can see that the song was Twist And Shout. 
-         How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout.  </p>
+         How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout. The last column of the table shows us that there was a whole 23 years between the song's release and when it hit the Billboard charts!</p>
          </p>
          </div>
+         </div>
     </body>
+
 </html>

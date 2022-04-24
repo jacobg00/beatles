@@ -14,7 +14,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 <th>Song</th>
                 <th>Released </th>
                 <th>Billboard Charts</th>
-                <th>Difference of Years</th>
+                <th>Years Difference</th>
             </tr>            
             {
                 let $chart-songs := $bbSongs//Q{}billboardSong
@@ -22,12 +22,13 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                 
                 for $cs in $chart-songs
                 let $chart-song-title := $cs/Q{}songName/text()
-                let $chart-song-date := $cs/Q{}date/string()
-                let $chart-song-year := $cs/Q{}date/Q{}year/string()
+                let $chart-song-date := $cs/Q{}date/data()
+                let $chart-song-year := $cs/Q{}date/Q{}year/data()
                 let $chart-lyrics-year := $lyric-file//Q{}song[./Q{}songName/data(@name) =
-                $cs/Q{}songName/data(@name)]/Q{}year/string()
+                $cs/Q{}songName/data(@name)]/Q{}year/data()
                 count $n
-                let $diffYear := $chart-song-year - $chart-lyrics-year 
+      
+                let $diffYear := ($chart-song-year - $chart-lyrics-year) 
                  return <tr><td>{$chart-song-title}</td><td>{$chart-lyrics-year}</td><td>{$chart-song-year}</td><td>{$diffYear}</td></tr>
                    
             }  <!--whc: you also needed to add a curly brace here -->
