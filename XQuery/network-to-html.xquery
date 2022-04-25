@@ -100,7 +100,13 @@ return
    
    </g>
 </svg>
-<p>Nicolas, Hellmer and Montogue are all listed as writers due to their work translating two tracks into German. Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to Hold Your Hand)
+<p>First let’s look at the four actual members of the band. John Lennon and Paul McCartney did most of the song writing, being listed as a writer on 138 tracks and 137 respectively.  This is illustrated by the size of their circles. George Harrison had 38 songs to his name while Ringo Starr only had 12. In the entire discography there are only 8 songs that list all of the members as writers.
+
+In addition to the four Beatles there are 5 other people listed.  George Harrison and John Lennon released 1 song under the Beatles name with Yoko Ono listed as a cowriter. This graph excludes the songs that would be released under either of their names. 
+
+The same thing occurred between singer Donovan and Lennon and McCartney. 
+
+Nicolas, Hellmer and Montogue are all listed as writers due to their work translating two tracks into German. Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to Hold Your Hand)
  with Montogue  and Nicolas listed for Sie Liebt dich  (She loves you)</p>
 </div>
 </body>
