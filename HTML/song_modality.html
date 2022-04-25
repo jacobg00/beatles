@@ -19,7 +19,7 @@
                 how common it was across the whole discography.</li>
             <li>Second, we needed to run <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score.xquery">a similar XQuery</a> to count the frequency of each word on a song-by-song basis. This generated <a href="https://github.com/jacobg00/beatles/blob/main/XML/words_separated_per_song.xml">another new XML file</a> in which each song had a list of the words used in it, and the number of times each
                 one was used.</li>
-            <li>Third, and offering the greatest challenge of the three, was <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality.xquery">a new XQuery</a> to generate the HTML page you are reading right now, and especially the table below.
+            <li>Third was <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality.xquery">a new XQuery</a> to generate the HTML page you are reading right now, and especially the table below.
                 On a song-by-song basis, it cross-references the two new XML files. As it loops over
                 each song (excluding instrumentals, which have no lyrics), it looks at the frequency
                 of each word in that song, and then multiplies that by the frequency of that word's
