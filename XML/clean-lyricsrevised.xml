@@ -2947,7 +2947,7 @@
             more Oh the judge he guilty found her For robbing a homeward bounder That dirty no good
             robbin' Maggie Mae To the port of Liverpool They returned me to Two pounds ten a week,
             that was my pay</lyrics>
-        <cover status="True">True</cover>
+        <cover status="False">True</cover>
         <songWrite writer="John_Lennon Paul_McCartney George_Harrison Ringo_Starr"/>
         <vocals vocalist="Lennon McCartney"/>
     </song>
@@ -3943,7 +3943,7 @@
         <year>1962</year>
         <instrumental/>
         <cover status="True">True</cover>
-        <songWrite writer="Harry_B._Smith_Francis_Wheeler_Ted_Snyder"/>
+        <songWrite writer="Harry_B._Smith Francis_Wheeler Ted_Snyder"/>
         <vocals vocalist="Harrison"/>
     </song>
     <song>
@@ -3978,7 +3978,7 @@
         <year>1964</year>
         <instrumental/>
         <cover status="True">True</cover>
-        <songWrite writer="Rudolph_Isley_Ronald_Isley_O’Kelly_Isley_Jr."/>
+        <songWrite writer="Rudolph_Isley Ronald_Isley O’Kelly_Isley_Jr."/>
         <vocals vocalist="Lennon McCartney Harrison Starr"/>
     </song>
     <song>
