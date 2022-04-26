@@ -2947,7 +2947,7 @@
             more Oh the judge he guilty found her For robbing a homeward bounder That dirty no good
             robbin' Maggie Mae To the port of Liverpool They returned me to Two pounds ten a week,
             that was my pay</lyrics>
-        <cover status="False">True</cover>
+        <cover status="False">False</cover>
         <songWrite writer="John_Lennon Paul_McCartney George_Harrison Ringo_Starr"/>
         <vocals vocalist="Lennon McCartney"/>
     </song>
@@ -3115,7 +3115,7 @@
             voices singing (I like it!) They seemed to say (Keep on, Bongo) You have borken my heart
             (Oh, twist and shout) So go away [Are the Beatles gone? No, they're here. Oh.] With you
             big, far, hairy legs On Moonlight Bay On Moonlight Bay Ooohhh Yeah! Ha ha!</lyrics>
-        <cover status="False">False</cover>
+        <cover status="True">True</cover>
         <songWrite writer="Percy_Wenrich Edward_Madden"/>
         <vocals vocalist="Lennon McCartney Harrison Eric_Morecambe Ernie_Wise"/>
     </song>
