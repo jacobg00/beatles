@@ -1,4 +1,5 @@
-<html><head><title>Network Analysis</title>
+<html>
+<head><title>Network Analysis</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
@@ -15,6 +16,8 @@ let $l := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(
 let $m := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'McCartney')]] =>count() 
 let $s := //Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Starr') ]] =>count() 
 let $D :=//Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Donovan') ]] =>count()
+let $C :=//Q{}song [.//@status='True'] =>count()
+
 let $JN :=//Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Jean_Nicolas') ]] =>count()
 let $HH :=//Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Heinz_Hellmer') ]] =>count()
 let $YO :=//Q{}song [.//@status='False'][./Q{}songWrite/ data(@writer)[contains(., 'Yoko_Ono') ]] =>count()
@@ -69,22 +72,25 @@ return
         <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="{$ls}"/><!--ls edge-->
         <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$ms}"/><!--ms edge-->
         
-        <circle cx="50" cy="50" r="{$h}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
-        <circle cx="300" cy="300" r="{$s}" stroke="green" stroke-width="1" fill="white" /><!--s node-->
-        <circle cx="300" cy="50" r="{$m}" stroke="red" stroke-width="" fill="white" /><!--m node-->
-        <circle cx="50" cy="300" r="{$l}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
+        <circle cx="50" cy="50" r="{($h*$h div 130)}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
+        <circle cx="300" cy="300" r="{($s*$s div 130)}" stroke="green" stroke-width="1" fill="white" /><!--s node-->
+        <circle cx="300" cy="50" r="{($m*$m div 130)}" stroke="red" stroke-width="" fill="white" /><!--m node-->
+        <circle cx="50" cy="300" r="{($l*$l div 130)}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
         
         
         <circle cx="-10" cy="0" r="{$D}" stroke="Black" stroke-width="1" fill="white" /><!--Donovan node-->
         <circle cx="-55" cy="-45" r="{$Lee}" stroke="Black" stroke-width="1" fill="white" /><!--Lee_Montogue node-->
         <circle cx="-40" cy="-30" r="{$JN}" stroke="Black" stroke-width="1" fill="white" /><!--Jean_Nicolas node-->
         <circle cx="-25" cy="-15" r="{$HH}" stroke="Black" stroke-width="1" fill="white" /><!--Heinz_Hellmer node-->
-        
-        
         <circle cx="-10" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
+        
+        
+        <circle cx="350" cy="350" r="{($C*$C div 130)}" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
+        
+        
        
         
-        <text x="35" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison</text>
+        <text x="35" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison ({$h})</text>
         <text x="35" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon</text>
         <text x="280" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney</text>
         <text x="289" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr</text>
@@ -100,14 +106,25 @@ return
    
    </g>
 </svg>
-<p>First let’s look at the four actual members of the band. John Lennon and Paul McCartney did most of the song writing, being listed as a writer on 138 tracks and 137 respectively.  This is illustrated by the size of their circles. George Harrison had 38 songs to his name while Ringo Starr only had 12. In the entire discography there are only 8 songs that list all of the members as writers.
+<p>First let’s look at the four actual members of the band. John Lennon and Paul McCartney did most of the song writing, being listed as a writer on 138 tracks and 137 respectively.  This is illustrated by the size of their circles. George Harrison had 38 songs to his name while Ringo Starr only had 12. In the entire discography there are only 8 songs that list all of the members as writers.</p>
 
-In addition to the four Beatles there are 5 other people listed.  George Harrison and John Lennon released 1 song under the Beatles name with Yoko Ono listed as a cowriter. This graph excludes the songs that would be released under either of their names. 
+<p>In addition to the four Beatles there are 5 other people listed.  George Harrison and John Lennon released 1 song under the Beatles name with Yoko Ono listed as a cowriter. This graph excludes the songs that would be released under either of their names. 
+The same thing occurred between singer Donovan and Lennon and McCartney. </p>
 
-The same thing occurred between singer Donovan and Lennon and McCartney. 
+<p>Nicolas, Hellmer and Montogue are all listed as writers due to their work translating two tracks into German. Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to Hold Your Hand) with Montogue  and Nicolas listed for Sie Liebt dich  (She loves you)</p>
 
-Nicolas, Hellmer and Montogue are all listed as writers due to their work translating two tracks into German. Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to Hold Your Hand)
- with Montogue  and Nicolas listed for Sie Liebt dich  (She loves you)</p>
+
+<h2>Cover Song Writers</h2>
+<ul>{
+
+let $covwrite := //Q{}song[./Q{}cover/@status="True"]/Q{}songWrite/data(@writer) => string-join() 
+(:let $writers := $covwrite => tokenize($covwrite,"\s")
+for $w in distinct-values($writers) :)
+return <li>{$covwrite}</li>
+
+
+}</ul>
+
 </div>
 </body>
 </html>
