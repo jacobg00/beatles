@@ -2,9 +2,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Song Modality</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body><!--whc: header, navbar here-->
+        <link rel="stylesheet" type="text/css" href="style.css"><script src="/beatles/js/sticky.js"></script></head>
+    <body>
+        <div class="header"><img src="images/Beatles_logo.svg"></div>
+        <div id="navbar">
+            <div class="navbar"><a href="/beatles/index.html">Home</a><div class="dropdown"><button class="dropbtn">About</button><div class="dropdown-content"><a href="/beatles/HTML/research.html">Research Questions</a><a href="/beatles/HTML/method.html">Methodology</a><a href="/beatles/HTML/team.html">Team</a></div>
+                </div>
+                <div class="dropdown"><button class="dropbtn">Analysis</button><div class="dropdown-content"><a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a><a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a><a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a><a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a></div>
+                </div>
+                <div class="dropdown"><button class="dropbtn">Sources</button><div class="dropdown-content"><a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a><a href="http://www.mybeatles.net/charts.html">Charts</a></div>
+                </div>
+            </div>
+        </div>
         <div id="content">
             <h1>Song Lyrics: Modality Score</h1>
             <p>As we considered the lyrical content of the Beatles songs, we started to wonder: Which
@@ -27,6 +36,7 @@
                     use in the whole discography. We then took the average of those multiples across the
                     song.
                     </li>
+                <li>And finally, looking at trends over time, <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality_date.xquery">yet another XQuery</a> created an HTML page to <a href="https://jacobg00.github.io/beatles/HTML/song_modality_over_time.html">compare language use over time</a>.</li>
             </ol>
             <p><b>What does this mean in practice?</b></p>
             <p>The word "you" is used 2073 times across the discography. It appears 11 times in the song "All I've Got to Do". That means that, in that song, we multiply

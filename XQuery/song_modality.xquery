@@ -2,18 +2,57 @@ declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
 declare variable $words-sep := doc('../XML/words_separated_per_song.xml');
 declare variable $word-score := doc('../XML/word_score_total.xml');
-
+(:This XQuery creates song_modality.html:)
 <html><head><title>Song Modality</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
-</head><body>
-<!--whc: header, navbar here-->
+<script src="/beatles/js/sticky.js"></script>
+</head>
+<body>
+        <div class="header">
+        <img src="/beatles/images/Beatles_logo.svg"/>
+        </div>
+        <div id="navbar">
+            <div class="navbar">
+                
+                <a href="/beatles/index.html">Home</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/research.html">Research Questions</a>
+                        <a href="/beatles/HTML/method.html">Methodology</a>
+                        <a href="/beatles/HTML/team.html">Team</a>                 
+                    </div>
+                </div>      
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Analysis</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a>
+                        <a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a>
+                        <a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a>
+                        <a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a>
+                    </div>                                 
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Sources</button>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a>
+                        <a href="http://www.mybeatles.net/charts.html">Charts</a>
+                    </div>                                 
+                </div>
+            </div>
+        </div>
 <div id="content">
 <h1>Song Lyrics: Modality Score</h1>
 <p>As we considered the lyrical content of the Beatles songs, we started to wonder: Which Beatles songs are most typical, most quintessentially "Beatles", in their vocabulary? Calculating this turned out to be possible, but very tricky, and it required us to break the problem into several smaller steps, generating three separate XQuery document and two ancillary XML documents along the way. Here are our steps.</p>
 <ol><li>First, we needed to write an XQuery to string together the lyrics from all the songs, and then to "tokenize" the text (divide the lyrics into individual words). It would then count the frequency of each word across the entire corpus of Beatles lyrics. The <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">first version</a> of this created [link Vince's HTML output here], for visual display; the <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score_to_xml.xquery">second version</a>  instead created a <a href="https://github.com/jacobg00/beatles/blob/main/XML/word_score_total.xml">new XML file</a> with the same data. This assigned each word an "overall frequency score" indicating how common it was across the whole discography.</li>
 <li>Second, we needed to run <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score.xquery">a similar XQuery</a> to count the frequency of each word on a song-by-song basis. This generated <a href="https://github.com/jacobg00/beatles/blob/main/XML/words_separated_per_song.xml">another new XML file</a> in which each song had a list of the words used in it, and the number of times each one was used.</li>
 <li>Third, bringing these together, was <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality.xquery">a new XQuery</a> to generate the HTML page you are reading right now, and especially the table below. On a song-by-song basis, it cross-references the two new XML files. As it loops over each song (excluding instrumentals, which have no lyrics), it looks at the frequency of each word in that song, and then multiplies that by the frequency of that word's use in the whole discography. We then took the average of those multiples across the song.
-</li></ol>
+</li>
+<li>And finally, looking at trends over time, <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality_date.xquery">yet another XQuery</a> created an HTML page to <a href="https://jacobg00.github.io/beatles/HTML/song_modality_over_time.html">compare language use over time</a>.</li>
+</ol>
 <p><b>What does this mean in practice?</b></p>
 
 <p>The word "you" is used {$word-score//word[./v/text()="you"]/vScore/data()} times across the discography. It appears {$words-sep//song[./songName/string()="All I've Got to Do"]/lyrics-counted/word[./v/string()="you"]/count/data()} times in the song "All I've Got to Do". That means that, in that song, we multiply {$word-score//word[./v/text()="you"]/vScore/data()} times {$words-sep//song[./songName/string()="All I've Got to Do"]/lyrics-counted/word[./v/string()="you"]/count/data()} to get {$word-score//word[./v/text()="you"]/vScore/data() * $words-sep//song[./songName/string()="All I've Got to Do"]/lyrics-counted/word[./v/string()="you"]/count/data()}. This high number means that the song has used a very common word a large number of times. This contributes to a higher score for the song, meaning that is closer to the "modal" -- that is, the most typical -- Beatles song, as measured by word use frequency.</p>

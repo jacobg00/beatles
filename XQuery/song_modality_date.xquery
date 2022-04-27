@@ -3,12 +3,49 @@ declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml');
 declare variable $words-sep := doc('../XML/words_separated_per_song.xml');
 declare variable $word-score := doc('../XML/word_score_total.xml');
 declare variable $bbSongs := doc('../XML/beatles_billboard_songs_US.xml');
-<html><head><title>Modality: Covers</title>
+<html><head><title>Modality: Date</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="/beatles/js/sticky.js"></script>
 </head>
 <body>
+<div class="header">
+        <img src="/beatles/images/Beatles_logo.svg"/>
+        </div>
+        <div id="navbar">
+            <div class="navbar">
+                
+                <a href="/beatles/index.html">Home</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/research.html">Research Questions</a>
+                        <a href="/beatles/HTML/method.html">Methodology</a>
+                        <a href="/beatles/HTML/team.html">Team</a>                 
+                    </div>
+                </div>      
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Analysis</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a>
+                        <a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a>
+                        <a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a>
+                        <a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a>
+                    </div>                                 
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Sources</button>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a>
+                        <a href="http://www.mybeatles.net/charts.html">Charts</a>
+                    </div>                                 
+                </div>
+            </div>
+        </div>
 <div id="content">
-<h1>Song Modality: Date</h1>
+<h1>Song Modality: Trends Over Time</h1>
 <p>Is there a noteworthy difference in word usage patterns over time? </p>
 <p>Chronologically, the key date to look for is <b>1964</b>, since The Beatles began their first US tour -- commonly known as 
 <a href="https://www.britannica.com/event/British-Invasion">"The British Invasion"</a> -- with a concert in New York City
@@ -54,10 +91,15 @@ return
    <line x1="{($n * 4)}" y1="0" x2="{($n * 4)}" y2="{($score div -14)}" stroke="black" stroke-width="4"/>
    }</g></svg>
 <h2>Visual subdivision</h2> 
-<p>The graph above is visually confusing, yet it is full of data. Let's break it down. We know that the left has 
-high scores (focus on common words) and the right has low scores (focus on uncommon words), so we can cut out 
-the height element. We can also disaggregate the bars by year, and set the background to light grey so the blue 
-background of the website is eliminated as a factor.</p>
+<p>The graph above is visually confusing, yet it is full of data. Even a brief glance
+will show that the "warm" colors (red, orange, yellow) are most represented in the upper
+ half of the spectrum, while the cooler colors (especially cyan, blue, purple, and black) 
+ are more heavily represented in the lower half.</p>
+ <p>What does this mean? Let's break it down. We know that the left has 
+high scores (focus on fewer common words, repeated often) and the right has low scores (focus on uncommon words, 
+or words used fewer times per song, so more linguistical variety); so we can cut out 
+the height element that is used to indicate that. We can also disaggregate the bars by year, and set the background to light grey so the blue 
+background of the website is eliminated as a visually confusing factor.</p>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" style="background-color:#d9d9d9">
    <g alignment-baseline="baseline" transform="translate(0,200)">
