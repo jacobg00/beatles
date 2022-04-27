@@ -47,7 +47,7 @@ declare variable $word-score := doc('../XML/word_score_total.xml');
 <div id="content">
 <h1>Song Lyrics: Modality Score</h1>
 <p>As we considered the lyrical content of the Beatles songs, we started to wonder: Which Beatles songs are most typical, most quintessentially "Beatles", in their vocabulary? Calculating this turned out to be possible, but very tricky, and it required us to break the problem into several smaller steps, generating three separate XQuery document and two ancillary XML documents along the way. Here are our steps.</p>
-<ol><li>First, we needed to write an XQuery to string together the lyrics from all the songs, and then to "tokenize" the text (divide the lyrics into individual words). It would then count the frequency of each word across the entire corpus of Beatles lyrics. The <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">first version</a> of this created [link Vince's HTML output here], for visual display; the <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score_to_xml.xquery">second version</a>  instead created a <a href="https://github.com/jacobg00/beatles/blob/main/XML/word_score_total.xml">new XML file</a> with the same data. This assigned each word an "overall frequency score" indicating how common it was across the whole discography.</li>
+<ol><li>First, we needed to write an XQuery to string together the lyrics from all the songs, and then to "tokenize" the text (divide the lyrics into individual words). It would then count the frequency of each word across the entire corpus of Beatles lyrics. The <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">first version</a> of this created <a href="/beatles/HTML/word_count_output.html">this page</a>, for visual display; the <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score_to_xml.xquery">second version</a>  instead created a <a href="https://github.com/jacobg00/beatles/blob/main/XML/word_score_total.xml">new XML file</a> with the same data. This assigned each word an "overall frequency score" indicating how common it was across the whole discography.</li>
 <li>Second, we needed to run <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score.xquery">a similar XQuery</a> to count the frequency of each word on a song-by-song basis. This generated <a href="https://github.com/jacobg00/beatles/blob/main/XML/words_separated_per_song.xml">another new XML file</a> in which each song had a list of the words used in it, and the number of times each one was used.</li>
 <li>Third, bringing these together, was <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality.xquery">a new XQuery</a> to generate the HTML page you are reading right now, and especially the table below. On a song-by-song basis, it cross-references the two new XML files. As it loops over each song (excluding instrumentals, which have no lyrics), it looks at the frequency of each word in that song, and then multiplies that by the frequency of that word's use in the whole discography. We then took the average of those multiples across the song.
 </li>
@@ -81,7 +81,7 @@ return ($score)))
 https://stackoverflow.com/questions/71911039/xquery-how-do-i-use-the-results-of-an-inner-for-loop-to-order-the-results-of-an :)}
 
 <table>
-<tr><th>Rank</th><th>Song Title</th><th>Modality Score</th></tr>
+<tr><th>Rank</th><th>Year</th><th>Song Title</th><th>Modality Score</th></tr>
 {for $song in $words-sep//song[.//word]
 let $words := $song/lyrics-counted/word,
     $score := round-half-to-even(avg(
@@ -90,7 +90,7 @@ let $words := $song/lyrics-counted/word,
         $word-score//word[./v/string() = $word/v/string()]/vScore/data()   ))
 order by $score descending
 count $n
-return (<tr><td>{$n}</td><td>{$song/songName/string()}</td>
+return (<tr><td>{$n}</td><td>{$song/year/data()}</td><td>{$song/songName/string()}</td>
         <td>{$score}</td>
         </tr>)
 }

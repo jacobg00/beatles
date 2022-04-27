@@ -4,7 +4,7 @@
         <title>Song Modality</title>
         <link rel="stylesheet" type="text/css" href="style.css"><script src="/beatles/js/sticky.js"></script></head>
     <body>
-        <div class="header"><img src="images/Beatles_logo.svg"></div>
+        <div class="header"><img src="/beatles/images/Beatles_logo.svg"></div>
         <div id="navbar">
             <div class="navbar"><a href="/beatles/index.html">Home</a><div class="dropdown"><button class="dropbtn">About</button><div class="dropdown-content"><a href="/beatles/HTML/research.html">Research Questions</a><a href="/beatles/HTML/method.html">Methodology</a><a href="/beatles/HTML/team.html">Team</a></div>
                 </div>
@@ -25,7 +25,7 @@
                 <li>First, we needed to write an XQuery to string together the lyrics from all the songs,
                     and then to "tokenize" the text (divide the lyrics into individual words). It would
                     then count the frequency of each word across the entire corpus of Beatles lyrics.
-                    The <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">first version</a> of this created [link Vince's HTML output here], for visual display; the <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score_to_xml.xquery">second version</a>  instead created a <a href="https://github.com/jacobg00/beatles/blob/main/XML/word_score_total.xml">new XML file</a> with the same data. This assigned each word an "overall frequency score" indicating
+                    The <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">first version</a> of this created <a href="/beatles/HTML/word_count_output.html">this page</a>, for visual display; the <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score_to_xml.xquery">second version</a>  instead created a <a href="https://github.com/jacobg00/beatles/blob/main/XML/word_score_total.xml">new XML file</a> with the same data. This assigned each word an "overall frequency score" indicating
                     how common it was across the whole discography.</li>
                 <li>Second, we needed to run <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score.xquery">a similar XQuery</a> to count the frequency of each word on a song-by-song basis. This generated <a href="https://github.com/jacobg00/beatles/blob/main/XML/words_separated_per_song.xml">another new XML file</a> in which each song had a list of the words used in it, and the number of times each
                     one was used.</li>
@@ -90,1273 +90,1525 @@
             <table>
                 <tr>
                     <th>Rank</th>
+                    <th>Year</th>
                     <th>Song Title</th>
                     <th>Modality Score</th>
                 </tr>
                 <tr>
                     <td>1</td>
+                    <td>1969</td>
                     <td>I Want You (She's So Heavy)</td>
                     <td>8197</td>
                 </tr>
                 <tr>
                     <td>2</td>
+                    <td>1967</td>
                     <td>Hello, GoodBye</td>
                     <td>6142</td>
                 </tr>
                 <tr>
                     <td>3</td>
+                    <td>1963</td>
                     <td>I Wanna Be Your Man</td>
                     <td>4890</td>
                 </tr>
                 <tr>
                     <td>4</td>
+                    <td>1967</td>
                     <td>You Know My Name (Look Up the
                         Number)</td>
                     <td>4085</td>
                 </tr>
                 <tr>
                     <td>5</td>
+                    <td>1969</td>
                     <td>The End</td>
                     <td>3413</td>
                 </tr>
                 <tr>
                     <td>6</td>
+                    <td>1968</td>
                     <td>Why Don't We Do It in the Road?</td>
                     <td>2886</td>
                 </tr>
                 <tr>
                     <td>7</td>
+                    <td>1962</td>
                     <td>P.S. I Love You</td>
                     <td>2777</td>
                 </tr>
                 <tr>
                     <td>8</td>
+                    <td>1962</td>
                     <td>Love Me Do</td>
                     <td>2776</td>
                 </tr>
                 <tr>
                     <td>9</td>
+                    <td>1969</td>
                     <td>Oh! Darling</td>
                     <td>2634</td>
                 </tr>
                 <tr>
                     <td>10</td>
+                    <td>1962</td>
                     <td>Like Dreamers Do</td>
                     <td>2495</td>
                 </tr>
                 <tr>
                     <td>11</td>
+                    <td>1963</td>
                     <td>From Me to You</td>
                     <td>2491</td>
                 </tr>
                 <tr>
                     <td>12</td>
+                    <td>1963</td>
                     <td>She Loves You</td>
                     <td>2308</td>
                 </tr>
                 <tr>
                     <td>13</td>
+                    <td>1967</td>
                     <td>All You Need Is Love</td>
                     <td>2288</td>
                 </tr>
                 <tr>
                     <td>14</td>
+                    <td>1967</td>
                     <td>Magical Mystery Tour</td>
                     <td>2226</td>
                 </tr>
                 <tr>
                     <td>15</td>
+                    <td>1969</td>
                     <td>Dig a Pony</td>
                     <td>2157</td>
                 </tr>
                 <tr>
                     <td>16</td>
+                    <td>1963</td>
                     <td>I Want to Hold Your Hand</td>
                     <td>2057</td>
                 </tr>
                 <tr>
                     <td>17</td>
+                    <td>1958</td>
                     <td>In Spite of All the Danger</td>
                     <td>2018</td>
                 </tr>
                 <tr>
                     <td>18</td>
+                    <td>1964</td>
                     <td>Leave My Kitten Alone</td>
                     <td>1977</td>
                 </tr>
                 <tr>
                     <td>19</td>
+                    <td>1964</td>
                     <td>You Know What to Do</td>
                     <td>1970</td>
                 </tr>
                 <tr>
                     <td>20</td>
+                    <td>1965</td>
                     <td>You Like Me Too Much</td>
                     <td>1940</td>
                 </tr>
                 <tr>
                     <td>21</td>
+                    <td>1965</td>
                     <td>The Night Before</td>
                     <td>1933</td>
                 </tr>
                 <tr>
                     <td>22</td>
+                    <td>1964</td>
                     <td>I Should Have Known Better</td>
                     <td>1914</td>
                 </tr>
                 <tr>
                     <td>23</td>
+                    <td>1964</td>
                     <td>You Can't Do That</td>
                     <td>1867</td>
                 </tr>
                 <tr>
                     <td>24</td>
+                    <td>1963</td>
                     <td>Lonesome Tears in My Eyes</td>
                     <td>1859</td>
                 </tr>
                 <tr>
                     <td>25</td>
+                    <td>1970</td>
                     <td>I Me Mine</td>
                     <td>1854</td>
                 </tr>
                 <tr>
                     <td>26</td>
+                    <td>1962</td>
                     <td>Hello Little Girl</td>
                     <td>1835</td>
                 </tr>
                 <tr>
                     <td>27</td>
+                    <td>1968</td>
                     <td>Helter Skelter</td>
                     <td>1835</td>
                 </tr>
                 <tr>
                     <td>28</td>
+                    <td>1963</td>
                     <td>A Shot of Rhythm and Blues</td>
                     <td>1819</td>
                 </tr>
                 <tr>
                     <td>29</td>
+                    <td>1964</td>
                     <td>A Hard Day's Night</td>
                     <td>1816</td>
                 </tr>
                 <tr>
                     <td>30</td>
+                    <td>1964</td>
                     <td>I Feel Fine</td>
                     <td>1787</td>
                 </tr>
                 <tr>
                     <td>31</td>
+                    <td>1964</td>
                     <td>Sie liebt dich</td>
                     <td>1755</td>
                 </tr>
                 <tr>
                     <td>32</td>
+                    <td>1962</td>
                     <td>Love of the Loved</td>
                     <td>1720</td>
                 </tr>
                 <tr>
                     <td>33</td>
+                    <td>1965</td>
                     <td>The Word</td>
                     <td>1653</td>
                 </tr>
                 <tr>
                     <td>34</td>
+                    <td>1963</td>
                     <td>Bad to Me</td>
                     <td>1652</td>
                 </tr>
                 <tr>
                     <td>35</td>
+                    <td>1963</td>
                     <td>I Just Don't Understand</td>
                     <td>1616</td>
                 </tr>
                 <tr>
                     <td>36</td>
+                    <td>1963</td>
                     <td>All I've Got to Do</td>
                     <td>1606</td>
                 </tr>
                 <tr>
                     <td>37</td>
+                    <td>1963</td>
                     <td>I'll Get You</td>
                     <td>1598</td>
                 </tr>
                 <tr>
                     <td>38</td>
+                    <td>1964</td>
                     <td>Tell Me Why</td>
                     <td>1585</td>
                 </tr>
                 <tr>
                     <td>39</td>
+                    <td>1963</td>
                     <td>Thank You Girl</td>
                     <td>1580</td>
                 </tr>
                 <tr>
                     <td>40</td>
+                    <td>1964</td>
                     <td>One and One Is Two</td>
                     <td>1575</td>
                 </tr>
                 <tr>
                     <td>41</td>
+                    <td>1965</td>
                     <td>Michelle</td>
                     <td>1573</td>
                 </tr>
                 <tr>
                     <td>42</td>
+                    <td>1963</td>
                     <td>Anna (Go to Him)</td>
                     <td>1552</td>
                 </tr>
                 <tr>
                     <td>43</td>
+                    <td>1968</td>
                     <td>Revolution 1</td>
                     <td>1543</td>
                 </tr>
                 <tr>
                     <td>44</td>
+                    <td>1968</td>
                     <td>Everybody's Got
                         Something to Hide Except Me and My Monkey</td>
                     <td>1537</td>
                 </tr>
                 <tr>
                     <td>45</td>
+                    <td>1965</td>
                     <td>You Won't See Me</td>
                     <td>1523</td>
                 </tr>
                 <tr>
                     <td>46</td>
+                    <td>1966</td>
                     <td>She Said She Said</td>
                     <td>1520</td>
                 </tr>
                 <tr>
                     <td>47</td>
+                    <td>1965</td>
                     <td>You're Going to Lose That Girl</td>
                     <td>1516</td>
                 </tr>
                 <tr>
                     <td>48</td>
+                    <td>1968</td>
                     <td>Child of Nature</td>
                     <td>1514</td>
                 </tr>
                 <tr>
                     <td>49</td>
+                    <td>1963</td>
                     <td>Do You Want to Know a Secret?</td>
                     <td>1513</td>
                 </tr>
                 <tr>
                     <td>50</td>
+                    <td>1965</td>
                     <td>That Means a Lot</td>
                     <td>1497</td>
                 </tr>
                 <tr>
                     <td>51</td>
+                    <td>1965</td>
                     <td>Tell Me What You See</td>
                     <td>1473</td>
                 </tr>
                 <tr>
                     <td>52</td>
+                    <td>1969</td>
                     <td>Because I Know You Love Me So</td>
                     <td>1460</td>
                 </tr>
                 <tr>
                     <td>53</td>
+                    <td>1962</td>
                     <td>Please Please Me</td>
                     <td>1457</td>
                 </tr>
                 <tr>
                     <td>54</td>
+                    <td>1963</td>
                     <td>Ask Me Why</td>
                     <td>1451</td>
                 </tr>
                 <tr>
                     <td>55</td>
+                    <td>1969</td>
                     <td>For You Blue</td>
                     <td>1451</td>
                 </tr>
                 <tr>
                     <td>56</td>
+                    <td>1969</td>
                     <td>Come and Get It</td>
                     <td>1450</td>
                 </tr>
                 <tr>
                     <td>57</td>
+                    <td>1961</td>
                     <td>Ain't She Sweet</td>
                     <td>1440</td>
                 </tr>
                 <tr>
                     <td>58</td>
+                    <td>1965</td>
                     <td>Ticket to Ride</td>
                     <td>1429</td>
                 </tr>
                 <tr>
                     <td>59</td>
+                    <td>1965</td>
                     <td>I'm Down</td>
                     <td>1418</td>
                 </tr>
                 <tr>
                     <td>60</td>
+                    <td>1968</td>
                     <td>Birthday</td>
                     <td>1397</td>
                 </tr>
                 <tr>
                     <td>61</td>
+                    <td>1964</td>
                     <td>She's a Woman</td>
                     <td>1376</td>
                 </tr>
                 <tr>
                     <td>62</td>
+                    <td>1968</td>
                     <td>Long, Long, Long</td>
                     <td>1372</td>
                 </tr>
                 <tr>
                     <td>63</td>
+                    <td>1965</td>
                     <td>Run for Your Life</td>
                     <td>1369</td>
                 </tr>
                 <tr>
                     <td>64</td>
+                    <td>1964</td>
                     <td>I'll Be Back</td>
                     <td>1361</td>
                 </tr>
                 <tr>
                     <td>65</td>
+                    <td>1965</td>
                     <td>Wait</td>
                     <td>1357</td>
                 </tr>
                 <tr>
                     <td>66</td>
+                    <td>1967</td>
                     <td>Your Mother Should Know</td>
                     <td>1351</td>
                 </tr>
                 <tr>
                     <td>67</td>
+                    <td>1964</td>
                     <td>Mr. Moonlight</td>
                     <td>1342</td>
                 </tr>
                 <tr>
                     <td>68</td>
+                    <td>1965</td>
                     <td>Drive My Car</td>
                     <td>1326</td>
                 </tr>
                 <tr>
                     <td>69</td>
+                    <td>1964</td>
                     <td>Baby's in Black</td>
                     <td>1321</td>
                 </tr>
                 <tr>
                     <td>70</td>
+                    <td>1968</td>
                     <td>What's The New Mary Jane</td>
                     <td>1320</td>
                 </tr>
                 <tr>
                     <td>71</td>
+                    <td>1969</td>
                     <td>Don't Let Me Down</td>
                     <td>1312</td>
                 </tr>
                 <tr>
                     <td>72</td>
+                    <td>1965</td>
                     <td>If You've Got Trouble</td>
                     <td>1307</td>
                 </tr>
                 <tr>
                     <td>73</td>
+                    <td>1963</td>
                     <td>Tip of My Tongue</td>
                     <td>1287</td>
                 </tr>
                 <tr>
                     <td>74</td>
+                    <td>1967</td>
                     <td>With a Little Help from My
                         Friends</td>
                     <td>1280</td>
                 </tr>
                 <tr>
                     <td>75</td>
+                    <td>1965</td>
                     <td>I'm Looking Through You</td>
                     <td>1267</td>
                 </tr>
                 <tr>
                     <td>76</td>
+                    <td>1964</td>
                     <td>What You're Doing</td>
                     <td>1258</td>
                 </tr>
                 <tr>
                     <td>77</td>
+                    <td>1968</td>
                     <td>Revolution</td>
                     <td>1245</td>
                 </tr>
                 <tr>
                     <td>78</td>
+                    <td>1964</td>
                     <td>I'm Happy Just to Dance with
                         You</td>
                     <td>1243</td>
                 </tr>
                 <tr>
                     <td>79</td>
+                    <td>1963</td>
                     <td>Hold Me Tight</td>
                     <td>1242</td>
                 </tr>
                 <tr>
                     <td>80</td>
+                    <td>1969</td>
                     <td>One After 909</td>
                     <td>1239</td>
                 </tr>
                 <tr>
                     <td>81</td>
+                    <td>1964</td>
                     <td>Eight Days a Week</td>
                     <td>1219</td>
                 </tr>
                 <tr>
                     <td>82</td>
+                    <td>1965</td>
                     <td>What Goes On</td>
                     <td>1219</td>
                 </tr>
                 <tr>
                     <td>83</td>
+                    <td>1969</td>
                     <td>Carry That Weight</td>
                     <td>1218</td>
                 </tr>
                 <tr>
                     <td>84</td>
+                    <td>1963</td>
                     <td>I Got a Woman</td>
                     <td>1211</td>
                 </tr>
                 <tr>
                     <td>85</td>
+                    <td>1969</td>
                     <td>Something</td>
                     <td>1210</td>
                 </tr>
                 <tr>
                     <td>86</td>
+                    <td>1965</td>
                     <td>Act Naturally</td>
                     <td>1203</td>
                 </tr>
                 <tr>
                     <td>87</td>
+                    <td>1964</td>
                     <td>I Call Your Name</td>
                     <td>1203</td>
                 </tr>
                 <tr>
                     <td>88</td>
+                    <td>1964</td>
                     <td>Can't Buy Me Love</td>
                     <td>1191</td>
                 </tr>
                 <tr>
                     <td>89</td>
+                    <td>1965</td>
                     <td>Help!</td>
                     <td>1179</td>
                 </tr>
                 <tr>
                     <td>90</td>
+                    <td>1964</td>
                     <td>Everybody's Trying to Be My
                         Baby</td>
                     <td>1178</td>
                 </tr>
                 <tr>
                     <td>91</td>
+                    <td>1969</td>
                     <td>Here Comes the Sun</td>
                     <td>1165</td>
                 </tr>
                 <tr>
                     <td>92</td>
+                    <td>1965</td>
                     <td>It's Only Love</td>
                     <td>1160</td>
                 </tr>
                 <tr>
                     <td>93</td>
+                    <td>1964</td>
                     <td>Things We Said Today</td>
                     <td>1152</td>
                 </tr>
                 <tr>
                     <td>94</td>
+                    <td>1963</td>
                     <td>Devil in Her Heart</td>
                     <td>1149</td>
                 </tr>
                 <tr>
                     <td>95</td>
+                    <td>1963</td>
                     <td>I'm In Love</td>
                     <td>1149</td>
                 </tr>
                 <tr>
                     <td>96</td>
+                    <td>1967</td>
                     <td>It's All Too Much</td>
                     <td>1148</td>
                 </tr>
                 <tr>
                     <td>97</td>
+                    <td>1968</td>
                     <td>Blackbird</td>
                     <td>1138</td>
                 </tr>
                 <tr>
                     <td>98</td>
+                    <td>1968</td>
                     <td>Don't Pass Me By</td>
                     <td>1138</td>
                 </tr>
                 <tr>
                     <td>99</td>
+                    <td>1964</td>
                     <td>No Reply</td>
                     <td>1128</td>
                 </tr>
                 <tr>
                     <td>100</td>
+                    <td>1968</td>
                     <td>Back in the U.S.S.R.</td>
                     <td>1126</td>
                 </tr>
                 <tr>
                     <td>101</td>
+                    <td>1963</td>
                     <td>It Won't Be Long</td>
                     <td>1123</td>
                 </tr>
                 <tr>
                     <td>102</td>
+                    <td>1963</td>
                     <td>Keep Your Hands Off My Baby</td>
                     <td>1122</td>
                 </tr>
                 <tr>
                     <td>103</td>
+                    <td>1965</td>
                     <td>Think for Yourself</td>
                     <td>1119</td>
                 </tr>
                 <tr>
                     <td>104</td>
+                    <td>1967</td>
                     <td>Getting Better</td>
                     <td>1113</td>
                 </tr>
                 <tr>
                     <td>105</td>
+                    <td>1964</td>
                     <td>I'll Follow the Sun</td>
                     <td>1110</td>
                 </tr>
                 <tr>
                     <td>106</td>
+                    <td>1968</td>
                     <td>Circles</td>
                     <td>1107</td>
                 </tr>
                 <tr>
                     <td>107</td>
+                    <td>1963</td>
                     <td>There's a Place</td>
                     <td>1102</td>
                 </tr>
                 <tr>
                     <td>108</td>
+                    <td>1968</td>
                     <td>Sexy Sadie</td>
                     <td>1097</td>
                 </tr>
                 <tr>
                     <td>109</td>
+                    <td>1968</td>
                     <td>I'm So Tired</td>
                     <td>1093</td>
                 </tr>
                 <tr>
                     <td>110</td>
+                    <td>1963</td>
                     <td>Baby It's You</td>
                     <td>1072</td>
                 </tr>
                 <tr>
                     <td>111</td>
+                    <td>1967</td>
                     <td>Baby, You're a Rich Man</td>
                     <td>1054</td>
                 </tr>
                 <tr>
                     <td>112</td>
+                    <td>1966</td>
                     <td>Strawberry Fields Forever</td>
                     <td>1048</td>
                 </tr>
                 <tr>
                     <td>113</td>
+                    <td>1965</td>
                     <td>Yes It Is</td>
                     <td>1034</td>
                 </tr>
                 <tr>
                     <td>114</td>
+                    <td>1968</td>
                     <td>I Will</td>
                     <td>1032</td>
                 </tr>
                 <tr>
                     <td>115</td>
+                    <td>1966</td>
                     <td>And Your Bird Can Sing</td>
                     <td>1027</td>
                 </tr>
                 <tr>
                     <td>116</td>
+                    <td>1964</td>
                     <td>I'm a Loser</td>
                     <td>1027</td>
                 </tr>
                 <tr>
                     <td>117</td>
+                    <td>1964</td>
                     <td>I Don't Want to Spoil the Party</td>
                     <td>1026</td>
                 </tr>
                 <tr>
                     <td>118</td>
+                    <td>1964</td>
                     <td>And I Love Her</td>
                     <td>1012</td>
                 </tr>
                 <tr>
                     <td>119</td>
+                    <td>1964</td>
                     <td>Every Little Thing</td>
                     <td>1008</td>
                 </tr>
                 <tr>
                     <td>120</td>
+                    <td>1960</td>
                     <td>You'll Be Mine</td>
                     <td>1008</td>
                 </tr>
                 <tr>
                     <td>121</td>
+                    <td>1966</td>
                     <td>Rain</td>
                     <td>1005</td>
                 </tr>
                 <tr>
                     <td>122</td>
+                    <td>1965</td>
                     <td>Day Tripper</td>
                     <td>1000</td>
                 </tr>
                 <tr>
                     <td>123</td>
+                    <td>1965</td>
                     <td>I Need You</td>
                     <td>996</td>
                 </tr>
                 <tr>
                     <td>124</td>
+                    <td>1964</td>
                     <td>If I Fell</td>
                     <td>987</td>
                 </tr>
                 <tr>
                     <td>125</td>
+                    <td>1968</td>
                     <td>While My Guitar Gently Weeps</td>
                     <td>983</td>
                 </tr>
                 <tr>
                     <td>126</td>
+                    <td>1963</td>
                     <td>Don't Ever Change</td>
                     <td>981</td>
                 </tr>
                 <tr>
                     <td>127</td>
+                    <td>1969</td>
                     <td>Taking a Trip to Carolina</td>
                     <td>969</td>
                 </tr>
                 <tr>
                     <td>128</td>
+                    <td>1966</td>
                     <td>I Want to Tell You</td>
                     <td>948</td>
                 </tr>
                 <tr>
                     <td>129</td>
+                    <td>1965</td>
                     <td>We Can Work It Out</td>
                     <td>937</td>
                 </tr>
                 <tr>
                     <td>130</td>
+                    <td>1968</td>
                     <td>Wild Honey Pie</td>
                     <td>916</td>
                 </tr>
                 <tr>
                     <td>131</td>
+                    <td>1963</td>
                     <td>Chains</td>
                     <td>908</td>
                 </tr>
                 <tr>
                     <td>132</td>
+                    <td>1968</td>
                     <td>Martha My Dear</td>
                     <td>906</td>
                 </tr>
                 <tr>
                     <td>133</td>
+                    <td>1963</td>
                     <td>I Saw Her Standing There</td>
                     <td>904</td>
                 </tr>
                 <tr>
                     <td>134</td>
+                    <td>1968</td>
                     <td>Ob-La-Di, Ob-La-Da</td>
                     <td>895</td>
                 </tr>
                 <tr>
                     <td>135</td>
+                    <td>1968</td>
                     <td>The Inner Light</td>
                     <td>887</td>
                 </tr>
                 <tr>
                     <td>136</td>
+                    <td>1968</td>
                     <td>Hey Jude</td>
                     <td>886</td>
                 </tr>
                 <tr>
                     <td>137</td>
+                    <td>1980</td>
                     <td>Real Love</td>
                     <td>882</td>
                 </tr>
                 <tr>
                     <td>138</td>
+                    <td>1968</td>
                     <td>Step Inside Love/Los Paranoias</td>
                     <td>882</td>
                 </tr>
                 <tr>
                     <td>139</td>
+                    <td>1963</td>
                     <td>I'll Be on My Way</td>
                     <td>881</td>
                 </tr>
                 <tr>
                     <td>140</td>
+                    <td>1964</td>
                     <td>When I Get Home</td>
                     <td>881</td>
                 </tr>
                 <tr>
                     <td>141</td>
+                    <td>1969</td>
                     <td>Get Back</td>
                     <td>873</td>
                 </tr>
                 <tr>
                     <td>142</td>
+                    <td>1966</td>
                     <td>Tomorrow Never Knows</td>
                     <td>869</td>
                 </tr>
                 <tr>
                     <td>143</td>
+                    <td>1963</td>
                     <td>Carol</td>
                     <td>867</td>
                 </tr>
                 <tr>
                     <td>144</td>
+                    <td>1963</td>
                     <td>I Got to Find My Baby</td>
                     <td>864</td>
                 </tr>
                 <tr>
                     <td>145</td>
+                    <td>1964</td>
                     <td>Any Time at All</td>
                     <td>861</td>
                 </tr>
                 <tr>
                     <td>146</td>
+                    <td>1966</td>
                     <td>For No One</td>
                     <td>860</td>
                 </tr>
                 <tr>
                     <td>147</td>
+                    <td>1969</td>
                     <td>Golden Slumbers</td>
                     <td>859</td>
                 </tr>
                 <tr>
                     <td>148</td>
+                    <td>1963</td>
                     <td>All My Loving</td>
                     <td>856</td>
                 </tr>
                 <tr>
                     <td>149</td>
+                    <td>1969</td>
                     <td>Old Brown Shoe</td>
                     <td>855</td>
                 </tr>
                 <tr>
                     <td>150</td>
+                    <td>1969</td>
                     <td>The Ballad of John and Yoko</td>
                     <td>849</td>
                 </tr>
                 <tr>
                     <td>151</td>
+                    <td>1968</td>
                     <td>Hey Bulldog</td>
                     <td>848</td>
                 </tr>
                 <tr>
                     <td>152</td>
+                    <td>1966</td>
                     <td>Taxman</td>
                     <td>847</td>
                 </tr>
                 <tr>
                     <td>153</td>
+                    <td>1963</td>
                     <td>Lucille</td>
                     <td>836</td>
                 </tr>
                 <tr>
                     <td>154</td>
+                    <td>1968</td>
                     <td>Not Guilty</td>
                     <td>836</td>
                 </tr>
                 <tr>
                     <td>155</td>
+                    <td>1968</td>
                     <td>Yer Blues</td>
                     <td>834</td>
                 </tr>
                 <tr>
                     <td>156</td>
+                    <td>1966</td>
                     <td>Paperback Writer</td>
                     <td>817</td>
                 </tr>
                 <tr>
                     <td>157</td>
+                    <td>1963</td>
                     <td>From Us to You</td>
                     <td>814</td>
                 </tr>
                 <tr>
                     <td>158</td>
+                    <td>1969</td>
                     <td>Let It Be</td>
                     <td>813</td>
                 </tr>
                 <tr>
                     <td>159</td>
+                    <td>1968</td>
                     <td>Honey Pie</td>
                     <td>811</td>
                 </tr>
                 <tr>
                     <td>160</td>
+                    <td>1969</td>
                     <td>Dig It</td>
                     <td>810</td>
                 </tr>
                 <tr>
                     <td>161</td>
+                    <td>1968</td>
                     <td>Dear Prudence</td>
                     <td>806</td>
                 </tr>
                 <tr>
                     <td>162</td>
+                    <td>1968</td>
                     <td>Cry Baby Cry</td>
                     <td>789</td>
                 </tr>
                 <tr>
                     <td>163</td>
+                    <td>1969</td>
                     <td>Teddy Boy</td>
                     <td>789</td>
                 </tr>
                 <tr>
                     <td>164</td>
+                    <td>1966</td>
                     <td>Here, There and Everywhere</td>
                     <td>788</td>
                 </tr>
                 <tr>
                     <td>165</td>
+                    <td>1965</td>
                     <td>In My Life</td>
                     <td>780</td>
                 </tr>
                 <tr>
                     <td>166</td>
+                    <td>1969</td>
                     <td>Octopus's Garden</td>
                     <td>774</td>
                 </tr>
                 <tr>
                     <td>167</td>
+                    <td>1968</td>
                     <td>Glass Onion</td>
                     <td>772</td>
                 </tr>
                 <tr>
                     <td>168</td>
+                    <td>1960</td>
                     <td>Hallelujah, I Love Her So</td>
                     <td>770</td>
                 </tr>
                 <tr>
                     <td>169</td>
+                    <td>1969</td>
                     <td>Because</td>
                     <td>769</td>
                 </tr>
                 <tr>
                     <td>170</td>
+                    <td>1964</td>
                     <td>I'll Cry Instead</td>
                     <td>764</td>
                 </tr>
                 <tr>
                     <td>171</td>
+                    <td>1968</td>
                     <td>The Continuing Story of Bungalow
                         Bill</td>
                     <td>763</td>
                 </tr>
                 <tr>
                     <td>172</td>
+                    <td>1965</td>
                     <td>Girl</td>
                     <td>761</td>
                 </tr>
                 <tr>
                     <td>173</td>
+                    <td>1965</td>
                     <td>Another Girl</td>
                     <td>746</td>
                 </tr>
                 <tr>
                     <td>174</td>
+                    <td>1964</td>
                     <td>Matchbox</td>
                     <td>746</td>
                 </tr>
                 <tr>
                     <td>175</td>
+                    <td>1963</td>
                     <td>Lend Me Your Comb</td>
                     <td>742</td>
                 </tr>
                 <tr>
                     <td>176</td>
+                    <td>1965</td>
                     <td>Yesterday</td>
                     <td>742</td>
                 </tr>
                 <tr>
                     <td>177</td>
+                    <td>1963</td>
                     <td>Crying, Waiting, Hoping</td>
                     <td>740</td>
                 </tr>
                 <tr>
                     <td>178</td>
+                    <td>1969</td>
                     <td>The Long and Winding Road</td>
                     <td>736</td>
                 </tr>
                 <tr>
                     <td>179</td>
+                    <td>1963</td>
                     <td>Little Child</td>
                     <td>733</td>
                 </tr>
                 <tr>
                     <td>180</td>
+                    <td>1968</td>
                     <td>Julia</td>
                     <td>729</td>
                 </tr>
                 <tr>
                     <td>181</td>
+                    <td>1968</td>
                     <td>Happiness Is a Warm Gun</td>
                     <td>719</td>
                 </tr>
                 <tr>
                     <td>182</td>
+                    <td>1967</td>
                     <td>Blue Jay Way</td>
                     <td>718</td>
                 </tr>
                 <tr>
                     <td>183</td>
+                    <td>1967</td>
                     <td>I Am the Walrus</td>
                     <td>718</td>
                 </tr>
                 <tr>
                     <td>184</td>
+                    <td>1967</td>
                     <td>Fixing a Hole</td>
                     <td>716</td>
                 </tr>
                 <tr>
                     <td>185</td>
+                    <td>1967</td>
                     <td>Good Morning Good Morning</td>
                     <td>716</td>
                 </tr>
                 <tr>
                     <td>186</td>
+                    <td>1968</td>
                     <td>Good Night</td>
                     <td>713</td>
                 </tr>
                 <tr>
                     <td>187</td>
+                    <td>1969</td>
                     <td>You Never Give Me Your Money</td>
                     <td>712</td>
                 </tr>
                 <tr>
                     <td>188</td>
+                    <td>1968</td>
                     <td>Savoy Truffle</td>
                     <td>705</td>
                 </tr>
                 <tr>
                     <td>189</td>
+                    <td>1969</td>
                     <td>Watching Rainbows</td>
                     <td>703</td>
                 </tr>
                 <tr>
                     <td>190</td>
+                    <td>1969</td>
                     <td>Two of Us</td>
                     <td>699</td>
                 </tr>
                 <tr>
                     <td>191</td>
+                    <td>1966</td>
                     <td>Yellow Submarine</td>
                     <td>697</td>
                 </tr>
                 <tr>
                     <td>192</td>
+                    <td>1977</td>
                     <td>Free as a Bird</td>
                     <td>688</td>
                 </tr>
                 <tr>
                     <td>193</td>
+                    <td>1964</td>
                     <td>I Forgot to Remember to Forget</td>
                     <td>683</td>
                 </tr>
                 <tr>
                     <td>194</td>
+                    <td>1966</td>
                     <td>I'm Only Sleeping</td>
                     <td>679</td>
                 </tr>
                 <tr>
                     <td>195</td>
+                    <td>1967</td>
                     <td>Christmas Time (Is Here Again)</td>
                     <td>671</td>
                 </tr>
                 <tr>
                     <td>196</td>
+                    <td>1969</td>
                     <td>Her Majesty</td>
                     <td>670</td>
                 </tr>
                 <tr>
                     <td>197</td>
+                    <td>1963</td>
                     <td>A Taste of Honey</td>
                     <td>667</td>
                 </tr>
                 <tr>
                     <td>198</td>
+                    <td>1967</td>
                     <td>Lucy in the Sky with Diamonds</td>
                     <td>656</td>
                 </tr>
                 <tr>
                     <td>199</td>
+                    <td>1967</td>
                     <td>Sgt. Pepper's Lonely Hearts Club
                         Band</td>
                     <td>655</td>
                 </tr>
                 <tr>
                     <td>200</td>
+                    <td>1966</td>
                     <td>Eleanor Rigby</td>
                     <td>646</td>
                 </tr>
                 <tr>
                     <td>201</td>
+                    <td>1966</td>
                     <td>Penny Lane</td>
                     <td>644</td>
                 </tr>
                 <tr>
                     <td>202</td>
+                    <td>1967</td>
                     <td>All Together Now</td>
                     <td>643</td>
                 </tr>
                 <tr>
                     <td>203</td>
+                    <td>1963</td>
                     <td>Glad All Over</td>
                     <td>635</td>
                 </tr>
                 <tr>
                     <td>204</td>
+                    <td>1966</td>
                     <td>When I'm Sixty-Four</td>
                     <td>627</td>
                 </tr>
                 <tr>
                     <td>205</td>
+                    <td>1963</td>
                     <td>This Boy</td>
                     <td>624</td>
                 </tr>
                 <tr>
                     <td>206</td>
+                    <td>1965</td>
                     <td>Norwegian Wood (This Bird Has
                         Flown)</td>
                     <td>621</td>
                 </tr>
                 <tr>
                     <td>207</td>
+                    <td>1965</td>
                     <td>You've Got to Hide Your Love
                         Away</td>
                     <td>620</td>
                 </tr>
                 <tr>
                     <td>208</td>
+                    <td>1963</td>
                     <td>Don't Bother Me</td>
                     <td>614</td>
                 </tr>
                 <tr>
                     <td>209</td>
+                    <td>1967</td>
                     <td>Within You Without You</td>
                     <td>608</td>
                 </tr>
                 <tr>
                     <td>210</td>
+                    <td>1969</td>
                     <td>Polythene Pam</td>
                     <td>606</td>
                 </tr>
                 <tr>
                     <td>211</td>
+                    <td>1965</td>
                     <td>If I Needed Someone</td>
                     <td>602</td>
                 </tr>
                 <tr>
                     <td>212</td>
+                    <td>1963</td>
                     <td>Misery</td>
                     <td>598</td>
                 </tr>
                 <tr>
                     <td>213</td>
+                    <td>1966</td>
                     <td>Doctor Robert</td>
                     <td>589</td>
                 </tr>
                 <tr>
                     <td>214</td>
+                    <td>1965</td>
                     <td>Nowhere Man</td>
                     <td>587</td>
                 </tr>
                 <tr>
                     <td>215</td>
+                    <td>1967</td>
                     <td>A Day in the Life</td>
                     <td>574</td>
                 </tr>
                 <tr>
                     <td>216</td>
+                    <td>1969</td>
                     <td>I've Got a Feeling</td>
                     <td>573</td>
                 </tr>
                 <tr>
                     <td>217</td>
+                    <td>1967</td>
                     <td>The Fool on the Hill</td>
                     <td>568</td>
                 </tr>
                 <tr>
                     <td>218</td>
+                    <td>1963</td>
                     <td>Clarabella</td>
                     <td>567</td>
                 </tr>
                 <tr>
                     <td>219</td>
+                    <td>1963</td>
                     <td>Boys</td>
                     <td>564</td>
                 </tr>
                 <tr>
                     <td>220</td>
+                    <td>1962</td>
                     <td>I Lost My Little Girl</td>
                     <td>559</td>
                 </tr>
                 <tr>
                     <td>221</td>
+                    <td>1966</td>
                     <td>Love You To</td>
                     <td>559</td>
                 </tr>
                 <tr>
                     <td>222</td>
+                    <td>1969</td>
                     <td>She Came in Through the Bathroom
                         Window</td>
                     <td>556</td>
                 </tr>
                 <tr>
                     <td>223</td>
+                    <td>1966</td>
                     <td>Good Day Sunshine</td>
                     <td>552</td>
                 </tr>
                 <tr>
                     <td>224</td>
+                    <td>1968</td>
                     <td>Junk</td>
                     <td>542</td>
                 </tr>
                 <tr>
                     <td>225</td>
+                    <td>1963</td>
                     <td>Not a Second Time</td>
                     <td>536</td>
                 </tr>
                 <tr>
                     <td>226</td>
+                    <td>1968</td>
                     <td>Sour Milk Sea</td>
                     <td>535</td>
                 </tr>
                 <tr>
                     <td>227</td>
+                    <td>1969</td>
                     <td>Come Together</td>
                     <td>524</td>
                 </tr>
                 <tr>
                     <td>228</td>
+                    <td>1965</td>
                     <td>I've Just Seen a Face</td>
                     <td>516</td>
                 </tr>
                 <tr>
                     <td>229</td>
+                    <td>1964</td>
                     <td>Johnny B. Goode</td>
                     <td>516</td>
                 </tr>
                 <tr>
                     <td>230</td>
+                    <td>1968</td>
                     <td>Rocky Raccoon</td>
                     <td>514</td>
                 </tr>
                 <tr>
                     <td>231</td>
+                    <td>1967</td>
                     <td>Lovely Rita</td>
                     <td>512</td>
                 </tr>
                 <tr>
                     <td>232</td>
+                    <td>1968</td>
                     <td>Heather</td>
                     <td>498</td>
                 </tr>
                 <tr>
                     <td>233</td>
+                    <td>1967</td>
                     <td>Only a Northern Song</td>
                     <td>495</td>
                 </tr>
                 <tr>
                     <td>234</td>
+                    <td>1969</td>
                     <td>All Things Must Pass</td>
                     <td>465</td>
                 </tr>
                 <tr>
                     <td>235</td>
+                    <td>1968</td>
                     <td>Piggies</td>
                     <td>459</td>
                 </tr>
                 <tr>
                     <td>236</td>
+                    <td>1968</td>
                     <td>Lady Madonna</td>
                     <td>448</td>
                 </tr>
                 <tr>
                     <td>237</td>
+                    <td>1965</td>
                     <td>Bad Boy</td>
                     <td>433</td>
                 </tr>
                 <tr>
                     <td>238</td>
+                    <td>1968</td>
                     <td>Across the Universe</td>
                     <td>422</td>
                 </tr>
                 <tr>
                     <td>239</td>
+                    <td>1968</td>
                     <td>Revolution 9</td>
                     <td>420</td>
                 </tr>
                 <tr>
                     <td>240</td>
+                    <td>1967</td>
                     <td>Being for the Benefit of Mr.
                         Kite!</td>
                     <td>399</td>
                 </tr>
                 <tr>
                     <td>241</td>
+                    <td>1969</td>
                     <td>Mailman, Bring Me No More Blues</td>
                     <td>384</td>
                 </tr>
                 <tr>
                     <td>242</td>
+                    <td>1969</td>
                     <td>Maxwell's Silver Hammer</td>
                     <td>369</td>
                 </tr>
                 <tr>
                     <td>243</td>
+                    <td>1967</td>
                     <td>Sgt. Pepper's Lonely Hearts
                         Club Band (Reprise)</td>
                     <td>350</td>
                 </tr>
                 <tr>
                     <td>244</td>
+                    <td>1964</td>
                     <td>Long Tall Sally</td>
                     <td>345</td>
                 </tr>
                 <tr>
                     <td>245</td>
+                    <td>1969</td>
                     <td>Mean Mr. Mustard</td>
                     <td>343</td>
                 </tr>
                 <tr>
                     <td>246</td>
+                    <td>1963</td>
                     <td>Moonlight Bay</td>
                     <td>338</td>
                 </tr>
                 <tr>
                     <td>247</td>
+                    <td>1967</td>
                     <td>She's Leaving Home</td>
                     <td>323</td>
                 </tr>
                 <tr>
                     <td>248</td>
+                    <td>1969</td>
                     <td>Maggie Mae</td>
                     <td>281</td>
                 </tr>
                 <tr>
                     <td>249</td>
+                    <td>1968</td>
                     <td>Mother Nature's Son</td>
                     <td>281</td>
                 </tr>
                 <tr>
                     <td>250</td>
+                    <td>1964</td>
                     <td>Komm gib mir deine Hand</td>
                     <td>189</td>
                 </tr>
                 <tr>
                     <td>251</td>
+                    <td>1969</td>
                     <td>Sun King</td>
                     <td>168</td>
                 </tr>

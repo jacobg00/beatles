@@ -3,6 +3,7 @@ declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml');
 declare variable $words-sep := doc('../XML/words_separated_per_song.xml');
 declare variable $word-score := doc('../XML/word_score_total.xml');
 declare variable $bbSongs := doc('../XML/beatles_billboard_songs_US.xml');
+(:This XQuery generates the file song_modality_over_time.html :)
 <html><head><title>Modality: Date</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <script src="/beatles/js/sticky.js"></script>
