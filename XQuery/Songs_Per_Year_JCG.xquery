@@ -4,9 +4,11 @@ declare variable $bbSongs := doc('../XML/beatles_billboard_songs_US.xml');
 declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
 
 <html>
-    <head>
+    <head >
+    
         <title>The Beatles' music Billboard Appearances vs. Release Dates</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="/beatles/js/sticky.js"></script>
     </head>
     <body>
     <div id="content">
