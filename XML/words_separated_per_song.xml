@@ -3,11 +3,13 @@
     <song>
         <songName>12-Bar Original</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Across the Universe</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>my</v>
@@ -334,6 +336,7 @@
     <song>
         <songName>Act Naturally</songName>
         <cover>True</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -616,6 +619,7 @@
     <song>
         <songName>Ain't She Sweet</songName>
         <cover>True</cover>
+        <year>1961</year>
         <lyrics-counted>
             <word>
                 <v>aint</v>
@@ -782,6 +786,7 @@
     <song>
         <songName>All I've Got to Do</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -960,6 +965,7 @@
     <song>
         <songName>All My Loving</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i'll</v>
@@ -1122,6 +1128,7 @@
     <song>
         <songName>All Things Must Pass</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>all</v>
@@ -1404,6 +1411,7 @@
     <song>
         <songName>All Together Now</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -1630,6 +1638,7 @@
     <song>
         <songName>All You Need Is Love</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -1836,6 +1845,7 @@
     <song>
         <songName>And I Love Her</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>love</v>
@@ -2030,6 +2040,7 @@
     <song>
         <songName>And Your Bird Can Sing</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -2236,6 +2247,7 @@
     <song>
         <songName>Anna (Go to Him)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -2490,6 +2502,7 @@
     <song>
         <songName>Another Girl</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -2776,6 +2789,7 @@
     <song>
         <songName>Any Time at All</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>all</v>
@@ -3010,6 +3024,7 @@
     <song>
         <songName>Ask Me Why</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -3256,6 +3271,7 @@
     <song>
         <songName>Baby It's You</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>la</v>
@@ -3514,6 +3530,7 @@
     <song>
         <songName>Baby, You're a Rich Man</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -3788,6 +3805,7 @@
     <song>
         <songName>Baby's in Black</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -3978,6 +3996,7 @@
     <song>
         <songName>Back in the U.S.S.R.</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>s</v>
@@ -4408,6 +4427,7 @@
     <song>
         <songName>Bad Boy</songName>
         <cover>True</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>and</v>
@@ -4878,6 +4898,7 @@
     <song>
         <songName>Bad to Me</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -5140,6 +5161,7 @@
     <song>
         <songName>The Ballad of John and Yoko</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -5706,11 +5728,13 @@
     <song>
         <songName>Beautiful Dreamer</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Because</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>is</v>
@@ -5821,6 +5845,7 @@
     <song>
         <songName>Because I Know You Love Me So</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -5980,6 +6005,7 @@
         <songName>Being for the Benefit of Mr.
             Kite!</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -6350,11 +6376,13 @@
     <song>
         <songName>Bésame Mucho</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Birthday</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>birthday</v>
@@ -6497,6 +6525,7 @@
     <song>
         <songName>Blackbird</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>to</v>
@@ -6643,6 +6672,7 @@
     <song>
         <songName>Blue Jay Way</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>be</v>
@@ -6925,6 +6955,7 @@
     <song>
         <songName>Boys</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -7103,6 +7134,7 @@
     <song>
         <songName>Can't Buy Me Love</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -7321,6 +7353,7 @@
     <song>
         <songName>Carol</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -7719,6 +7752,7 @@
     <song>
         <songName>Carry That Weight</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>carry</v>
@@ -7825,16 +7859,19 @@
     <song>
         <songName>Catswalk</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Cayenne</songName>
         <cover>False</cover>
+        <year>1960</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Chains</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>chains</v>
@@ -8101,6 +8138,7 @@
     <song>
         <songName>Child of Nature</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -8319,6 +8357,7 @@
     <song>
         <songName>Christmas Time (Is Here Again)</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>christmas</v>
@@ -8669,6 +8708,7 @@
     <song>
         <songName>Circles</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>round</v>
@@ -8943,6 +8983,7 @@
     <song>
         <songName>Clarabella</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>baby</v>
@@ -9145,6 +9186,7 @@
     <song>
         <songName>Come and Get It</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>it</v>
@@ -9339,6 +9381,7 @@
     <song>
         <songName>Come Together</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>he</v>
@@ -9662,6 +9705,7 @@
         <songName>The Continuing Story of Bungalow
             Bill</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>bill</v>
@@ -9968,6 +10012,7 @@
     <song>
         <songName>Cry Baby Cry</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>cry</v>
@@ -10266,11 +10311,13 @@
     <song>
         <songName>Cry for a Shadow</songName>
         <cover>False</cover>
+        <year>1961</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Crying, Waiting, Hoping</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>do</v>
@@ -10465,6 +10512,7 @@
     <song>
         <songName>A Day in the Life</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -10955,6 +11003,7 @@
     <song>
         <songName>Day Tripper</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -11129,6 +11178,7 @@
     <song>
         <songName>Dear Prudence</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>dear</v>
@@ -11347,6 +11397,7 @@
     <song>
         <songName>Devil in Her Heart</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>no</v>
@@ -11573,6 +11624,7 @@
     <song>
         <songName>Dig a Pony</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -11787,6 +11839,7 @@
     <song>
         <songName>Dig It</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>dig</v>
@@ -11861,11 +11914,13 @@
     <song>
         <songName>Dizzy Miss Lizzy</songName>
         <cover>True</cover>
+        <year>1965</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Do You Want to Know a Secret?</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -12052,6 +12107,7 @@
     <song>
         <songName>Doctor Robert</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>doctor</v>
@@ -12338,6 +12394,7 @@
     <song>
         <songName>Don't Bother Me</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -12628,6 +12685,7 @@
     <song>
         <songName>Don't Ever Change</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -12934,6 +12992,7 @@
     <song>
         <songName>Don't Let Me Down</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -13132,6 +13191,7 @@
     <song>
         <songName>Don't Pass Me By</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>don't</v>
@@ -13490,6 +13550,7 @@
     <song>
         <songName>Drive My Car</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -13776,6 +13837,7 @@
     <song>
         <songName>Eight Days a Week</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>love</v>
@@ -13954,6 +14016,7 @@
     <song>
         <songName>Eleanor Rigby</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -14288,6 +14351,7 @@
     <song>
         <songName>The End</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -14390,11 +14454,13 @@
     <song>
         <songName>Etcetera</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Every Little Thing</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>she</v>
@@ -14614,6 +14680,7 @@
         <songName>Everybody's Got
             Something to Hide Except Me and My Monkey</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>come</v>
@@ -14785,6 +14852,7 @@
         <songName>Everybody's Trying to Be My
             Baby</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>my</v>
@@ -14971,6 +15039,7 @@
     <song>
         <songName>Fixing a Hole</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>i'm</v>
@@ -15253,16 +15322,19 @@
     <song>
         <songName>Fancy My Chances with You</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Flying</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>The Fool on the Hill</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -15541,6 +15613,7 @@
     <song>
         <songName>For No One</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -15863,6 +15936,7 @@
     <song>
         <songName>For You Blue</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -16065,6 +16139,7 @@
     <song>
         <songName>Free as a Bird</songName>
         <cover>False</cover>
+        <year>1977</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -16283,6 +16358,7 @@
     <song>
         <songName>From Me to You</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -16461,6 +16537,7 @@
     <song>
         <songName>From Us to You</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>da</v>
@@ -16563,6 +16640,7 @@
     <song>
         <songName>Get Back</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>back</v>
@@ -16849,6 +16927,7 @@
     <song>
         <songName>Getting Better</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>better</v>
@@ -17163,6 +17242,7 @@
     <song>
         <songName>Girl</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>girl</v>
@@ -17533,6 +17613,7 @@
     <song>
         <songName>Glad All Over</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>glad</v>
@@ -17907,6 +17988,7 @@
     <song>
         <songName>Glass Onion</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -18213,6 +18295,7 @@
     <song>
         <songName>Golden Slumbers</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -18343,6 +18426,7 @@
     <song>
         <songName>Good Day Sunshine</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>good</v>
@@ -18585,6 +18669,7 @@
     <song>
         <songName>Good Morning Good Morning</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>good</v>
@@ -19007,6 +19092,7 @@
     <song>
         <songName>Good Night</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>good</v>
@@ -19149,16 +19235,19 @@
     <song>
         <songName>Goodbye</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Got to Get You into My Life</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Hallelujah, I Love Her So</songName>
         <cover>True</cover>
+        <year>1960</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -19437,6 +19526,7 @@
     <song>
         <songName>Happiness Is a Warm Gun</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -19807,6 +19897,7 @@
     <song>
         <songName>A Hard Day's Night</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -20077,6 +20168,7 @@
     <song>
         <songName>Heather</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -20239,6 +20331,7 @@
     <song>
         <songName>Hello, GoodBye</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>say</v>
@@ -20317,6 +20410,7 @@
     <song>
         <songName>Hello Little Girl</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -20615,6 +20709,7 @@
     <song>
         <songName>Help!</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>help</v>
@@ -20929,6 +21024,7 @@
     <song>
         <songName>Helter Skelter</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -21227,6 +21323,7 @@
     <song>
         <songName>Her Majesty</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>her</v>
@@ -21365,6 +21462,7 @@
     <song>
         <songName>Here Comes the Sun</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>sun</v>
@@ -21515,6 +21613,7 @@
     <song>
         <songName>Here, There and Everywhere</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>her</v>
@@ -21789,6 +21888,7 @@
     <song>
         <songName>Hey Bulldog</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -22039,6 +22139,7 @@
     <song>
         <songName>Hey Jude</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>it</v>
@@ -22361,11 +22462,13 @@
     <song>
         <songName>Hippy Hippy Shake</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Hold Me Tight</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -22524,11 +22627,13 @@
     <song>
         <songName>Honey Don't</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Honey Pie</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>oh</v>
@@ -22903,16 +23008,19 @@
     <song>
         <songName>The Honeymoon Song</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>How Do You Do It?</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>I Am the Walrus</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -23379,6 +23487,7 @@
     <song>
         <songName>I Call Your Name</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -23565,6 +23674,7 @@
     <song>
         <songName>I Don't Want to Spoil the Party</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -23847,6 +23957,7 @@
     <song>
         <songName>I Feel Fine</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>she's</v>
@@ -24025,6 +24136,7 @@
     <song>
         <songName>I Forgot to Remember to Forget</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -24235,6 +24347,7 @@
     <song>
         <songName>I Got a Woman</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -24541,6 +24654,7 @@
     <song>
         <songName>I Got to Find My Baby</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -24839,6 +24953,7 @@
     <song>
         <songName>I Just Don't Understand</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -24997,6 +25112,7 @@
     <song>
         <songName>I Lost My Little Girl</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted>
             <word>
                 <v>oh</v>
@@ -25187,6 +25303,7 @@
     <song>
         <songName>I Me Mine</songName>
         <cover>False</cover>
+        <year>1970</year>
         <lyrics-counted>
             <word>
                 <v>mine</v>
@@ -25345,6 +25462,7 @@
     <song>
         <songName>I Need You</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -25627,6 +25745,7 @@
     <song>
         <songName>I Saw Her Standing There</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -25889,6 +26008,7 @@
     <song>
         <songName>I Should Have Known Better</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -26107,6 +26227,7 @@
     <song>
         <songName>I Wanna Be Your Man</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -26189,6 +26310,7 @@
     <song>
         <songName>I Want to Hold Your Hand</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -26355,6 +26477,7 @@
     <song>
         <songName>I Want to Tell You</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -26629,6 +26752,7 @@
     <song>
         <songName>I Want You (She's So Heavy)</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -26691,6 +26815,7 @@
     <song>
         <songName>I Will</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -26969,6 +27094,7 @@
     <song>
         <songName>If I Fell</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -27239,6 +27365,7 @@
     <song>
         <songName>If I Needed Someone</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -27465,6 +27592,7 @@
     <song>
         <songName>If You've Got Trouble</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -27799,6 +27927,7 @@
     <song>
         <songName>I'll Be Back</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -28049,6 +28178,7 @@
     <song>
         <songName>I'll Be on My Way</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -28263,6 +28393,7 @@
     <song>
         <songName>I'll Cry Instead</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -28629,6 +28760,7 @@
     <song>
         <songName>I'll Follow the Sun</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -28811,6 +28943,7 @@
     <song>
         <songName>I'll Get You</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -29061,6 +29194,7 @@
     <song>
         <songName>I'm a Loser</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -29391,6 +29525,7 @@
     <song>
         <songName>I'm Down</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>down</v>
@@ -29646,12 +29781,14 @@
         <songName>I'm Gonna Sit Right Down and
             Cry (Over You)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>I'm Happy Just to Dance with
             You</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -29902,6 +30039,7 @@
     <song>
         <songName>I'm In Love</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i'm</v>
@@ -30152,6 +30290,7 @@
     <song>
         <songName>I'm Looking Through You</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -30426,6 +30565,7 @@
     <song>
         <songName>I'm Only Sleeping</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>i'm</v>
@@ -30740,6 +30880,7 @@
     <song>
         <songName>I'm So Tired</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -31050,11 +31191,13 @@
     <song>
         <songName>I'm Talking About You</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>In My Life</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -31313,6 +31456,7 @@
     <song>
         <songName>In Spite of All the Danger</songName>
         <cover>False</cover>
+        <year>1958</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -31467,6 +31611,7 @@
     <song>
         <songName>The Inner Light</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -31601,6 +31746,7 @@
     <song>
         <songName>It Won't Be Long</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>be</v>
@@ -31831,6 +31977,7 @@
     <song>
         <songName>It's All Too Much</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>much</v>
@@ -32121,6 +32268,7 @@
     <song>
         <songName>It's Only Love</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -32339,6 +32487,7 @@
     <song>
         <songName>I've Got a Feeling</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>oh</v>
@@ -32613,6 +32762,7 @@
     <song>
         <songName>I've Just Seen a Face</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -32891,16 +33041,19 @@
     <song>
         <songName>Jazz Piano Song</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Jessie's Dream</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Johnny B. Goode</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>go</v>
@@ -33339,6 +33492,7 @@
     <song>
         <songName>Julia</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>julia</v>
@@ -33553,6 +33707,7 @@
     <song>
         <songName>Junk</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>nah</v>
@@ -33663,11 +33818,13 @@
     <song>
         <songName>Kansas City/Hey-Hey-Hey-Hey!</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Keep Your Hands Off My Baby</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>your</v>
@@ -33938,6 +34095,7 @@
     <song>
         <songName>Komm gib mir deine Hand</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>komm</v>
@@ -34096,6 +34254,7 @@
     <song>
         <songName>Lady Madonna</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>how</v>
@@ -34394,6 +34553,7 @@
     <song>
         <songName>Leave My Kitten Alone</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -34584,6 +34744,7 @@
     <song>
         <songName>Lend Me Your Comb</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>to</v>
@@ -34802,6 +34963,7 @@
     <song>
         <songName>Let It Be</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>be</v>
@@ -35060,6 +35222,7 @@
     <song>
         <songName>Like Dreamers Do</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -35250,6 +35413,7 @@
     <song>
         <songName>Little Child</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>come</v>
@@ -35432,6 +35596,7 @@
     <song>
         <songName>Lonesome Tears in My Eyes</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>baby</v>
@@ -35606,6 +35771,7 @@
     <song>
         <songName>The Long and Winding Road</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -35860,6 +36026,7 @@
     <song>
         <songName>Long, Long, Long</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -36018,6 +36185,7 @@
     <song>
         <songName>Long Tall Sally</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>fun</v>
@@ -36228,11 +36396,13 @@
     <song>
         <songName>Looking Glass</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Love Me Do</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted>
             <word>
                 <v>love</v>
@@ -36331,6 +36501,7 @@
     <song>
         <songName>Love of the Loved</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -36573,6 +36744,7 @@
     <song>
         <songName>Love You To</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -36851,6 +37023,7 @@
     <song>
         <songName>Lovely Rita</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -37221,6 +37394,7 @@
     <song>
         <songName>Lucille</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -37431,6 +37605,7 @@
     <song>
         <songName>Lucy in the Sky with Diamonds</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -37793,11 +37968,13 @@
     <song>
         <songName>Madman</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Maggie Mae</songName>
         <cover>True</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>oh</v>
@@ -37984,6 +38161,7 @@
     <song>
         <songName>Magical Mystery Tour</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>roll</v>
@@ -38106,6 +38284,7 @@
     <song>
         <songName>Mailman, Bring Me No More Blues</songName>
         <cover>True</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -38232,6 +38411,7 @@
     <song>
         <songName>Martha My Dear</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -38478,6 +38658,7 @@
     <song>
         <songName>Matchbox</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -38772,6 +38953,7 @@
     <song>
         <songName>Maxwell's Silver Hammer</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>bang</v>
@@ -39282,6 +39464,7 @@
     <song>
         <songName>Mean Mr. Mustard</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -39508,11 +39691,13 @@
     <song>
         <songName>Memphis Tennessee</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Michelle</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -39735,6 +39920,7 @@
     <song>
         <songName>Misery</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>misery</v>
@@ -39969,11 +40155,13 @@
     <song>
         <songName>Money (That's What I Want)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Moonlight Bay</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>on</v>
@@ -40172,6 +40360,7 @@
     <song>
         <songName>Mother Nature's Son</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>doo</v>
@@ -40394,6 +40583,7 @@
     <song>
         <songName>Mr. Moonlight</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -40596,6 +40786,7 @@
     <song>
         <songName>The Night Before</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>night</v>
@@ -40798,6 +40989,7 @@
     <song>
         <songName>No Reply</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -41085,6 +41277,7 @@
         <songName>Norwegian Wood (This Bird Has
             Flown)</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -41371,6 +41564,7 @@
     <song>
         <songName>Not a Second Time</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>no</v>
@@ -41549,6 +41743,7 @@
     <song>
         <songName>Not Guilty</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>not</v>
@@ -41840,11 +42035,13 @@
         <songName>Nothin' Shakin' (But the
             Leaves on the Trees)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Nowhere Man</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>nowhere</v>
@@ -42103,6 +42300,7 @@
     <song>
         <songName>Ob-La-Di, Ob-La-Da</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -42453,6 +42651,7 @@
     <song>
         <songName>Octopus's Garden</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -42771,6 +42970,7 @@
     <song>
         <songName>Oh! Darling</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -42917,6 +43117,7 @@
     <song>
         <songName>Old Brown Shoe</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -43399,6 +43600,7 @@
     <song>
         <songName>One After 909</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -43673,6 +43875,7 @@
     <song>
         <songName>One and One Is Two</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -43927,6 +44130,7 @@
     <song>
         <songName>Only a Northern Song</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>it</v>
@@ -44229,11 +44433,13 @@
     <song>
         <songName>Ooh! My Soul</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Paperback Writer</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>writer</v>
@@ -44580,6 +44786,7 @@
     <song>
         <songName>Penny Lane</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -45010,6 +45217,7 @@
     <song>
         <songName>Piggies</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -45280,11 +45488,13 @@
     <song>
         <songName>Please Mr. Postman</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Please Please Me</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted>
             <word>
                 <v>c'mon</v>
@@ -45487,6 +45697,7 @@
     <song>
         <songName>Polythene Pam</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>yeah</v>
@@ -45669,6 +45880,7 @@
     <song>
         <songName>P.S. I Love You</songName>
         <cover>False</cover>
+        <year>1962</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -45835,6 +46047,7 @@
     <song>
         <songName>Rain</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -46069,6 +46282,7 @@
     <song>
         <songName>Real Love</songName>
         <cover>False</cover>
+        <year>1980</year>
         <lyrics-counted>
             <word>
                 <v>it's</v>
@@ -46311,6 +46525,7 @@
     <song>
         <songName>Revolution</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -46625,6 +46840,7 @@
     <song>
         <songName>Revolution 1</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -46955,6 +47171,7 @@
     <song>
         <songName>Revolution 9</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>number</v>
@@ -47978,16 +48195,19 @@
         <songName>Rip It Up/Shake,
             Rattle, and Roll/Blue Suede Shoes</songName>
         <cover>True</cover>
+        <year>1969</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Rock and Roll Music</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Rocky Raccoon</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>do</v>
@@ -48566,11 +48786,13 @@
     <song>
         <songName>Roll Over Beethoven</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Run for Your Life</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -48849,6 +49071,7 @@
     <song>
         <songName>Savoy Truffle</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>have</v>
@@ -49195,16 +49418,19 @@
     <song>
         <songName>Searchin'</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>September in the Rain</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Sexy Sadie</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -49464,6 +49690,7 @@
         <songName>Sgt. Pepper's Lonely Hearts Club
             Band</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>to</v>
@@ -49827,6 +50054,7 @@
         <songName>Sgt. Pepper's Lonely Hearts
             Club Band (Reprise)</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>sgt</v>
@@ -49981,12 +50209,14 @@
     <song>
         <songName>Shakin' in the Sixties</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>She Came in Through the Bathroom
             Window</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>she</v>
@@ -50293,6 +50523,7 @@
     <song>
         <songName>She Loves You</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -50527,6 +50758,7 @@
     <song>
         <songName>She Said She Said</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -50737,6 +50969,7 @@
     <song>
         <songName>She's a Woman</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -50979,6 +51212,7 @@
     <song>
         <songName>She's Leaving Home</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>she</v>
@@ -51497,11 +51731,13 @@
     <song>
         <songName>The Sheik of Araby</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>A Shot of Rhythm and Blues</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -51824,11 +52060,13 @@
     <song>
         <songName>Shout</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Sie liebt dich</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -52059,27 +52297,32 @@
     <song>
         <songName>Slow Down</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>So How Come (No One Loves Me)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Soldier of Love (Lay Down Your
             Arms)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Some Other Guy</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Something</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -52286,6 +52529,7 @@
     <song>
         <songName>Sour Milk Sea</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>he</v>
@@ -52628,6 +52872,7 @@
     <song>
         <songName>Step Inside Love/Los Paranoias</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>love</v>
@@ -52878,6 +53123,7 @@
     <song>
         <songName>Strawberry Fields Forever</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>to</v>
@@ -53164,6 +53410,7 @@
     <song>
         <songName>Sun King</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>here</v>
@@ -53278,21 +53525,25 @@
     <song>
         <songName>Sure to Fall (in Love with You)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Sweet Little Sixteen</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Take Good Care of My Baby</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Taking a Trip to Carolina</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>taking</v>
@@ -53347,6 +53598,7 @@
     <song>
         <songName>A Taste of Honey</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -53521,6 +53773,7 @@
     <song>
         <songName>Taxman</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>taxman</v>
@@ -53823,6 +54076,7 @@
     <song>
         <songName>Teddy Boy</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>he</v>
@@ -54217,6 +54471,7 @@
     <song>
         <songName>Tell Me What You See</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -54467,6 +54722,7 @@
     <song>
         <songName>Tell Me Why</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -54745,6 +55001,7 @@
     <song>
         <songName>Thank You Girl</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -54959,6 +55216,7 @@
     <song>
         <songName>That Means a Lot</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -55173,16 +55431,19 @@
     <song>
         <songName>That'll Be the Day</songName>
         <cover>True</cover>
+        <year>1958</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>That’s All Right (Mama)</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>There's a Place</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -55361,6 +55622,7 @@
     <song>
         <songName>Things We Said Today</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>love</v>
@@ -55651,6 +55913,7 @@
     <song>
         <songName>Think for Yourself</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -55961,6 +56224,7 @@
     <song>
         <songName>This Boy</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>boy</v>
@@ -56151,11 +56415,13 @@
     <song>
         <songName>Three Cool Cats</songName>
         <cover>True</cover>
+        <year>1962</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Ticket to Ride</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>to</v>
@@ -56410,11 +56676,13 @@
     <song>
         <songName>Till There Was You</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Tip of My Tongue</songName>
         <cover>False</cover>
+        <year>1963</year>
         <lyrics-counted>
             <word>
                 <v>to</v>
@@ -56705,11 +56973,13 @@
     <song>
         <songName>To Know Her is to Love Her</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Tomorrow Never Knows</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>is</v>
@@ -56912,16 +57182,19 @@
     <song>
         <songName>Too Much Monkey Business</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Twist and Shout</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Two of Us</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>home</v>
@@ -57220,6 +57493,7 @@
     <song>
         <songName>Wait</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>been</v>
@@ -57458,6 +57732,7 @@
     <song>
         <songName>Watching Rainbows</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -57812,6 +58087,7 @@
     <song>
         <songName>We Can Work It Out</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>it</v>
@@ -58138,6 +58414,7 @@
     <song>
         <songName>What Goes On</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -58448,6 +58725,7 @@
     <song>
         <songName>What You're Doing</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>me</v>
@@ -58650,6 +58928,7 @@
     <song>
         <songName>What's The New Mary Jane</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>a</v>
@@ -58948,6 +59227,7 @@
     <song>
         <songName>When I Get Home</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>got</v>
@@ -59214,6 +59494,7 @@
     <song>
         <songName>When I'm Sixty-Four</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -59676,6 +59957,7 @@
     <song>
         <songName>While My Guitar Gently Weeps</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>oh</v>
@@ -59974,6 +60256,7 @@
     <song>
         <songName>Why Don't We Do It in the Road?</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>do</v>
@@ -60048,6 +60331,7 @@
     <song>
         <songName>Wild Honey Pie</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>honey</v>
@@ -60075,6 +60359,7 @@
         <songName>With a Little Help from My
             Friends</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -60441,6 +60726,7 @@
     <song>
         <songName>Within You Without You</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -60815,11 +61101,13 @@
     <song>
         <songName>Woman</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>The Word</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -61050,11 +61338,13 @@
     <song>
         <songName>Words of Love</songName>
         <cover>True</cover>
+        <year>1964</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Yellow Submarine</songName>
         <cover>False</cover>
+        <year>1966</year>
         <lyrics-counted>
             <word>
                 <v>yellow</v>
@@ -61341,6 +61631,7 @@
     <song>
         <songName>Yer Blues</songName>
         <cover>False</cover>
+        <year>1968</year>
         <lyrics-counted>
             <word>
                 <v>the</v>
@@ -61607,6 +61898,7 @@
     <song>
         <songName>Yes It Is</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>is</v>
@@ -61853,6 +62145,7 @@
     <song>
         <songName>Yesterday</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -62099,6 +62392,7 @@
     <song>
         <songName>You Can't Do That</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -62398,6 +62692,7 @@
         <songName>You Know My Name (Look Up the
             Number)</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -62572,6 +62867,7 @@
     <song>
         <songName>You Know What to Do</songName>
         <cover>False</cover>
+        <year>1964</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -62798,6 +63094,7 @@
     <song>
         <songName>You Like Me Too Much</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -63080,6 +63377,7 @@
     <song>
         <songName>You Never Give Me Your Money</songName>
         <cover>False</cover>
+        <year>1969</year>
         <lyrics-counted>
             <word>
                 <v>to</v>
@@ -63438,6 +63736,7 @@
     <song>
         <songName>You Won't See Me</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>you</v>
@@ -63764,6 +64063,7 @@
     <song>
         <songName>You'll Be Mine</songName>
         <cover>False</cover>
+        <year>1960</year>
         <lyrics-counted>
             <word>
                 <v>be</v>
@@ -63950,11 +64250,13 @@
     <song>
         <songName>Young Blood</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
     <song>
         <songName>Your Mother Should Know</songName>
         <cover>False</cover>
+        <year>1967</year>
         <lyrics-counted>
             <word>
                 <v>your</v>
@@ -64085,6 +64387,7 @@
     <song>
         <songName>You're Going to Lose That Girl</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>her</v>
@@ -64280,6 +64583,7 @@
         <songName>You've Got to Hide Your Love
             Away</songName>
         <cover>False</cover>
+        <year>1965</year>
         <lyrics-counted>
             <word>
                 <v>i</v>
@@ -64542,6 +64846,7 @@
     <song>
         <songName>You've Really Got a Hold on Me</songName>
         <cover>True</cover>
+        <year>1963</year>
         <lyrics-counted/>
     </song>
 </root>
