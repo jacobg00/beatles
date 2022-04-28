@@ -5,15 +5,56 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="/beatles/js/sticky.js"></script>
     </head> 
-    <body> <!--Code the viewable part of your site here.-->
+    <body> 
+        <div class="header">
+            <img src="/beatles/images/Beatles_logo.svg"/>
+        </div>
+        <div id="navbar">
+            <div class="navbar">
+                
+                <a href="/beatles/index.html">Home</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/research.html">Research Questions</a>
+                        <a href="/beatles/HTML/method.html">Methodology</a>
+                        <a href="/beatles/HTML/team.html">Team</a>                 
+                    </div>
+                </div>      
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Analysis</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a>
+                        <a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a>
+                        <a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a>
+                        <a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a>
+                    </div>                                 
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Sources</button>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a>
+                        <a href="http://www.mybeatles.net/charts.html">Charts</a>
+                    </div>                                 
+                </div>
+            </div>
+        </div>
+        <div id="content">
         <h1>Beatles Project Method Page</h1>
         <h2>This page contains the steps for the making of our Beatles Project</h2>
-        <p>1. We started by finding a CSV file on GitHub that contained the Beatles' discography. There was the song name, album, release date,year,lyrics,cover,songwriters and vocals.</p>
-        <p>2. We then worked on converting the file to an XML file to where we could easily access the information. The complete list of steps taken when making the XML can be found at our stpes file. </p>
-        <p>3. While creating the XML, we created a Schema to help check our code. </p>
-        <p>4. From there we created a the html files that contains the various types of data that we have.</p>
-        <p>5. We then found data that had the Beatles songs that were on BillBoard charts that we could help use toward our project. </p>
+        <ol><li>We started by finding a CSV file on GitHub that contained The Beatles' discography. There was the song name, album, release date,year,lyrics,cover,songwriters and vocals.</li>
+        <li>We then worked on converting the file to an XML file to where we could easily access the information. The complete list of steps taken when making the XML can be found at our stpes file. </li>
+        <li>While creating the XML, we created a Schema to help check our code. </li>
+        <li>From there we created the html files that contains the various types of data that we have.</li>
+        <li>We then found data that had the Beatles songs that were on BillBoard charts. This too was converted to XML files using Regex.</li>
+        <li>Using XQuery, we began to look for patterns in the data. At first we used XQuery to produce HTML tables and text. Some of these remain in the finished site, while in other cases, we converted those data to SVG graphics.</li>
+        </ol>
         <img alt="image of Octocat" src="../images/Octocat.jpg"/>
+        </div>
     </body>
 </html>  
