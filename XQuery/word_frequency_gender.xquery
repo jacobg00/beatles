@@ -35,8 +35,46 @@ declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count()
     <head>
         <title>Gender Word Frequency</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="/beatles/js/sticky.js"></script>
     </head>
     <body>
+    <div class="header">
+        <img src="/beatles/images/Beatles_logo.svg"/>
+        </div>
+        <div id="navbar">
+            <div class="navbar">
+                
+                <a href="/beatles/index.html">Home</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/research.html">Research Questions</a>
+                        <a href="/beatles/HTML/method.html">Methodology</a>
+                        <a href="/beatles/HTML/team.html">Team</a>                 
+                    </div>
+                </div>      
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Analysis</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a>
+                        <a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a>
+                        <a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a>
+                        <a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a>
+                    </div>                                 
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Sources</button>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a>
+                        <a href="http://www.mybeatles.net/charts.html">Charts</a>
+                    </div>                                 
+                </div>
+            </div>
+        </div>
+        <div id="content">
         <h1>Gender Word Frequency in The Beatles Discography</h1>
         <p>This table displays the frequency of words associated with gender in songs performed by The Beatles. This table started as a simple idea to show the difference in Beatles songs themed around women vs. those themed around men.</p>
         <table>
@@ -86,5 +124,6 @@ declare variable $herTotal := $lyricsClean ! (tokenize(.)[. = 'her']) => count()
                 <td>{$herTotal}</td>
             </tr>
         </table>
+        </div>
     </body>
 </html>
