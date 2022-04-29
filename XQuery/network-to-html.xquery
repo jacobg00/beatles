@@ -110,10 +110,10 @@ return
         <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="{$ls}"/><!--ls edge-->
         <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$ms}"/><!--ms edge-->
         
-        <circle cx="50" cy="50" r="{math:sqrt($h)}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
-        <circle cx="300" cy="300" r="{math:sqrt($s)}" stroke="green" stroke-width="1" fill="white" /><!--s node-->
-        <circle cx="300" cy="50" r="{math:sqrt($m)}" stroke="red" stroke-width="" fill="white" /><!--m node-->
-        <circle cx="50" cy="300" r="{math:sqrt($l)}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
+        <circle cx="50" cy="50" r="{math:sqrt($h)*6.5}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
+        <circle cx="300" cy="300" r="{math:sqrt($s)*6.5}" stroke="green" stroke-width="1" fill="white" /><!--s node-->
+        <circle cx="300" cy="50" r="{math:sqrt($m)*6.5}" stroke="red" stroke-width="" fill="white" /><!--m node-->
+        <circle cx="50" cy="300" r="{math:sqrt($l)*6.5}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
         
         
         <circle cx="-10" cy="0" r="{$D}" stroke="Black" stroke-width="1" fill="white" /><!--Donovan node-->
@@ -123,15 +123,15 @@ return
         <circle cx="-10" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
         
         
-        <circle cx="350" cy="350" r="{math:sqrt($C)}" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
+        <circle cx="450" cy="350" r="{math:sqrt($C)*6.5}" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
         
         
        
         
-        <text x="35" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison ({$h})</text>
-        <text x="35" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon ({$l})</text>
-        <text x="280" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney ({$m})</text>
-        <text x="289" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr ({$s})</text>
+        <text x="27" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison ({$h})</text>
+        <text x="28" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon ({$l})</text>
+        <text x="278" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney ({$m})</text>
+        <text x="279" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr ({$s})</text>
         
         
         <text x="-121" y="-44" stroke="black" stroke-width="0.5" font-size="10">Lee Montogue</text>
@@ -139,6 +139,9 @@ return
         <text x="-121" y="-10" stroke="black" stroke-width="0.5" font-size="10">Heinz Hellmer</text>
         <text x="-121" y="7" stroke="black" stroke-width="0.5" font-size="10">Donovan</text>
         <text x="-60" y="155" stroke="black" stroke-width="0.5" font-size="10">Yoko Ono</text>
+        
+         <text x="421" y="350" stroke="black" stroke-width="0.5" font-size="10">Covers ({$C})</text>
+        
 </g>
 }
    
