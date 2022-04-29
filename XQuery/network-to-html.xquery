@@ -109,10 +109,10 @@ return
         <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="{$ls}"/><!--ls edge-->
         <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$ms}"/><!--ms edge-->
         
-        <circle cx="50" cy="50" r="sqrt({$h})" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
-        <circle cx="300" cy="300" r="sqrt({$s})" stroke="green" stroke-width="1" fill="white" /><!--s node-->
-        <circle cx="300" cy="50" r="sqrt({$m})" stroke="red" stroke-width="" fill="white" /><!--m node-->
-        <circle cx="50" cy="300" r="sqrt({$l})" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
+        <circle cx="50" cy="50" r="{math:sqrt($h1)}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
+        <circle cx="300" cy="300" r="{math:sqrt($s)}" stroke="green" stroke-width="1" fill="white" /><!--s node-->
+        <circle cx="300" cy="50" r="{math:sqrt($m)}" stroke="red" stroke-width="" fill="white" /><!--m node-->
+        <circle cx="50" cy="300" r="{math:sqrt($l)}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
         
         
         <circle cx="-10" cy="0" r="{$D}" stroke="Black" stroke-width="1" fill="white" /><!--Donovan node-->
@@ -122,7 +122,7 @@ return
         <circle cx="-10" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
         
         
-        <circle cx="350" cy="350" r="sqrt({$C})" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
+        <circle cx="350" cy="350" r="{math:sqrt($C)}" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
         
         
        
