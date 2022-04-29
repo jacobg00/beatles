@@ -109,10 +109,10 @@ return
         <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="{$ls}"/><!--ls edge-->
         <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$ms}"/><!--ms edge-->
         
-        <circle cx="50" cy="50" r="{($h*$h div 130)}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
-        <circle cx="300" cy="300" r="{($s*$s div 130)}" stroke="green" stroke-width="1" fill="white" /><!--s node-->
-        <circle cx="300" cy="50" r="{($m*$m div 130)}" stroke="red" stroke-width="" fill="white" /><!--m node-->
-        <circle cx="50" cy="300" r="{($l*$l div 130)}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
+        <circle cx="50" cy="50" r="sqrt({$h})" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
+        <circle cx="300" cy="300" r="sqrt({$s})" stroke="green" stroke-width="1" fill="white" /><!--s node-->
+        <circle cx="300" cy="50" r="sqrt({$m})" stroke="red" stroke-width="" fill="white" /><!--m node-->
+        <circle cx="50" cy="300" r="sqrt({$l})" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
         
         
         <circle cx="-10" cy="0" r="{$D}" stroke="Black" stroke-width="1" fill="white" /><!--Donovan node-->
@@ -122,15 +122,15 @@ return
         <circle cx="-10" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
         
         
-        <circle cx="350" cy="350" r="{($C*$C div 130)}" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
+        <circle cx="350" cy="350" r="sqrt({$C})" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
         
         
        
         
         <text x="35" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison ({$h})</text>
-        <text x="35" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon</text>
-        <text x="280" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney</text>
-        <text x="289" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr</text>
+        <text x="35" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon ({$l})</text>
+        <text x="280" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney ({$m})</text>
+        <text x="289" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr ({$s})</text>
         
         
         <text x="-121" y="-44" stroke="black" stroke-width="0.5" font-size="10">Lee Montogue</text>
@@ -153,13 +153,10 @@ The same thing occurred between singer Donovan and Lennon and McCartney. </p>
 
 <h2>Cover Song Writers</h2>
 <ul>{
-
-let $covwrite := //Q{}song[./Q{}cover/@status="True"]/Q{}songWrite/data(@writer) => string-join() 
-(:let $writers := $covwrite => tokenize($covwrite,"\s")
-for $w in distinct-values($writers) :)
-return <li>{$covwrite}</li>
-
-
+let $covwrite := //song[./cover/@status="True"]/songWrite/data(@writer) =>string-join(' ')
+let $writers-sep := tokenize($covwrite, '\s')
+for $writer in distinct-values($writers-sep)
+return <li>{replace($writer, '_', ' ')}</li>
 }</ul>
 
 </div>

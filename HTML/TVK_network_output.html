@@ -1,10 +1,19 @@
 <html>
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Network Analysis</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="/beatles/js/sticky.js"></script><title>Network Analysis</title>
       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
+      <div class="header"><img src="/beatles/images/Beatles_logo.svg"></div>
+      <div id="navbar">
+         <div class="navbar"><a href="/beatles/index.html">Home</a><div class="dropdown"><button class="dropbtn">About</button><div class="dropdown-content"><a href="/beatles/HTML/research.html">Research Questions</a><a href="/beatles/HTML/method.html">Methodology</a><a href="/beatles/HTML/team.html">Team</a></div>
+            </div>
+            <div class="dropdown"><button class="dropbtn">Analysis</button><div class="dropdown-content"><a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a><a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a><a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a><a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a></div>
+            </div>
+            <div class="dropdown"><button class="dropbtn">Sources</button><div class="dropdown-content"><a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a><a href="http://www.mybeatles.net/charts.html">Charts</a></div>
+            </div>
+         </div>
+      </div>
       <div id="content">
          <h1>Network Analysis </h1>
          <p>A network analysis is a graph that uses nodes, the circles, to represent people, places
@@ -60,13 +69,13 @@
                   <!--ls edge-->
                   <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="9"></line>
                   <!--ms edge-->
-                  <circle cx="50" cy="50" r="11.7" stroke="blue" stroke-width="1" fill="white"></circle>
+                  <circle cx="50" cy="50" r="sqrt(39)" stroke="blue" stroke-width="1" fill="white"></circle>
                   <!--h node-->
-                  <circle cx="300" cy="300" r="1.3" stroke="green" stroke-width="1" fill="white"></circle>
+                  <circle cx="300" cy="300" r="sqrt(13)" stroke="green" stroke-width="1" fill="white"></circle>
                   <!--s node-->
-                  <circle cx="300" cy="50" r="146.492307692307692308" stroke="red" stroke-width="" fill="white"></circle>
+                  <circle cx="300" cy="50" r="sqrt(138)" stroke="red" stroke-width="" fill="white"></circle>
                   <!--m node-->
-                  <circle cx="50" cy="300" r="148.623076923076923077" stroke="purple" stroke-width="1" fill="white"></circle>
+                  <circle cx="50" cy="300" r="sqrt(139)" stroke="purple" stroke-width="1" fill="white"></circle>
                   <!--l node-->
                   <circle cx="-10" cy="0" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
                   <!--Donovan node-->
@@ -78,12 +87,12 @@
                   <!--Heinz_Hellmer node-->
                   <circle cx="-10" cy="150" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
                   <!--Yoko_Ono node-->
-                  <circle cx="350" cy="350" r="38.776923076923076923" stroke="Black" stroke-width="1" fill="white"></circle>
+                  <circle cx="350" cy="350" r="sqrt(71)" stroke="Black" stroke-width="1" fill="white"></circle>
                   <!--Cover node-->
                   <text x="35" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison (39)</text>
-                  <text x="35" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon</text>
-                  <text x="280" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney</text>
-                  <text x="289" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr</text>
+                  <text x="35" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon (139)</text>
+                  <text x="280" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney (138)</text>
+                  <text x="289" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr (13)</text>
                   <text x="-121" y="-44" stroke="black" stroke-width="0.5" font-size="10">Lee Montogue</text>
                   <text x="-121" y="-27" stroke="black" stroke-width="0.5" font-size="10">Jean Nicolas</text>
                   <text x="-121" y="-10" stroke="black" stroke-width="0.5" font-size="10">Heinz Hellmer</text>
@@ -105,24 +114,98 @@
             Hold Your Hand) with Montogue  and Nicolas listed for Sie Liebt dich  (She loves you)</p>
          <h2>Cover Song Writers</h2>
          <ul>
-            <li>Johnny_Russell Voni_MorrisonJack_Yellen Milton_AgerArthur_AlexanderBurt_Bacharach
-               Hal_David Luther_DixonLarry_WilliamsStephen_FosterConsuelo_Velázquez Sunny_SkylarLuther_Dixon
-               Wes_FarrellChuck_BerryGerry_Goffin Carole_KingMike_PingitoreBuddy_HollyDrapkinLarry_WilliamsGerry_Goffin
-               Carole_KingCarl_PerkinsRoy_C._Bennett Sid_Tepper Aaron_SchroederRay_CharlesChan_RomeroCarl_PerkinsMikis_Theodorakis
-               SansomMitch_MurrayStan_Kesler Charlie_FeathersRay_CharlesChuck_BerryMarijohn_Wilkin
-               Kent_WestberryJoe_Thomas Howard_BiggsChuck_BerryChuck_BerryJerry_Leiber Mike_StollerGerry_Goffin
-               Carole_KingLittle_Willie_John Titus_Turner James_McDougallKay_Twomey Fred_Wise Ben_WeismanJohnny_Burnette
-               Dorsey_Burnette Paul_Burlison Al_MortimerRobert_Blackwell Enotris_Johnson Little_RichardLittle_Richard
-               Albert_CollinsRuth_Roberts Bill_Katz Stanley_ClaytonCarl_Perkins Blind_Lemon_JeffersonChuck_BerryBerry_Gordy
-               Janie_BradfordPercy_Wenrich Edward_MaddenRoy_Lee_JohnsonEddie_FontaineLittle_RichardGeorgia_Dobbins
-               William_Garrett Brian_Holland Robert_Bateman Freddie_GormanRobert_Blackwell John_Marascalco
-               Charles_Calhoun Charles_Calhoun Carl_PerkinsChuck_BerryChuck_BerryJerry_Leiber Mike_StollerAl_Dubin
-               Harry_WarrenHarry_B._Smith Francis_Wheeler Ted_SnyderTerry_ThompsonRudolph_Isley Ronald_Isley
-               O’Kelly_Isley_Jr.Larry_WilliamsFelice_and_Boudleaux_BryantBuzz_Cason Tony_MoonJerry_Leiber
-               Mike_Stoller Richie_BarrettCarl_Perkins Quinton_Claunch Bill_CantrellChuck_BerryGerry_Goffin
-               Carole_KingBobby_Scott Ric_MarlowJerry_Allison Buddy_Holly Norman_PettyArthur_CrudupJerry_Leiber
-               Mike_StollerMeredith_WillsonPhil_SpectorChuck_BerryPhil_Medley Bert_BernsBuddy_HollyJerry_Leiber
-               Mike_StollerSmokey_Robinson</li>
+            <li>Johnny Russell</li>
+            <li>Voni Morrison</li>
+            <li>Jack Yellen</li>
+            <li>Milton Ager</li>
+            <li>Arthur Alexander</li>
+            <li>Burt Bacharach</li>
+            <li>Hal David</li>
+            <li>Luther Dixon</li>
+            <li>Larry Williams</li>
+            <li>Stephen Foster</li>
+            <li>Consuelo Velázquez</li>
+            <li>Sunny Skylar</li>
+            <li>Wes Farrell</li>
+            <li>Chuck Berry</li>
+            <li>Gerry Goffin</li>
+            <li>Carole King</li>
+            <li>Mike Pingitore</li>
+            <li>Buddy Holly</li>
+            <li>Drapkin</li>
+            <li>Carl Perkins</li>
+            <li>Roy C. Bennett</li>
+            <li>Sid Tepper</li>
+            <li>Aaron Schroeder</li>
+            <li>Ray Charles</li>
+            <li>Chan Romero</li>
+            <li>Mikis Theodorakis</li>
+            <li>Sansom</li>
+            <li>Mitch Murray</li>
+            <li>Stan Kesler</li>
+            <li>Charlie Feathers</li>
+            <li>Marijohn Wilkin</li>
+            <li>Kent Westberry</li>
+            <li>Joe Thomas</li>
+            <li>Howard Biggs</li>
+            <li>Jerry Leiber</li>
+            <li>Mike Stoller</li>
+            <li>Little Willie John</li>
+            <li>Titus Turner</li>
+            <li>James McDougall</li>
+            <li>Kay Twomey</li>
+            <li>Fred Wise</li>
+            <li>Ben Weisman</li>
+            <li>Johnny Burnette</li>
+            <li>Dorsey Burnette</li>
+            <li>Paul Burlison</li>
+            <li>Al Mortimer</li>
+            <li>Robert Blackwell</li>
+            <li>Enotris Johnson</li>
+            <li>Little Richard</li>
+            <li>Albert Collins</li>
+            <li>Ruth Roberts</li>
+            <li>Bill Katz</li>
+            <li>Stanley Clayton</li>
+            <li>Blind Lemon Jefferson</li>
+            <li>Berry Gordy</li>
+            <li>Janie Bradford</li>
+            <li>Percy Wenrich</li>
+            <li>Edward Madden</li>
+            <li>Roy Lee Johnson</li>
+            <li>Eddie Fontaine</li>
+            <li>Georgia Dobbins</li>
+            <li>William Garrett</li>
+            <li>Brian Holland</li>
+            <li>Robert Bateman</li>
+            <li>Freddie Gorman</li>
+            <li>John Marascalco</li>
+            <li>Charles Calhoun</li>
+            <li>Al Dubin</li>
+            <li>Harry Warren</li>
+            <li>Harry B. Smith</li>
+            <li>Francis Wheeler</li>
+            <li>Ted Snyder</li>
+            <li>Terry Thompson</li>
+            <li>Rudolph Isley</li>
+            <li>Ronald Isley</li>
+            <li>O’Kelly Isley Jr.</li>
+            <li>Felice and Boudleaux Bryant</li>
+            <li>Buzz Cason</li>
+            <li>Tony Moon</li>
+            <li>Richie Barrett</li>
+            <li>Quinton Claunch</li>
+            <li>Bill Cantrell</li>
+            <li>Bobby Scott</li>
+            <li>Ric Marlow</li>
+            <li>Jerry Allison</li>
+            <li>Norman Petty</li>
+            <li>Arthur Crudup</li>
+            <li>Meredith Willson</li>
+            <li>Phil Spector</li>
+            <li>Phil Medley</li>
+            <li>Bert Berns</li>
+            <li>Smokey Robinson</li>
          </ul>
       </div>
    </body>
