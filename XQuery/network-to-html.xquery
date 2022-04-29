@@ -1,3 +1,4 @@
+declare namespace math = "http://www.w3.org/2005/xpath-functions/math";
 <html>
 <head><script src="/beatles/js/sticky.js"></script>
 <title>Network Analysis</title>
@@ -109,7 +110,7 @@ return
         <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="{$ls}"/><!--ls edge-->
         <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$ms}"/><!--ms edge-->
         
-        <circle cx="50" cy="50" r="{math:sqrt($h1)}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
+        <circle cx="50" cy="50" r="{math:sqrt($h)}" stroke="blue" stroke-width="1" fill="white" /> <!--h node-->
         <circle cx="300" cy="300" r="{math:sqrt($s)}" stroke="green" stroke-width="1" fill="white" /><!--s node-->
         <circle cx="300" cy="50" r="{math:sqrt($m)}" stroke="red" stroke-width="" fill="white" /><!--m node-->
         <circle cx="50" cy="300" r="{math:sqrt($l)}" stroke="purple" stroke-width="1" fill="white" /><!--l node-->
