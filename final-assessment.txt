@@ -1,0 +1,11 @@
+PROJECT ASSESSMENT
+
+Dr. Campbell, May 2, 2022
+
+This project started with a relatively rich data set, including the dates and lyrics for all songs recorded by The Beatles, together with their songwriters and US Billboard charts. This made for good material for potential visualization. The fact that much more could be done with this, that many more questions could be asked and answered, is not a strike against it. 
+
+Where the project is perhaps a bit weaker is in its coherence. Several different questions are asked and answered, but they are not necessarily tied together. For example, some small tweaks could have multiplied the network graph, breaking it up by years, so one could look for changes in collaboration over time; the relative share of Beatles-written vs. cover songs that made the charts could have been incorporated into the diagram; the prevalence of specific words could have been charted over time; the prevalence of certain words in chart- and non-chart songs could have been compared. These features would have made fuller use of the data, probably would have led to new and interesting conclusions (and further questions), and would have tied together the rather disparate work that the different students were pursuing. To get to that goal, it would have required more regular conversation among the team and taking more initiative. The project also lost a certain amount of momentum in the last few weeks of the semester, which robbed it of the ability to take on some of these additional tasks.
+
+All of that being said, this is an interesting project, and it leaves a legacy of a substantial amount of XQuery work on which future classes may draw for inspiration. 
+
+-WHC
