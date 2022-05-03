@@ -213,7 +213,8 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
     
     
     <H2>Graph 2: Billboard Songs</H2>
-    <h3>This graph shows how many per year of The Beatles' songs made the BillBoard Top 100s</h3>
+    <p>This graph shows how many per year of The Beatles' songs made the BillBoard Top 100s. (This pulls out that particular set of bars from the graph above for easier visibility.)</p>
+    <p>Note that The Beatles' peak year for Billboard songs was 1964, the year of the British Invasion. The number tapered off after that, but still represents remarkable staying power.</p>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -262,7 +263,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
                                     width="{$chartYearCount * $xspacer}"
                                     stroke="black"
                                     stroke-width="5"
-                                    fill="red"/>
+                                    fill="blue"/>
                                 <text
                                     x="25"
                                     y="{$n * $yspacer + 15}"
@@ -292,7 +293,8 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
     <p>
     
     <h2>Graph 3: BillBoard Albums</h2>
-    <h3>This graph shows how many per year of The Beatles' albums made the BillBoard Top 100s</h3>
+    <p>This graph shows how many per year of The Beatles' albums made the BillBoard Top 100s.</p>
+    <p>As with Graph 2, we can see the sudden success of 1964 followed by a long, gradual decline, though some albums first hit the charts later than one might expect. See more discussion of that below on this page.</p>
 
         
         <svg
@@ -370,7 +372,7 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
     <div class="graph">
     <p>
         <h1>Song's Billboard Appearance vs. Release Date</h1>
-        <text> This chart illistrates the fact that the year a song was released isn't typically the same year it made the Billboard charts  </text>
+        <p>This chart illistrates the fact that the year a song was released isn't typically the same year it made the Billboard charts. Note in particular that many of the songs that first hit the Billboard charts in America in 1964 had actually been recorded the previous year, before the first American tour.</p>
         <div class="table">
         <table>
             <tr>
@@ -396,8 +398,8 @@ declare variable $bbAlbums := doc('../XML/beatles_billboard_albums_US.xml');
             }  <!--whc: you also needed to add a curly brace here -->
         </table>
         </div>
-         <p> By using this chart in addition to our other graphs, we can begin to see how relevent The Beatles' music was at a given point in time, and even pick out trends. An example of this can be found when looking at graph 2, where we see that in 1986, 1 song made the Billboard charts. Checking the chart above, we can see that the song was Twist And Shout. 
-         How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout. The last column of the table shows us that there was a whole 23 years between the song's release and when it hit the Billboard charts!</p>
+         <p> By using this chart in addition to our other graphs, we can begin to see how relevent The Beatles' music was at a given point in time, and even pick out trends. An example of this can be found when looking at graph 2, where we see that in 1986, 1 song made the Billboard charts. Checking the chart above, we can see that the song was Twist And Shout.</p> 
+         <p>How is this interesting? Well in 1986 the movie "Ferris Bueller's Day Off" was released which was very popular, and a song that was featured in the film was none other than Twist and Shout. The last column of the table shows us that there was a whole 23 years between the song's release and when it hit the Billboard charts!</p>
          </p>
          </div>
          </div>
