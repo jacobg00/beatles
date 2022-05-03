@@ -1,9 +1,17 @@
+declare option saxon:output "method=html";
+declare option saxon:output "doctype-public=-//W3C//DTD XHTML 1.0 Strict//EN";
+
 declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
 declare variable $words-sep := doc('../XML/words_separated_per_song.xml');
 declare variable $word-score := doc('../XML/word_score_total.xml');
 (:This XQuery creates song_modality.html:)
-<html><head><title>Song Modality</title>
+(:For reasons unknown, this xquery will not run unless 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+is stripped down to <html> root element. :)
+<html>
+<head>
+<title>Song Modality</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <script src="/beatles/js/sticky.js"></script>
 </head>
@@ -46,12 +54,10 @@ declare variable $word-score := doc('../XML/word_score_total.xml');
         </div>
 <div id="content">
 <h1>Song Lyrics: Modality Score</h1>
-<p>As we considered the lyrical content of the Beatles songs, we started to wonder: Which Beatles songs are most typical, most quintessentially "Beatles", in their vocabulary? Calculating this turned out to be possible, but very tricky, and it required us to break the problem into several smaller steps, generating three separate XQuery document and two ancillary XML documents along the way. Here are our steps.</p>
+<p>As we considered the lyrical content of The Beatles' songs, we started to wonder: Which Beatles songs are most typical, most quintessentially "Beatles", in their vocabulary? Calculating this turned out to be possible, but very tricky, and it required us to break the problem into several smaller steps, generating three separate XQuery document and two ancillary XML documents along the way. Here are our steps.</p>
 <ol><li>First, we needed to write an XQuery to string together the lyrics from all the songs, and then to "tokenize" the text (divide the lyrics into individual words). It would then count the frequency of each word across the entire corpus of Beatles lyrics. The <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">first version</a> of this created <a href="/beatles/HTML/word_count_output.html">this page</a>, for visual display; the <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score_to_xml.xquery">second version</a>  instead created a <a href="https://github.com/jacobg00/beatles/blob/main/XML/word_score_total.xml">new XML file</a> with the same data. This assigned each word an "overall frequency score" indicating how common it was across the whole discography.</li>
 <li>Second, we needed to run <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_score.xquery">a similar XQuery</a> to count the frequency of each word on a song-by-song basis. This generated <a href="https://github.com/jacobg00/beatles/blob/main/XML/words_separated_per_song.xml">another new XML file</a> in which each song had a list of the words used in it, and the number of times each one was used.</li>
-<li>Third, bringing these together, was <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality.xquery">a new XQuery</a> to generate the HTML page you are reading right now, and especially the table below. On a song-by-song basis, it cross-references the two new XML files. As it loops over each song (excluding instrumentals, which have no lyrics), it looks at the frequency of each word in that song, and then multiplies that by the frequency of that word's use in the whole discography. We then took the average of those multiples across the song.
-</li>
-<li>And finally, looking at trends over time, <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality_date.xquery">yet another XQuery</a> created an HTML page to <a href="https://jacobg00.github.io/beatles/HTML/song_modality_over_time.html">compare language use over time</a>.</li>
+<li>Third, bringing these together, was <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality.xquery">a new XQuery</a> to generate the HTML page you are reading right now, and especially the table below. On a song-by-song basis, it cross-references the two new XML files. As it loops over each song (excluding instrumentals, which have no lyrics), it looks at the frequency of each word in that song, and then multiplies that by the frequency of that word's use in the whole discography. We then took the average of those multiples across the song.</li>
 </ol>
 <p><b>What does this mean in practice?</b></p>
 
@@ -62,6 +68,8 @@ declare variable $word-score := doc('../XML/word_score_total.xml');
 <p>Further down on this page, you will see a table ranking all 251 songs with lyrics. To get a visual summary, though, you will want to look at some graphs produced with these data.</p>
 <p>First, take a look at <a href="/beatles/HTML/song_modality_covers_bar_graph.html">a page showing how cover songs</a> (those written by others, but recorded by The Beatles) stack up in terms of how quintessentially "Beatles" their word-use patterns are. (See <a href="song_modality_covers_bar_graph.xquery">here</a> for the XQuery that generated that page.)</p>
 <p>Then check out <a href="/beatles/HTML/song_modality_chart_songs_bar_graph.html">this page</a> to see how song modality scores relate to song popularity, as measured by which songs made the Billboard Top 100 Charts in the United States. (See <a href="song_modality_chartsongs_bar_graph.xquery">here</a> for the XQuery that generated that page.)</p>
+<p>And finally, looking at trends over time, <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/song_modality_date.xquery">yet another XQuery</a> created an HTML page to <a href="https://jacobg00.github.io/beatles/HTML/song_modality_over_time.html">compare language use over time</a>.</p>
+
 <h1>And the winner is...</h1>
 <p>...a song you may never have heard of: "I Want You (She's So Heavy)", with an exceedingly high score of nearly 8200. (For context, only a handful of songs have scores exceeding 2000, and only four other songs exceed 3000.) What could possibly account for a song being both the most linguistically typical of all Beatles songs, and yet also an obscure deep cut from the Abbey Road album?</p>
 <p>The answer is simple: there are very few different words ({$words-sep//song[.//songName/text() = "I Want You (She's So Heavy)"]/lyrics-counted/count(word)}) used in this song; almost all of them are very common words; and they are repeated over and over. (<a href="https://en.wikipedia.org/wiki/Abbey_Road">Lennon said</a> that he had "made a deliberate choice to keep the lyrics simple and concise.") If you wanted to write a song to rack up the maximum score, this is exactly how you would do it.</p>

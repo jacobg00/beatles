@@ -1,10 +1,15 @@
+declare option saxon:output "method=html";
+declare option saxon:output "doctype-public=-//W3C//DTD XHTML 1.0 Strict//EN";
+
 declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml'); 
 declare variable $words-sep := doc('../XML/words_separated_per_song.xml');
 declare variable $word-score := doc('../XML/word_score_total.xml');
 declare variable $bbSongs := doc('../XML/beatles_billboard_songs_US.xml');
 (:This XQuery generates the file song_modality_over_time.html :)
-<html><head><title>Modality: Date</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Modality: Date</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <script src="/beatles/js/sticky.js"></script>
 </head>

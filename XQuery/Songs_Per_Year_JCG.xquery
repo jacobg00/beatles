@@ -1,7 +1,6 @@
 declare option saxon:output "method=html";
 declare option saxon:output "doctype-public=-//W3C//DTD XHTML 1.0 Strict//EN";
-(:declare option saxon:output "doctype-system=http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd";
-:)
+
 declare variable $files := collection('../XML/?select=*.xml');
 declare variable $lyric-file := doc('../XML/clean-lyricsrevised.xml');
 declare variable $bbSongs := doc('../XML/beatles_billboard_songs_US.xml');
