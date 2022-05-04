@@ -1,213 +1,222 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
 <html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="/beatles/js/sticky.js"></script><title>Network Analysis</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
-   <body>
-      <div class="header"><img src="/beatles/images/Beatles_logo.svg"></div>
-      <div id="navbar">
-         <div class="navbar"><a href="/beatles/index.html">Home</a><div class="dropdown"><button class="dropbtn">About</button><div class="dropdown-content"><a href="/beatles/HTML/research.html">Research Questions</a><a href="/beatles/HTML/method.html">Methodology</a><a href="/beatles/HTML/team.html">Team</a></div>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="/beatles/js/sticky.js"></script><title>Network Analysis</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="header"><img src="/beatles/images/Beatles_logo.svg"></div>
+        <div id="navbar">
+            <div class="navbar"><a href="/beatles/index.html">Home</a><div class="dropdown"><button class="dropbtn">About</button><div class="dropdown-content"><a href="/beatles/HTML/research.html">Research Questions</a><a href="/beatles/HTML/method.html">Methodology</a><a href="/beatles/HTML/team.html">Team</a></div>
+                </div>
+                <div class="dropdown"><button class="dropbtn">Analysis</button><div class="dropdown-content"><a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a><a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a><a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a><a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a></div>
+                </div>
+                <div class="dropdown"><button class="dropbtn">Sources</button><div class="dropdown-content"><a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a><a href="http://www.mybeatles.net/charts.html">Charts</a></div>
+                </div>
             </div>
-            <div class="dropdown"><button class="dropbtn">Analysis</button><div class="dropdown-content"><a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a><a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a><a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a><a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a></div>
-            </div>
-            <div class="dropdown"><button class="dropbtn">Sources</button><div class="dropdown-content"><a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a><a href="http://www.mybeatles.net/charts.html">Charts</a></div>
-            </div>
-         </div>
-      </div>
-      <div id="content">
-         <h1>Network Analysis </h1>
-         <p>A network analysis is a graph that uses nodes, the circles, to represent people, places
-            organizations, or some other thing. The lines connecting them, known as edges indicate
-            a relationship between them. In this instance, the nodes are the beatles and those
-            who have written songs with them. The width of the edges represent how many times
-            they have written songs together. As you can see the strongest cowriting relationship
-            is between John Lennon and Paul McCartney. The size of the node indicates the number
-            of songs written by that person. </p><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-            <g alignment-baseline="baseline" transform="translate (200, 100)">
-               <g>
-                  <line x1="50" y1="50" x2="300" y2="50" stroke="black" stroke-width="9"></line>
-                  <!--hm edge-->
-                  <line x1="50" y1="50" x2="50" y2="300" stroke="black" stroke-width="11"></line>
-                  <!--hl edge-->
-                  <line x1="50" y1="50" x2="300" y2="300" stroke="black" stroke-width="8"></line>
-                  <!--hs edge-->
-                  <line x1="50" y1="300" x2="300" y2="50" stroke="black" stroke-width="73"></line>
-                  <!--lm edge-->
-                  <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="9"></line>
-                  <!--ls edge-->
-                  <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="9"></line>
-                  <!--ms edge-->
-                  <line x1="-10" y1="0" x2="300" y2="50" stroke="red" stroke-width="1"></line>
-                  <!--DM edge-->
-                  <line x1="-10" y1="0" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
-                  <!--DL edge-->
-                  <line x1="-10" y1="150" x2="50" y2="50" stroke="blue" stroke-width="1"></line>
-                  <!--h YO edge-->
-                  <line x1="-10" y1="150" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
-                  <!--l YO edge-->
-                  <line x1="-40" y1="-30" x2="50" y2="300" stroke="purple" stroke-width="2"></line>
-                  <!--JN L edge-->
-                  <line x1="-40" y1="-30" x2="300" y2="50" stroke="red" stroke-width="2"></line>
-                  <!--JN M edge-->
-                  <line x1="-25" y1="-15" x2="-40" y2="-30" stroke="black" stroke-width="1"></line>
-                  <!--Hh JN edge-->
-                  <line x1="-40" y1="-30" x2="-55" y2="-45" stroke="black" stroke-width="1"></line>
-                  <!--JN Lee edge-->
-                  <line x1="-55" y1="-45" x2="300" y2="50" stroke="red" stroke-width="1"></line>
-                  <!--Lee M edge-->
-                  <line x1="-55" y1="-45" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
-                  <!--Lee L edge-->
-                  <line x1="-25" y1="-15" x2="300" y2="50" stroke="red" stroke-width="1"></line>
-                  <!--Hh M edge-->
-                  <line x1="-25" y1="-15" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
-                  <!--Hh L edge-->
-                  <line x1="50" y1="50" x2="300" y2="300" stroke="black" stroke-width="8"></line>
-                  <!--hs edge-->
-                  <line x1="50" y1="300" x2="300" y2="50" stroke="black" stroke-width="73"></line>
-                  <!--lm edge-->
-                  <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="9"></line>
-                  <!--ls edge-->
-                  <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="9"></line>
-                  <!--ms edge-->
-                  <circle cx="50" cy="50" r="40.59248698958959" stroke="blue" stroke-width="1" fill="white"></circle>
-                  <!--h node-->
-                  <circle cx="300" cy="300" r="23.436083290515928" stroke="green" stroke-width="1" fill="white"></circle>
-                  <!--s node-->
-                  <circle cx="300" cy="50" r="76.35771080905974" stroke="red" stroke-width="" fill="white"></circle>
-                  <!--m node-->
-                  <circle cx="50" cy="300" r="76.63386979658537" stroke="purple" stroke-width="1" fill="white"></circle>
-                  <!--l node-->
-                  <circle cx="-10" cy="0" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
-                  <!--Donovan node-->
-                  <circle cx="-55" cy="-45" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
-                  <!--Lee_Montogue node-->
-                  <circle cx="-40" cy="-30" r="2" stroke="Black" stroke-width="1" fill="white"></circle>
-                  <!--Jean_Nicolas node-->
-                  <circle cx="-25" cy="-15" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
-                  <!--Heinz_Hellmer node-->
-                  <circle cx="-10" cy="150" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
-                  <!--Yoko_Ono node-->
-                  <circle cx="450" cy="350" r="54.769973525646336" stroke="Black" stroke-width="1" fill="white"></circle>
-                  <!--Cover node-->
-                  <text x="27" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison (39)</text>
-                  <text x="28" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon (139)</text>
-                  <text x="278" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney (138)</text>
-                  <text x="279" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr (13)</text>
-                  <text x="-121" y="-44" stroke="black" stroke-width="0.5" font-size="10">Lee Montogue</text>
-                  <text x="-121" y="-27" stroke="black" stroke-width="0.5" font-size="10">Jean Nicolas</text>
-                  <text x="-121" y="-10" stroke="black" stroke-width="0.5" font-size="10">Heinz Hellmer</text>
-                  <text x="-121" y="7" stroke="black" stroke-width="0.5" font-size="10">Donovan</text>
-                  <text x="-60" y="155" stroke="black" stroke-width="0.5" font-size="10">Yoko Ono</text>
-                  <text x="421" y="350" stroke="black" stroke-width="0.5" font-size="10">Covers (71)</text>
-               </g>
-            </g></svg><p>First let’s look at the four actual members of the band. John Lennon and Paul McCartney
-            did most of the song writing, being listed as a writer on 138 tracks and 137 respectively.
-            This is illustrated by the size of their circles. George Harrison had 38 songs to
-            his name while Ringo Starr only had 12. In the entire discography there are only 8
-            songs that list all of the members as writers.</p>
-         <p>In addition to the four Beatles there are 5 other people listed.  George Harrison
-            and John Lennon released 1 song under the Beatles name with Yoko Ono listed as a cowriter.
-            This graph excludes the songs that would be released under either of their names.
-            
-            The same thing occurred between singer Donovan and Lennon and McCartney. </p>
-         <p>Nicolas, Hellmer and Montogue are all listed as writers due to their work translating
-            two tracks into German. Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to
-            Hold Your Hand) with Montogue  and Nicolas listed for Sie Liebt dich  (She loves you)</p>
-         <h2>Cover Song Writers</h2>
-         <ul>
-            <li>Johnny Russell</li>
-            <li>Voni Morrison</li>
-            <li>Jack Yellen</li>
-            <li>Milton Ager</li>
-            <li>Arthur Alexander</li>
-            <li>Burt Bacharach</li>
-            <li>Hal David</li>
-            <li>Luther Dixon</li>
-            <li>Larry Williams</li>
-            <li>Stephen Foster</li>
-            <li>Consuelo Velázquez</li>
-            <li>Sunny Skylar</li>
-            <li>Wes Farrell</li>
-            <li>Chuck Berry</li>
-            <li>Gerry Goffin</li>
-            <li>Carole King</li>
-            <li>Mike Pingitore</li>
-            <li>Buddy Holly</li>
-            <li>Drapkin</li>
-            <li>Carl Perkins</li>
-            <li>Roy C. Bennett</li>
-            <li>Sid Tepper</li>
-            <li>Aaron Schroeder</li>
-            <li>Ray Charles</li>
-            <li>Chan Romero</li>
-            <li>Mikis Theodorakis</li>
-            <li>Sansom</li>
-            <li>Mitch Murray</li>
-            <li>Stan Kesler</li>
-            <li>Charlie Feathers</li>
-            <li>Marijohn Wilkin</li>
-            <li>Kent Westberry</li>
-            <li>Joe Thomas</li>
-            <li>Howard Biggs</li>
-            <li>Jerry Leiber</li>
-            <li>Mike Stoller</li>
-            <li>Little Willie John</li>
-            <li>Titus Turner</li>
-            <li>James McDougall</li>
-            <li>Kay Twomey</li>
-            <li>Fred Wise</li>
-            <li>Ben Weisman</li>
-            <li>Johnny Burnette</li>
-            <li>Dorsey Burnette</li>
-            <li>Paul Burlison</li>
-            <li>Al Mortimer</li>
-            <li>Robert Blackwell</li>
-            <li>Enotris Johnson</li>
-            <li>Little Richard</li>
-            <li>Albert Collins</li>
-            <li>Ruth Roberts</li>
-            <li>Bill Katz</li>
-            <li>Stanley Clayton</li>
-            <li>Blind Lemon Jefferson</li>
-            <li>Berry Gordy</li>
-            <li>Janie Bradford</li>
-            <li>Percy Wenrich</li>
-            <li>Edward Madden</li>
-            <li>Roy Lee Johnson</li>
-            <li>Eddie Fontaine</li>
-            <li>Georgia Dobbins</li>
-            <li>William Garrett</li>
-            <li>Brian Holland</li>
-            <li>Robert Bateman</li>
-            <li>Freddie Gorman</li>
-            <li>John Marascalco</li>
-            <li>Charles Calhoun</li>
-            <li>Al Dubin</li>
-            <li>Harry Warren</li>
-            <li>Harry B. Smith</li>
-            <li>Francis Wheeler</li>
-            <li>Ted Snyder</li>
-            <li>Terry Thompson</li>
-            <li>Rudolph Isley</li>
-            <li>Ronald Isley</li>
-            <li>O’Kelly Isley Jr.</li>
-            <li>Felice and Boudleaux Bryant</li>
-            <li>Buzz Cason</li>
-            <li>Tony Moon</li>
-            <li>Richie Barrett</li>
-            <li>Quinton Claunch</li>
-            <li>Bill Cantrell</li>
-            <li>Bobby Scott</li>
-            <li>Ric Marlow</li>
-            <li>Jerry Allison</li>
-            <li>Norman Petty</li>
-            <li>Arthur Crudup</li>
-            <li>Meredith Willson</li>
-            <li>Phil Spector</li>
-            <li>Phil Medley</li>
-            <li>Bert Berns</li>
-            <li>Smokey Robinson</li>
-         </ul>
-      </div>
-   </body>
+        </div>
+        <div id="content">
+            <h1>Network Analysis </h1>
+            <p>A network analysis is a graph that uses nodes, the circles, to represent people, places
+                organizations, or some other thing. The lines connecting them, known as edges indicate
+                a relationship between them. In this instance, the nodes are the beatles and those
+                who have written songs with them. The width of the edges represent how many times
+                they have written songs together. As you can see, the strongest cowriting relationship
+                by far is between John Lennon and Paul McCartney. The size of each node indicates
+                the number of songs written by that person in total, whether in collaboration with
+                others or writing alone.</p><svg xmlns="http://www.w3.org/2000/svg" width="1000" height="550">
+                <g alignment-baseline="baseline" transform="translate (200, 100)">
+                    <g>
+                        <line x1="50" y1="50" x2="300" y2="50" stroke="black" stroke-width="9"></line>
+                        <!--hm edge-->
+                        <line x1="50" y1="50" x2="50" y2="300" stroke="black" stroke-width="11"></line>
+                        <!--hl edge-->
+                        <line x1="50" y1="50" x2="300" y2="300" stroke="black" stroke-width="8"></line>
+                        <!--hs edge-->
+                        <line x1="50" y1="300" x2="300" y2="50" stroke="black" stroke-width="73"></line>
+                        <!--lm edge-->
+                        <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="9"></line>
+                        <!--ls edge-->
+                        <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="9"></line>
+                        <!--ms edge-->
+                        <line x1="-10" y1="0" x2="300" y2="50" stroke="red" stroke-width="1"></line>
+                        <!--DM edge-->
+                        <line x1="-10" y1="0" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
+                        <!--DL edge-->
+                        <line x1="-10" y1="150" x2="50" y2="50" stroke="blue" stroke-width="1"></line>
+                        <!--h YO edge-->
+                        <line x1="-10" y1="150" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
+                        <!--l YO edge-->
+                        <line x1="-40" y1="-30" x2="50" y2="300" stroke="purple" stroke-width="2"></line>
+                        <!--JN L edge-->
+                        <line x1="-40" y1="-30" x2="300" y2="50" stroke="red" stroke-width="2"></line>
+                        <!--JN M edge-->
+                        <line x1="-25" y1="-15" x2="-40" y2="-30" stroke="black" stroke-width="1"></line>
+                        <!--Hh JN edge-->
+                        <line x1="-40" y1="-30" x2="-55" y2="-45" stroke="black" stroke-width="1"></line>
+                        <!--JN Lee edge-->
+                        <line x1="-55" y1="-45" x2="300" y2="50" stroke="red" stroke-width="1"></line>
+                        <!--Lee M edge-->
+                        <line x1="-55" y1="-45" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
+                        <!--Lee L edge-->
+                        <line x1="-25" y1="-15" x2="300" y2="50" stroke="red" stroke-width="1"></line>
+                        <!--Hh M edge-->
+                        <line x1="-25" y1="-15" x2="50" y2="300" stroke="purple" stroke-width="1"></line>
+                        <!--Hh L edge-->
+                        <line x1="50" y1="50" x2="300" y2="300" stroke="black" stroke-width="8"></line>
+                        <!--hs edge-->
+                        <line x1="50" y1="300" x2="300" y2="50" stroke="black" stroke-width="73"></line>
+                        <!--lm edge-->
+                        <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="9"></line>
+                        <!--ls edge-->
+                        <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="9"></line>
+                        <!--ms edge-->
+                        <circle cx="50" cy="50" r="40.59248698958959" stroke="blue" stroke-width="1" fill="white"></circle>
+                        <!--h node-->
+                        <circle cx="300" cy="300" r="23.436083290515928" stroke="green" stroke-width="1" fill="white"></circle>
+                        <!--s node-->
+                        <circle cx="300" cy="50" r="76.35771080905974" stroke="red" stroke-width="" fill="white"></circle>
+                        <!--m node-->
+                        <circle cx="50" cy="300" r="76.63386979658537" stroke="purple" stroke-width="1" fill="white"></circle>
+                        <!--l node-->
+                        <circle cx="-10" cy="0" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
+                        <!--Donovan node-->
+                        <circle cx="-55" cy="-45" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
+                        <!--Lee_Montogue node-->
+                        <circle cx="-40" cy="-30" r="2" stroke="Black" stroke-width="1" fill="white"></circle>
+                        <!--Jean_Nicolas node-->
+                        <circle cx="-25" cy="-15" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
+                        <!--Heinz_Hellmer node-->
+                        <circle cx="-10" cy="150" r="1" stroke="Black" stroke-width="1" fill="white"></circle>
+                        <!--Yoko_Ono node-->
+                        <circle cx="450" cy="300" r="54.769973525646336" stroke="Black" stroke-width="1" fill="white"></circle>
+                        <!--Cover node-->
+                        <text x="27" y="50" stroke="black" stroke-width="0.5" font-size="10">Harrison (39)</text>
+                        <text x="28" y="303" stroke="black" stroke-width="0.5" font-size="10">Lennon (139)</text>
+                        <text x="278" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney (138)</text>
+                        <text x="279" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr (13)</text>
+                        <text x="-121" y="-44" stroke="black" stroke-width="0.5" font-size="10">Lee Montogue</text>
+                        <text x="-121" y="-27" stroke="black" stroke-width="0.5" font-size="10">Jean Nicolas</text>
+                        <text x="-121" y="-10" stroke="black" stroke-width="0.5" font-size="10">Heinz Hellmer</text>
+                        <text x="-121" y="7" stroke="black" stroke-width="0.5" font-size="10">Donovan</text>
+                        <text x="-60" y="155" stroke="black" stroke-width="0.5" font-size="10">Yoko Ono</text>
+                        <text x="421" y="300" stroke="black" stroke-width="0.5" font-size="10">Covers (71)</text>
+                        <!--numbers labeling edges-->
+                        <text x="175" y="53" fill="white" stroke-width="1" font-size="9">9</text>
+                        <text x="44" y="175" fill="white" stroke-width="1" font-size="11">11</text>
+                        <text x="100" y="104" fill="white" stroke-width="1" font-size="8">8</text>
+                        <text x="175" y="165" fill="white" stroke-width="1" font-size="73">73</text>
+                        <text x="175" y="303" fill="white" stroke-width="1" font-size="9">9</text>
+                        <text x="297" y="165" fill="white" stroke-width="1" font-size="9">9</text>
+                    </g>
+                </g></svg><p>First let’s look at the four actual members of the band. John Lennon and Paul McCartney
+                did most of the song writing, being listed as a writer on 139 tracks and 138 respectively.  This is illustrated by the size of their circles. George Harrison
+                had 39 songs to his name while Ringo Starr only had 13. In the entire discography there are only 8 songs that list all of the members as
+                writers.</p>
+            <p>In addition to the four Beatles there are 5 other people listed.  George Harrison
+                and John Lennon released 1 song under the Beatles name with Yoko Ono listed as a cowriter.
+                This graph excludes the songs that would be released under either of their names.
+                
+                The same thing occurred between singer Donovan and Lennon and McCartney. </p>
+            <p>Nicolas, Hellmer and Montogue are all listed as writers due to their work translating
+                two tracks into German: Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to
+                Hold Your Hand) with Montogue, and Nicolas listed for Sie Liebt dich (She loves you).</p>
+            <h2>List of Cover Song Writers</h2>
+            <ul>
+                <li>Johnny Russell</li>
+                <li>Voni Morrison</li>
+                <li>Jack Yellen</li>
+                <li>Milton Ager</li>
+                <li>Arthur Alexander</li>
+                <li>Burt Bacharach</li>
+                <li>Hal David</li>
+                <li>Luther Dixon</li>
+                <li>Larry Williams</li>
+                <li>Stephen Foster</li>
+                <li>Consuelo Velázquez</li>
+                <li>Sunny Skylar</li>
+                <li>Wes Farrell</li>
+                <li>Chuck Berry</li>
+                <li>Gerry Goffin</li>
+                <li>Carole King</li>
+                <li>Mike Pingitore</li>
+                <li>Buddy Holly</li>
+                <li>Drapkin</li>
+                <li>Carl Perkins</li>
+                <li>Roy C. Bennett</li>
+                <li>Sid Tepper</li>
+                <li>Aaron Schroeder</li>
+                <li>Ray Charles</li>
+                <li>Chan Romero</li>
+                <li>Mikis Theodorakis</li>
+                <li>Sansom</li>
+                <li>Mitch Murray</li>
+                <li>Stan Kesler</li>
+                <li>Charlie Feathers</li>
+                <li>Marijohn Wilkin</li>
+                <li>Kent Westberry</li>
+                <li>Joe Thomas</li>
+                <li>Howard Biggs</li>
+                <li>Jerry Leiber</li>
+                <li>Mike Stoller</li>
+                <li>Little Willie John</li>
+                <li>Titus Turner</li>
+                <li>James McDougall</li>
+                <li>Kay Twomey</li>
+                <li>Fred Wise</li>
+                <li>Ben Weisman</li>
+                <li>Johnny Burnette</li>
+                <li>Dorsey Burnette</li>
+                <li>Paul Burlison</li>
+                <li>Al Mortimer</li>
+                <li>Robert Blackwell</li>
+                <li>Enotris Johnson</li>
+                <li>Little Richard</li>
+                <li>Albert Collins</li>
+                <li>Ruth Roberts</li>
+                <li>Bill Katz</li>
+                <li>Stanley Clayton</li>
+                <li>Blind Lemon Jefferson</li>
+                <li>Berry Gordy</li>
+                <li>Janie Bradford</li>
+                <li>Percy Wenrich</li>
+                <li>Edward Madden</li>
+                <li>Roy Lee Johnson</li>
+                <li>Eddie Fontaine</li>
+                <li>Georgia Dobbins</li>
+                <li>William Garrett</li>
+                <li>Brian Holland</li>
+                <li>Robert Bateman</li>
+                <li>Freddie Gorman</li>
+                <li>John Marascalco</li>
+                <li>Charles Calhoun</li>
+                <li>Al Dubin</li>
+                <li>Harry Warren</li>
+                <li>Harry B. Smith</li>
+                <li>Francis Wheeler</li>
+                <li>Ted Snyder</li>
+                <li>Terry Thompson</li>
+                <li>Rudolph Isley</li>
+                <li>Ronald Isley</li>
+                <li>O’Kelly Isley Jr.</li>
+                <li>Felice and Boudleaux Bryant</li>
+                <li>Buzz Cason</li>
+                <li>Tony Moon</li>
+                <li>Richie Barrett</li>
+                <li>Quinton Claunch</li>
+                <li>Bill Cantrell</li>
+                <li>Bobby Scott</li>
+                <li>Ric Marlow</li>
+                <li>Jerry Allison</li>
+                <li>Norman Petty</li>
+                <li>Arthur Crudup</li>
+                <li>Meredith Willson</li>
+                <li>Phil Spector</li>
+                <li>Phil Medley</li>
+                <li>Bert Berns</li>
+                <li>Smokey Robinson</li>
+            </ul>
+        </div>
+    </body>
 </html>

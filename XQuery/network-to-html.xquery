@@ -1,4 +1,6 @@
 declare namespace math = "http://www.w3.org/2005/xpath-functions/math";
+declare option saxon:output "method=html";
+declare option saxon:output "doctype-public=-//W3C//DTD XHTML 1.0 Strict//EN";
 <html>
 <head><script src="/beatles/js/sticky.js"></script>
 <title>Network Analysis</title>
@@ -43,8 +45,8 @@ declare namespace math = "http://www.w3.org/2005/xpath-functions/math";
         </div>
 <div id="content">
 <h1>Network Analysis </h1>
-<p>A network analysis is a graph that uses nodes, the circles, to represent people, places organizations, or some other thing. The lines connecting them, known as edges indicate a relationship between them. In this instance, the nodes are the beatles and those who have written songs with them. The width of the edges represent how many times they have written songs together. As you can see the strongest cowriting relationship is between John Lennon and Paul McCartney. The size of the node indicates the number of songs written by that person. </p>
-   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+<p>A network analysis is a graph that uses nodes, the circles, to represent people, places organizations, or some other thing. The lines connecting them, known as edges indicate a relationship between them. In this instance, the nodes are the beatles and those who have written songs with them. The width of the edges represent how many times they have written songs together. As you can see, the strongest cowriting relationship by far is between John Lennon and Paul McCartney. The size of each node indicates the number of songs written by that person in total, whether in collaboration with others or writing alone.</p>
+   <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="550">
    <g alignment-baseline="baseline" transform="translate (200, 100)">
    
    
@@ -84,6 +86,7 @@ return
         <line x1="50" y1="50" x2="50" y2="300" stroke="black" stroke-width="{$hl}"/><!--hl edge-->
         <line x1="50" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$hs}"/><!--hs edge-->
         <line x1="50" y1="300" x2="300" y2="50" stroke="black" stroke-width="{$lm}"/><!--lm edge-->
+        
         <line x1="50" y1="300" x2="300" y2="300" stroke="black" stroke-width="{$ls}"/><!--ls edge-->
         <line x1="300" y1="50" x2="300" y2="300" stroke="black" stroke-width="{$ms}"/><!--ms edge-->
         
@@ -123,7 +126,7 @@ return
         <circle cx="-10" cy="150" r="{$YO}" stroke="Black" stroke-width="1" fill="white" /><!--Yoko_Ono node-->
         
         
-        <circle cx="450" cy="350" r="{math:sqrt($C)*6.5}" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
+        <circle cx="450" cy="300" r="{math:sqrt($C)*6.5}" stroke="Black" stroke-width="1" fill="white" /><!--Cover node-->
         
         
        
@@ -133,29 +136,35 @@ return
         <text x="278" y="50" stroke="black" stroke-width="0.5" font-size="10">McCartney ({$m})</text>
         <text x="279" y="303" stroke="black" stroke-width="0.5" font-size="10">Starr ({$s})</text>
         
-        
         <text x="-121" y="-44" stroke="black" stroke-width="0.5" font-size="10">Lee Montogue</text>
         <text x="-121" y="-27" stroke="black" stroke-width="0.5" font-size="10">Jean Nicolas</text>
         <text x="-121" y="-10" stroke="black" stroke-width="0.5" font-size="10">Heinz Hellmer</text>
         <text x="-121" y="7" stroke="black" stroke-width="0.5" font-size="10">Donovan</text>
         <text x="-60" y="155" stroke="black" stroke-width="0.5" font-size="10">Yoko Ono</text>
+        <text x="421" y="300" stroke="black" stroke-width="0.5" font-size="10">Covers ({$C})</text>
+         
         
-         <text x="421" y="350" stroke="black" stroke-width="0.5" font-size="10">Covers ({$C})</text>
-        
+      <!--numbers labeling edges-->        
+        <text x="175" y="53" fill="white" stroke-width="1" font-size="{$hm}">{$hm}</text>
+        <text x="44" y="175" fill="white" stroke-width="1" font-size="{$hl}">{$hl}</text>
+        <text x="100" y="104" fill="white" stroke-width="1" font-size="{$hs}">{$hs}</text>
+        <text x="175" y="165" fill="white" stroke-width="1" font-size="{$lm}">{$lm}</text>
+        <text x="175" y="303" fill="white" stroke-width="1" font-size="{$ls}">{$ls}</text>
+        <text x="297" y="165" fill="white" stroke-width="1" font-size="{$ms}">{$ms}</text>
 </g>
 }
    
    </g>
 </svg>
-<p>First let’s look at the four actual members of the band. John Lennon and Paul McCartney did most of the song writing, being listed as a writer on 138 tracks and 137 respectively.  This is illustrated by the size of their circles. George Harrison had 38 songs to his name while Ringo Starr only had 12. In the entire discography there are only 8 songs that list all of the members as writers.</p>
+<p>First let’s look at the four actual members of the band. John Lennon and Paul McCartney did most of the song writing, being listed as a writer on {//song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Lennon') ]] =>count()} tracks and {//song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'McCartney')]] =>count() } respectively.  This is illustrated by the size of their circles. George Harrison had {//song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Harrison')]] =>count() } songs to his name while Ringo Starr only had {//song [.//@status='False'][./songWrite/ data(@writer)[contains(., 'Starr')]] =>count() }. In the entire discography there are only 8 songs that list all of the members as writers.</p>
 
 <p>In addition to the four Beatles there are 5 other people listed.  George Harrison and John Lennon released 1 song under the Beatles name with Yoko Ono listed as a cowriter. This graph excludes the songs that would be released under either of their names. 
 The same thing occurred between singer Donovan and Lennon and McCartney. </p>
 
-<p>Nicolas, Hellmer and Montogue are all listed as writers due to their work translating two tracks into German. Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to Hold Your Hand) with Montogue  and Nicolas listed for Sie Liebt dich  (She loves you)</p>
+<p>Nicolas, Hellmer and Montogue are all listed as writers due to their work translating two tracks into German: Nicolas and Hellmer on Komm, gib mir deine Hand (I Want to Hold Your Hand) with Montogue, and Nicolas listed for Sie Liebt dich (She loves you).</p>
 
 
-<h2>Cover Song Writers</h2>
+<h2>List of Cover Song Writers</h2>
 <ul>{
 let $covwrite := //song[./cover/@status="True"]/songWrite/data(@writer) =>string-join(' ')
 let $writers-sep := tokenize($covwrite, '\s')
