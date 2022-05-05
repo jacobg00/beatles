@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Beatles Project</title>
+        <title>Word Count Analysis</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <script src="/beatles/js/sticky.js"></script>
     </head>
     <body>
-      <!--insert header, navbar here-->  
+        <div class="header">
+            <img src="/beatles/images/Beatles_logo.svg"/>
+        </div>
+        <div id="navbar">
+            <div class="navbar">
+                
+                <a href="/beatles/index.html">Home</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/research.html">Research Questions</a>
+                        <a href="/beatles/HTML/method.html">Methodology</a>
+                        <a href="/beatles/HTML/team.html">Team</a>                 
+                    </div>
+                </div>      
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Analysis</button>
+                    <div class="dropdown-content">
+                        <a href="/beatles/HTML/Songs_Per_Year.html">Songs Per Year</a>
+                        <a href="/beatles/HTML/TVK_network_output.html">Network: Co-writers</a>
+                        <a href="/beatles/HTML/word_count.html">Word Frequency Analysis</a>
+                        <a href="/beatles/HTML/song_modality.html">Song Modality Analysis</a>
+                    </div>                                 
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Sources</button>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/moizmb/beatles-lyrics">Lyrics</a>
+                        <a href="http://www.mybeatles.net/charts.html">Charts</a>
+                    </div>                                 
+                </div>
+            </div>
+        </div>  
         <div id="content">
             <h1>Word Count Analysis</h1>
-            <p>The initial idea was to compare a popular word in The Beatles' discography such as 'love' with other words that we assumed would be popular in their music. However, it turned out that 'love' shows up much more than 'war' or 'peace' or any other word I could think of that falls in <a href="/beatles/HTML/word_frequency_love_output.html">this theme</a>. Another attempt was made with comparing gendered pronouns such as 'she' vs. 'he' occurences, with a similarly underwhelming <a href="/beatles/HTML/word_frequency_gender_output.html">output</a>. This led to creating a file that would instead <a href="/beatles/HTML/word_count_output.html">count every word</a> that occurs in the lyrics of each song by The Beatles, in order to see which words appeared in similar frequencies as other thematically-similar words. This then led to the creation of smaller files that divided the discogrphy into songs <a href="/beatles/HTML/word_count_originals_output.html">originally written</a> by The Beatles and songs that were <a href="/beatles/HTML/word_count_covers_output.html">covered</a> by The Beatles. This process was done using various XPath functions in XQuery files and outputting the data into HTML files and tables.</p>
+            <p>The initial idea was to compare a popular word in The Beatles' discography such as 'love' with other words that we assumed would be popular in their music. However, it turned out that 'love' shows up much more than 'war' or 'peace' or any other word I could think of that falls in <a href="/beatles/HTML/word_frequency_love_output.html">this theme</a>. Another attempt was made with comparing gendered pronouns such as 'she' vs. 'he' occurences, which was then expanded to include other gendered words, leading to some <a href="/beatles/HTML/word_frequency_gender_output.html">interesting results</a>. This in turn led to creating a file that would <a href="/beatles/HTML/word_count_output.html">count every word</a> that occurs in the lyrics of each song by The Beatles, in order to see which words appeared in similar frequencies as other thematically-similar words. This then led to the creation of smaller files that divided the discogrphy into songs <a href="/beatles/HTML/word_count_originals_output.html">originally written</a> by The Beatles and songs that were <a href="/beatles/HTML/word_count_covers_output.html">covered</a> by The Beatles. This process was done using various XPath functions in XQuery files and outputting the data into HTML files and tables.</p>
             
-            <h2>Code</h2>
+            <h2>Pages and Code</h2>
             <!--<p>Here you should link to one of your XQueries and talk about how it works. Perhaps <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">this one</a>.</p> -->
-            <p><a href="/beatles/HTML/word_frequency_love_output.html">Word Frequency: Love, War, Peace</a></p>
-            <p><a href="/beatles/HTML/word_frequency_gender_output.html">Word Frequency: Gendered Pronouns</a></p>
-            <p><a href="/beatles/HTML/word_count_output.html">Word Count: Whole Discography</a></p>
-            <p><a href="/beatles/HTML/word_count_originals_output.html">Word Count: Originals (Songs written by The Beatles)</a></p>
-            <p><a href="/beatles/HTML/word_count_covers_output.html">Word Count: Covers (Songs written by others but recorded by The Beatles)</a></p>
+            <p><a href="/beatles/HTML/word_frequency_love_output.html">Word Frequency: Love, War, Peace</a> <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_frequency_love.xquery">(XQuery)</a></p>
+            <p><a href="/beatles/HTML/word_frequency_gender_output.html">Word Frequency: Gendered Pronouns</a> <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_frequency_gender.xquery">(Xquery)</a></p>
+            <p><a href="/beatles/HTML/word_count_output.html">Word Count: Whole Discography</a> <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count.xquery">(XQuery)</a></p>
+            <p><a href="/beatles/HTML/word_count_originals_output.html">Word Count: Originals (Songs written by The Beatles)</a>
+                <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count_originals.xquery">(XQuery)</a></p>
+            <p><a href="/beatles/HTML/word_count_covers_output.html">Word Count: Covers (Songs written by others but recorded by The Beatles)</a>
+                <a href="https://github.com/jacobg00/beatles/blob/main/XQuery/word_count_covers.xquery">(XQuery)</a></p>
         </div>
     </body>
 </html>
